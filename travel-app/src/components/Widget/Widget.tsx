@@ -1,17 +1,16 @@
 import React, { Component, Fragment } from 'react';
 
-import { TCountries, currencies, capitals } from '../../types/types';
+import { TCountries, currencies, capitals, months } from '../../types/types';
 
 import './widget.css'
 
 //interface
 type TState = {
   [key: string]: any;
-  // currencyData: object,
-  // weatherData: object,
-}
+};
 
 export default class Widget extends Component<{country: TCountries}, TState> {
+  timerID?: number;
   constructor(props: {country: TCountries}) {
     super(props)
     this.state = {
@@ -21,10 +20,16 @@ export default class Widget extends Component<{country: TCountries}, TState> {
     }
   }
 
+  tick = () => {
+    this.setState({
+      time: new Date(),
+    })
+  }
 
   componentDidMount() {
     const {country} = this.props;
     const countryCapital = capitals[country];
+    this.timerID = window.setInterval(this.tick, 1000)
 
     // fetching currency
     const BASE_URL ='https://api.exchangerate.host';
@@ -53,6 +58,10 @@ export default class Widget extends Component<{country: TCountries}, TState> {
       .catch(error => this.updateWeatherData(error))
   }
 
+  componentWillUnmount() {
+    window.clearInterval(this.timerID)
+  }
+
   updateWeatherData = (data: object): void => {
     this.setState({
       weatherData: data,
@@ -68,6 +77,8 @@ export default class Widget extends Component<{country: TCountries}, TState> {
   render() {
     const {country} = this.props;
     const countryCurrency = currencies[country];
+    const countryCapital = capitals[country];
+    const { time } = this.state;
 
     const hasCurrencyResponse = this.state.currencyData !== null;
     const hasWeatherResponse = this.state.weatherData !== null;
@@ -77,6 +88,13 @@ export default class Widget extends Component<{country: TCountries}, TState> {
     const icon = hasWeatherResponse ? this.state.weatherData.weather[0].icon : null;
     const description = hasWeatherResponse ? this.state.weatherData.weather[0].description : null;
     const temperature = hasWeatherResponse ? Math.round(this.state.weatherData.main.temp) : null;
+    const timezone = hasWeatherResponse ? this.state.weatherData.timezone : 0;
+
+    //update time with capital timezone
+    time.setSeconds(time.getSeconds() + timezone);
+
+    const currentDateInCapital = `${time.getUTCFullYear()} ${months[time.getUTCMonth()]}, ${time.getUTCDate()}`;
+    const currentTimeInCapital = `${time.getUTCHours()}:${time.getUTCMinutes()}:${time.getUTCSeconds()}`;
 
 
     const weatherIconPath = `http://openweathermap.org/img/wn/${icon}@2x.png`;
@@ -96,12 +114,14 @@ export default class Widget extends Component<{country: TCountries}, TState> {
           </div>
           <hr></hr>
           <div className='widget-weather'>
+            <div className='widget-weather_capital'>{countryCapital}</div>
             <div className='widget-weather_temperature'>{temperature} °C</div>
             <img src={weatherIconPath} alt='weather icon'></img>
             <div className='widget-weather_description'>{description}</div>
           </div>
           <hr></hr>
-          <div className='widget-time'></div>
+          <div className='widget-date'>{currentDateInCapital}</div>
+          <div className='widget-time'>{currentTimeInCapital}</div>
         </div>
       </div>
     );

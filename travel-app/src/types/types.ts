@@ -21,3 +21,7 @@ export enum capitals {
   Japan = 'Tokyo',
   Switzerland = 'Bern',
 }
+
+export enum months {
+  Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Okt, Nov, Dec,
+}
