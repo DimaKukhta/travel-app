@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { months } from '../../types/types';
+import { months, daysOfWeek } from '../../types/types';
 import { addZeroes } from '../../utils/addZeroes';
 
 
@@ -37,12 +37,13 @@ export default class Clock extends Component<TClockProps> {
     const year = time.getUTCFullYear();
     const month = addZeroes(months[time.getUTCMonth()]);
     const day = addZeroes(time.getUTCDate());
+    const dayOfWeek = daysOfWeek[time.getUTCDay()];
     //time
     const hours = addZeroes(time.getUTCHours());
     const minutes = addZeroes(time.getUTCMinutes());
     const seconds = addZeroes(time.getUTCSeconds());
 
-    const currentDateInCapital = `${year} ${month}, ${day}`;
+    const currentDateInCapital = `${year} | ${day} ${month} | ${dayOfWeek}`;
     const currentTimeInCapital = `${hours}:${minutes}:${seconds}`;
 
     return (

@@ -22,6 +22,10 @@ export enum capitals {
   Switzerland = 'Bern',
 }
 
+export enum daysOfWeek {
+  Sun, Mon, Tue, Wen, Thu, Fri, Sat, 
+}
+
 export enum months {
   Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Okt, Nov, Dec,
 }
