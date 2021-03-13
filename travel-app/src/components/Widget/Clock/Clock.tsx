@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { months, daysOfWeek } from '../../types/types';
-import { addZeroes } from '../../utils/addZeroes';
+import { months, daysOfWeek } from '../../../types/types';
+import { addZeroes } from '../../../utils/addZeroes';
 
 
 interface TClockProps {

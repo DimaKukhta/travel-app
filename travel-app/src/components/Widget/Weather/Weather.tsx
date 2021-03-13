@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TCountries, capitals } from '../../types/types';
+import { TCountries, capitals } from '../../../types/types';
 
 interface TProps {
   country: TCountries,
@@ -12,6 +12,7 @@ export default class Weather extends Component<TProps> {
     const {country, weatherData} = this.props;
     const countryCapital = capitals[country];
     const hasWeatherResponse = weatherData !== null;
+    console.log(weatherData)
 
     const icon = hasWeatherResponse ? weatherData.weather[0].icon : null;
     const description = hasWeatherResponse ? weatherData.weather[0].description : null;

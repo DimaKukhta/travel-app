@@ -22,6 +22,17 @@ export enum capitals {
   Switzerland = 'Bern',
 }
 
+export enum countryCodes {
+  Australia = 'AU',
+  Canada = 'CA',
+  Germany = 'DE',
+  France = 'FR',
+  Spain = 'ES',
+  Italy = 'IT',
+  Japan = 'JP',
+  Switzerland = 'CH',
+}
+
 export enum daysOfWeek {
   Sun, Mon, Tue, Wen, Thu, Fri, Sat, 
 }

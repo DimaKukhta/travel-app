@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Currency from '../Currency/Currency';
-import Weather from '../Weather/Weather';
-import Clock from '../Clock/Clock';
+import Currency from './Currency/Currency';
+import Weather from './Weather/Weather';
+import Clock from './Clock/Clock';
 
 import { TCountries, currencies } from '../../types/types';
 import { getCurrencyRatesForCountry, getWeatherDataForCountry } from '../../api/getWidgetData';

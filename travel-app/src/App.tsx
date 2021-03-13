@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <Widget country='Spain'/>
+    <Widget country='Japan'/>
   );
 }
 
