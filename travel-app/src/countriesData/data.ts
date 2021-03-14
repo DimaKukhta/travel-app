@@ -1,4 +1,4 @@
-[{
+const data: Array<{[key: string]: any}> = [{
   "country": "Australia",
   "capital": {
       "name": "Canberra",
@@ -327,3 +327,5 @@
   "video": "https://www.youtube.com/embed/dapluVS0lgg"
 }
 ]
+
+export default data;
