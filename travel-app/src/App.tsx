@@ -1,24 +1,17 @@
+import { type } from 'node:os';
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import CountryPage from './components/country-page/CountryPage'
 
 function App() {
+
+  const head: string = 'GERMANY'
+  const titleImgSrc: string = 'https://smapse.ru/storage/2018/12/34133860-1854685924582132-4255627268174381056-n.jpg'
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CountryPage head={head} titleImgSrc={titleImgSrc} />
     </div>
   );
 }
