@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, GridColumn, GridRow } from 'semantic-ui-react'
-import './page.module.css'
+import './page.css'
 
 interface I_CountryPage {
     counryPageProps: {
