@@ -1,13 +1,13 @@
 * {
-    background-color: rgba(56, 55, 55, 0.295);
-    margin: 0 auto;
-    box-sizing: border-box;
-    border: none;
-    box-shadow: none !important;
-    color: rgb(184, 133, 72);
+    /* background-color: rgba(56, 55, 55, 0.295); */
+    /* margin: 0 auto; */
+    /* box-sizing: border-box; */
+    /* border: none; */
+    /* color: rgb(184, 133, 72); */
 }
 
 .country_page_wrapper {
+    margin: 0 auto;
     max-width: 1264px;
     display: flex;
     justify-content: center;
@@ -15,13 +15,11 @@
 
 .wraper_capital_img {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .capital_img {
-    margin: auto 0;
-    width: 110%;
+    margin-left: -1rem;
+    width: 100%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.274) 7px 7px 5px;
 }

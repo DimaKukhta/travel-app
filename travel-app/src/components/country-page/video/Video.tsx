@@ -7,10 +7,10 @@ type videoType = {
   src: string
 }
 
-export const Video: React.FC<videoType> = ({src}) =>{
- console.log(src)
+export const Video: React.FC<videoType> = ({ src }) => {
+  console.log(src)
   return (
-    <ReactPlayer url={src} controls={true} width='360px' height='160px' className='video_wrapper'/>
+    <ReactPlayer url={src} controls={true} width='480px' height='240px' className='video_wrapper' />
   );
 }
 

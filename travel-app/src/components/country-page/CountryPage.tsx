@@ -19,14 +19,13 @@ class CountryPage extends React.Component<I_CountryPage> {
         this.state = {
 
         }
-
     }
 
     render() {
         return (
             <div className='country_page_wrapper'>
                 <Grid celled centered>
-                    <Grid.Column width={3} className='left_bar_wrapper'> 
+                    <Grid.Column width={3} className='left_bar_wrapper'>
                         <Container >
                             <h1>Left</h1>
                         </Container>
@@ -55,11 +54,10 @@ class CountryPage extends React.Component<I_CountryPage> {
                             </Container>
                         </GridRow>
                         <Grid celled>
-                            <GridColumn id='video' width={7}>
-                                VIDEO
+                            <GridRow id='video' width={7}>
                                 <Video src={this.props.counryPageProps.videoSrc}></Video>
-                                </GridColumn>
-                            <GridColumn id='map' width={7}>MAP</GridColumn>
+                            </GridRow>
+                            <GridRow id='map' width={7}>MAP</GridRow>
                         </Grid>
                     </Grid.Column>
                 </Grid>

@@ -12,20 +12,22 @@ export default function CountriesCards() {
         const { photoURL, country, capital: { name } } = countryObj;
 
         return (
-            <Card
-              key={country}
-              className='country-card'
-              href='/'>
-              <Image src={photoURL} />
-              <Card.Content>
-                <Card.Description>
-                  <b>{country}</b>
-                </Card.Description>
-                <Card.Description>
-                  <em>{name}</em>
-                </Card.Description>
-              </Card.Content>
-            </Card>
+          <Card
+            key={country}
+            className='country-card'
+            href='/country'
+            link
+            >
+            <Image src={photoURL} />
+            <Card.Content>
+              <Card.Description>
+                <b>{country}</b>
+              </Card.Description>
+              <Card.Description>
+                <em>{name}</em>
+              </Card.Description>
+            </Card.Content>
+          </Card>
         )
       })}
     </div>
