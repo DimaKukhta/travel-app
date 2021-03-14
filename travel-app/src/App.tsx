@@ -9,9 +9,16 @@ function App() {
   const head: string = 'GERMANY'
   const titleImgSrc: string = 'https://smapse.ru/storage/2018/12/34133860-1854685924582132-4255627268174381056-n.jpg'
 
+  const counryPageProps = {
+    head: 'Germany', 
+    titleImgSrc: 'https://smapse.ru/storage/2018/12/34133860-1854685924582132-4255627268174381056-n.jpg',
+    capital: 'Berlin',
+
+  }
+
   return (
     <div className="App">
-      <CountryPage head={head} titleImgSrc={titleImgSrc} />
+      <CountryPage counryPageProps={counryPageProps} />
     </div>
   );
 }

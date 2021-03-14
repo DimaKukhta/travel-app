@@ -1,5 +1,5 @@
 * {
-    background-color: rgba(82, 59, 59, 0.452);
+    background-color: rgba(56, 55, 55, 0.295);
     margin: 0 auto;
     box-sizing: border-box;
     border: none;
@@ -26,7 +26,7 @@
     box-shadow: rgba(0, 0, 0, 0.274) 7px 7px 5px;
 }
 
-.wraper_2capita_limg {
+.wraper_2capital_img {
     display: flex;
     align-items: center;
 }
