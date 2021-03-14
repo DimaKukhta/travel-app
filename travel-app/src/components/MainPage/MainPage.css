@@ -1,0 +1,13 @@
+#root {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.template {
+  flex: 1 0 auto;
+}
