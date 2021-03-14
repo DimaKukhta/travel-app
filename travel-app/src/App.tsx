@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import CountryPage from './components/country-page/CountryPage'
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   const counryPageProps = {
@@ -14,8 +15,10 @@ function App() {
 
   return (
     <div className="App">
+      <MainPage/>
       <CountryPage counryPageProps={counryPageProps} />
     </div>
+
   );
 }
 
