@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  background-color: #b4e1e6;
+  padding: 20px;
+}
+
+.header_lang {
+  min-width: 10rem!important;
+}
+
+.header_logo {
+  width: 50px;
+  /* margin-right: 10px; */
+}
+
+.header_search {
+  /* margin-right: 10px; */
+}

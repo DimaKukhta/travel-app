@@ -21,7 +21,7 @@ export default class Weather extends Component<TProps> {
     const weatherIconPath = `http://openweathermap.org/img/wn/${icon}@2x.png`;
 
     return (
-      <div className='widget-weather'>
+      <div className='widget-weather'> 
         <div className='widget-weather_capital'>{countryCapital}</div>
         <div className='widget-weather_temperature'>{temperature} °C</div>
         <img src={weatherIconPath} alt='weather icon'></img>

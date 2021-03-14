@@ -40,3 +40,9 @@ export enum daysOfWeek {
 export enum months {
   Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Okt, Nov, Dec,
 }
+
+export const languages: object[] = [
+  { key: 'en', value: 'en', text: 'English' },
+  { key: 'ru', value: 'ru', text: 'Русский' },
+  { key: 'by', value: 'by', text: 'Беларуская' },
+]
