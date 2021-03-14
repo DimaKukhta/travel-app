@@ -3,6 +3,7 @@ import { Card, Image } from 'semantic-ui-react'
 import './CountriesCards.css'
 
 import data from '../../../countriesData/data'
+import { NavLink } from 'react-router-dom';
 
 export default function CountriesCards() {
 
@@ -15,18 +16,18 @@ export default function CountriesCards() {
           <Card
             key={country}
             className='country-card'
-            href='/country'
-            link
-            >
-            <Image src={photoURL} />
-            <Card.Content>
-              <Card.Description>
-                <b>{country}</b>
-              </Card.Description>
-              <Card.Description>
-                <em>{name}</em>
-              </Card.Description>
-            </Card.Content>
+          >
+            <NavLink to='/country'>
+              <Image src={photoURL} />
+              <Card.Content>
+                <Card.Description>
+                  <b>{country}</b>
+                </Card.Description>
+                <Card.Description>
+                  <em>{name}</em>
+                </Card.Description>
+              </Card.Content>
+            </NavLink>
           </Card>
         )
       })}

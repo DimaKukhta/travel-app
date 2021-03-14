@@ -2,13 +2,14 @@ import { Select, Input, Button } from 'semantic-ui-react'
 import { languages } from '../../types/types'
 import logo from '../../assets/images/logo.png';
 import './Header.css'
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
     <div className='header'>
-      <a href='/'>
+      <NavLink to='/'>
         <img className='header_logo' src={logo} alt='logo'></img>
-      </a>
+      </NavLink>
       <Select className='header_lang' placeholder='Select language' options={languages} />
       <Input
         className='header_search'
