@@ -17,7 +17,7 @@ export default function CountriesCards() {
             key={country}
             className='country-card'
           >
-            <NavLink to='/country'>
+            <NavLink to={`/country/${country}`}>
               <Image src={photoURL} />
               <Card.Content>
                 <Card.Description>
