@@ -1,12 +1,15 @@
 import React from 'react';
 import { Container, Grid, GridColumn, GridRow } from 'semantic-ui-react'
 import './page.css'
+import { Video } from './video/Video'
 
 interface I_CountryPage {
     counryPageProps: {
         head: string
         titleImgSrc: string
         capital: string
+        videoSrc: string
+        countryInfo: string
     }
 }
 
@@ -14,6 +17,7 @@ class CountryPage extends React.Component<I_CountryPage> {
     constructor(props: I_CountryPage) {
         super(props)
         this.state = {
+
         }
 
     }
@@ -40,7 +44,7 @@ class CountryPage extends React.Component<I_CountryPage> {
                                 <Grid.Column width={8} >
                                     <h4>Capital {this.props.counryPageProps.capital}</h4>
                                     <Container >
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ipsam facilis harum! Quia eaque corrupti, eligendi atque perspiciatis architecto beatae quam officia perferendis modi, corporis eos voluptate qui nihil molestias.</p>
+                                        <p>{this.props.counryPageProps.countryInfo}</p>
                                     </Container>
                                 </Grid.Column>
                             </GridRow>
@@ -51,7 +55,10 @@ class CountryPage extends React.Component<I_CountryPage> {
                             </Container>
                         </GridRow>
                         <Grid celled>
-                            <GridColumn id='video' width={7}>VIDEO</GridColumn>
+                            <GridColumn id='video' width={7}>
+                                VIDEO
+                                <Video src={this.props.counryPageProps.videoSrc}></Video>
+                                </GridColumn>
                             <GridColumn id='map' width={7}>MAP</GridColumn>
                         </Grid>
                     </Grid.Column>
