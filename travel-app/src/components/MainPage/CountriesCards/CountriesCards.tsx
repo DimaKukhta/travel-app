@@ -39,7 +39,7 @@ export default function CountriesCards({search}: CountriesCardsProps) {
                 className={`country-card`}
                 data-country={country.en}
                 >
-                  <NavLink to={`/country/${country}`}>
+                  <NavLink to={`/country/${country.en}`}>
                 <Image src={photoURL} />
                 <Card.Content>
                   <Card.Description>
