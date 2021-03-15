@@ -24,13 +24,21 @@ export default class Header extends Component<HeaderProps, {}> {
     elem?.focus();
   }
 
+  addLangToUrl = ({ target }: any) => {
+    languages.forEach((lang: any) => {
+      if (lang.text === target.textContent) {
+        localStorage.setItem('lang', `${lang.value}`)
+      }
+    });
+  }
+
   render() {
     return (
       <div className='header'>
-        <NavLink to='/'>
+        <NavLink to=''>
           <img className='header_logo' src={logo} alt='logo'></img>
         </NavLink>
-        <Select className='header_lang' placeholder='Select language' options={languages} />
+        <Select className='header_lang' placeholder='Select language' options={languages} onChange={this.addLangToUrl} />
         <div>
           <input
             type='search'
