@@ -2,26 +2,22 @@ import React from 'react';
 import { Container, Grid, GridColumn, GridRow } from 'semantic-ui-react'
 import './page.css'
 import { Video } from './video/Video'
+import data from '../../countriesData/data'
 
-interface I_CountryPage {
-    counryPageProps: {
-        head: string
-        titleImgSrc: string
-        capital: string
-        videoSrc: string
-        countryInfo: string
-    }
-}
 
-class CountryPage extends React.Component<I_CountryPage> {
-    constructor(props: I_CountryPage) {
+class CountryPage extends React.Component {
+    [x: string]: any;
+    constructor(props: any) {
         super(props)
-        this.state = {
-
+        this.state  = {
+          // whill be lanlg
         }
+        this.urlCountry = window.location.pathname.split('/')[2]
     }
 
     render() {
+        const { video, photoURL, overview, capital: { name } } = data[this.urlCountry]
+
         return (
             <div className='country_page_wrapper'>
                 <Grid  centered>
@@ -32,18 +28,20 @@ class CountryPage extends React.Component<I_CountryPage> {
                     </GridColumn>
 
                     <GridColumn width={13} textAlign='center'>
-                        <h1>{this.props.counryPageProps.head}</h1>
+                        {/* <h1>{this.props.counryPageProps.head}</h1> */}
+                        <h1>{data[this.urlCountry].country.en}</h1>
+
                         <Grid textAlign='center' >
                             <GridRow columns={2}>
                                 <GridColumn width={6} className='wraper_2capital_img'>
                                     <Container className='wraper_capita_limg'>
-                                        <img className='capital_img' src={this.props.counryPageProps.titleImgSrc} alt="Capital" />
+                                        <img className='capital_img' src={photoURL} alt="Capital" />
                                     </Container>
                                 </GridColumn>
                                 <GridColumn width={8} >
-                                    <h4>{this.props.counryPageProps.capital}</h4>
+                                    <h4>{name.en}</h4>
                                     <Container >
-                                        <p>{this.props.counryPageProps.countryInfo}</p>
+                                        <p>{overview.en}</p>
                                     </Container>
                                 </GridColumn>
                             </GridRow>
@@ -55,7 +53,7 @@ class CountryPage extends React.Component<I_CountryPage> {
                         </GridRow>
                         <Grid >
                             <GridRow id='video' width={7}>
-                                <Video src={this.props.counryPageProps.videoSrc}></Video>
+                                <Video src={video}></Video>
                             </GridRow>
                             <GridRow id='map' width={7}>MAP</GridRow>
                         </Grid>
