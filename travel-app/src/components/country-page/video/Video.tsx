@@ -1,7 +1,6 @@
 import './video.css';
 import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player/lazy'
-import { TargetElement } from '@testing-library/user-event';
 
 type videoType = {
   src: string
