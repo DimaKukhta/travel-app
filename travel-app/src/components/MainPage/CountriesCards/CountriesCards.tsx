@@ -4,30 +4,55 @@ import './CountriesCards.css'
 
 import data from '../../../countriesData/data'
 
-export default function CountriesCards() {
+interface CountriesCardsProps {
+  search: string;
+}
+
+export default function CountriesCards({search}: CountriesCardsProps) {
+  const dataArray = Object.values(data);
+  const isMainEmpty = [...dataArray].every(({country, capital: { name }}) => {
+    return !(country.en.toLowerCase().includes(search.toLowerCase())
+      || name.en.toLowerCase().includes(search.toLowerCase()))
+  });
+ 
+  function getSelectSearchClass(val: string, isCountryFind: boolean): string {
+    const isSearchEmpty = val === '';
+    if (isSearchEmpty) {
+      return '';
+    }
+    return isCountryFind ? 'succes-search' : '';
+  }
 
   return (
     <div className='main'>
-      {data.map(countryObj => {
-        const { photoURL, country, capital: { name } } = countryObj;
+      { isMainEmpty ? <div>No data available for this search query...</div> : 
+        [...dataArray].map(countryObj => {
+          const { photoURL, country, capital: { name } } = countryObj;
+          const isSearchSucces = [country.en, name.en].some( elem => elem.toLowerCase().includes(search.toLowerCase()));
+          const isCountryFind = country.en.toLowerCase().includes(search.toLowerCase());
 
-        return (
-            <Card
-              key={country}
-              className='country-card'
-              href='/'>
-              <Image src={photoURL} />
-              <Card.Content>
-                <Card.Description>
-                  <b>{country}</b>
-                </Card.Description>
-                <Card.Description>
-                  <em>{name}</em>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-        )
-      })}
+          return (
+            <>
+            {isSearchSucces && <Card
+                key={country}
+                className={`country-card`}
+                href='/'
+                data-country={country.en}
+                >
+                <Image src={photoURL} />
+                <Card.Content>
+                  <Card.Description>
+                    <b className={getSelectSearchClass(search, isCountryFind)}>{country.en}</b>
+                  </Card.Description>
+                  <Card.Description>
+                    <em className={getSelectSearchClass(search, !isCountryFind)}>{name.en}</em>
+                  </Card.Description>
+                </Card.Content>
+              </Card>}
+            </>
+          )
+        })
+      }
     </div>
   )
 }

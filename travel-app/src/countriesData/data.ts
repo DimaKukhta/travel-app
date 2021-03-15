@@ -1,331 +1,3359 @@
-const data: Array<{[key: string]: any}> = [{
-  "country": "Australia",
-  "capital": {
-      "name": "Canberra",
-      "coords": [-35.306904, 149.125529]
-  },
-  "overview": "Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands. It is the largest country in Oceania and the world's sixth-largest country by total area.",
-  "photoURL": "https://kratkoe.com/wp-content/uploads/2020/08/osobennosti-avstralii.jpg",
-  "landmarks": [{
-          "name": "Great Ocean Road",
-          "photo": "https://cdn.newsapi.com.au/image/v1/2d735ccafa68694f78f0b7f804437bcd?width=1024",
-          "description": "Australia's Great Ocean Road is one of the world's most iconic drives. The coastal road stretches 151 miles from Torquay to Allansford, and was constructed in the 20s. It's got an unprecedented amount of jaw-dropping scenery, from sheer ocean cliffs to untouched surf beaches, whilst also traversing one of Australia's most cultured rural areas, offering an opportunity to experience some of Australia's most iconic landscapes in one fell swoop. Heading to Apollo Bay, it travels inland through the Otway Region, the Shipwreck Coast and the famous Twelve Apostles."
-      },
-      {
-          "name": "Twelve Apostles",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/The_Twelve_Apostles_2011.jpg",
-          "description": "The Twelve Apostles is a collection of limestone stacks off the shore of Port Campbell National Park, by the Great Ocean Road in Victoria, Australia. Their proximity to one another has made the site a popular tourist attraction."
-      },
-      {
-          "name": "Lake Hillier",
-          "photo": "https://www.leisurepro.com/blog/wp-content/uploads/2019/04/shutterstock_714405349-1366x800@2x.jpg",
-          "description": "Lake Hillier is a saline lake on the edge of Middle Island, the largest of the islands and islets that make up the Recherche Archipelago in the Goldfields-Esperance region, off the south coast of Western Australia. It is particularly notable for its pink colour."
-      },
-      {
-          "name": "Jim Jim Falls",
-          "photo": "https://d19lgisewk9l6l.cloudfront.net/assetbank/The_Jim_Jim_Falls_in_Kakadu_National_Park_331211.jpg",
-          "description": "The Jim Jim Falls is a plunge waterfall on the Jim Jim Creek that descends over the Arnhem Land escarpment within the UNESCO World Heritage–listed Kakadu National Park in the Northern Territory of Australia. The Jim Jim Falls area is registered on the Australian National Heritage List."
-      },
-      {
-          "name": "Uluru",
-          "photo": "https://thebigbus.com.au/wp-content/uploads/2018/11/bigstock-200401003-5.jpg",
-          "description": "Uluru, or Ayers Rock, is a massive sandstone monolith in the heart of the Northern Territory’s arid \"Red Centre\". The nearest large town is Alice Springs, 450km away. Uluru is sacred to indigenous Australians and is thought to have started forming around 550 million years ago. It’s within Uluru-Kata Tjuta National Park, which also includes the 36 red-rock domes of the Kata Tjuta (colloquially “The Olgas”) formation."
-      },
-      {
-          "name": "Kangaroo Island",
-          "photo": "https://www.exceptionalkangarooisland.com/wp-content/uploads/2019/07/image-6.jpg",
-          "description": "Kangaroo Island lies off the mainland of South Australia, southwest of Adelaide. Over a third of the island is protected in nature reserves, home to native wildlife like sea lions, koalas and diverse bird species. In the west, Flinders Chase National Park is known for penguin colonies and striking coastal rock formations, like the sculpted Remarkable Rocks and the stalactite-covered Admirals Arch."
-      }
-  ],
-  "video": "https://www.youtube.com/embed/QojXRvYgXxo"
-},
+const data: { [key: string]: any } =
 {
-  "country": "Canada",
-  "capital": {
-      "name": "Ottawa",
-      "coords": [45.401833, -75.699511]
-  },
-  "overview": "Canada is a country in the northern part of North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres, making it the world's second-largest country by total area. ",
-  "photoURL": "https://internationalwealth.info/wp-content/uploads/2016/08/Canada-busines.jpg",
-  "landmarks": [{
-          "name": "Big Muddy Valley",
-          "photo": "https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2015/01/shutterstock_93403981.jpg",
-          "description": "The Big Muddy Badlands are a series of badlands in southern Saskatchewan and northern Montana along Big Muddy Creek. They are found in the Big Muddy Valley, a cleft of erosion and sandstone along Big Muddy Creek. The valley is 55 kilometres long, 3.2 kilometres wide and 160 metres deep."
+  "Australia": {
+    "country": {
+      "en": "Australia",
+      "ru": "Австралия",
+      "be": "Аўстралія"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          145.39797814349484,
+          -40.79254851660589
+        ],
+        [
+          146.36412072162372,
+          -41.13769540788334
+        ],
+        [
+          146.90858361225085,
+          -41.00054615658068
+        ],
+        [
+          147.68925947488415,
+          -40.80825815202269
+        ],
+        [
+          148.28906782449602,
+          -40.87543751400213
+        ],
+        [
+          148.35986453673584,
+          -42.06244516374644
+        ],
+        [
+          148.0173014670731,
+          -42.407023614268624
+        ],
+        [
+          147.9140519553538,
+          -43.211522312188485
+        ],
+        [
+          147.564564243764,
+          -42.93768889747386
+        ],
+        [
+          146.87034305235494,
+          -43.634597263362096
+        ],
+        [
+          146.66332726459368,
+          -43.58085377377856
+        ],
+        [
+          146.04837772032042,
+          -43.54974456153889
+        ],
+        [
+          145.43192955951056,
+          -42.69377613705627
+        ],
+        [
+          145.2950903668017,
+          -42.03360971452756
+        ],
+        [
+          144.71807132383063,
+          -41.162551771815714
+        ],
+        [
+          144.74375451067968,
+          -40.70397511165771
+        ],
+        [
+          145.39797814349484,
+          -40.79254851660589
+        ]
+      ],
+      [
+        [
+          143.56181115129996,
+          -13.763655694232213
+        ],
+        [
+          143.92209923723894,
+          -14.548310642152003
+        ],
+        [
+          144.56371382057486,
+          -14.171176039285882
+        ],
+        [
+          144.89490807513354,
+          -14.594457696188625
+        ],
+        [
+          145.37472374896348,
+          -14.984976495018286
+        ],
+        [
+          145.27199100156727,
+          -15.428205254785695
+        ],
+        [
+          145.48525963763578,
+          -16.285672295804773
+        ],
+        [
+          145.63703331927695,
+          -16.784918308176614
+        ],
+        [
+          145.88890425026767,
+          -16.90692636481765
+        ],
+        [
+          146.1603088726645,
+          -17.761654554925244
+        ],
+        [
+          146.0636739442787,
+          -18.28007252367732
+        ],
+        [
+          146.3874784690196,
+          -18.95827402107591
+        ],
+        [
+          147.47108157774792,
+          -19.48072275154668
+        ],
+        [
+          148.1776017600425,
+          -19.95593922290277
+        ],
+        [
+          148.84841352762322,
+          -20.39120981209726
+        ],
+        [
+          148.7174654481956,
+          -20.633468926681516
+        ],
+        [
+          149.28942020080206,
+          -21.260510756111103
+        ],
+        [
+          149.67833703023067,
+          -22.342511895438392
+        ],
+        [
+          150.07738244038862,
+          -22.12278370533332
+        ],
+        [
+          150.48293908101516,
+          -22.556142266533012
+        ],
+        [
+          150.72726525289121,
+          -22.40240488046466
+        ],
+        [
+          150.89955447815228,
+          -23.462236830338682
+        ],
+        [
+          151.60917524638424,
+          -24.076256198830762
+        ],
+        [
+          152.07353966695908,
+          -24.457886651306197
+        ],
+        [
+          152.85519738180594,
+          -25.267501316023015
+        ],
+        [
+          153.13616214417678,
+          -26.07117319102619
+        ],
+        [
+          153.16194868389042,
+          -26.641319268502443
+        ],
+        [
+          153.0929089703486,
+          -27.26029957449451
+        ],
+        [
+          153.5694690289442,
+          -28.1100668271021
+        ],
+        [
+          153.51210818910022,
+          -28.995077406532758
+        ],
+        [
+          153.33909549378706,
+          -29.458201592732447
+        ],
+        [
+          153.06924116435889,
+          -30.350240166954816
+        ],
+        [
+          153.0896016786818,
+          -30.923641859665448
+        ],
+        [
+          152.8915775901394,
+          -31.640445651985956
+        ],
+        [
+          152.45000247620536,
+          -32.550002536755244
+        ],
+        [
+          151.70911746643682,
+          -33.041342054986345
+        ],
+        [
+          151.34397179586242,
+          -33.81602345147385
+        ],
+        [
+          151.01055545471516,
+          -34.310360202777886
+        ],
+        [
+          150.71413943908905,
+          -35.17345997491681
+        ],
+        [
+          150.32821984273326,
+          -35.67187916437193
+        ],
+        [
+          150.07521203023228,
+          -36.42020558039051
+        ],
+        [
+          149.94612430236717,
+          -37.10905242284123
+        ],
+        [
+          149.99728397033616,
+          -37.42526051203514
+        ],
+        [
+          149.42388227762555,
+          -37.77268116633346
+        ],
+        [
+          148.30462243061592,
+          -37.80906137466688
+        ],
+        [
+          147.3817330263153,
+          -38.21921721776755
+        ],
+        [
+          146.92212283751135,
+          -38.60653207779512
+        ],
+        [
+          146.3179219911548,
+          -39.03575652441144
+        ],
+        [
+          145.48965213438058,
+          -38.59376799901905
+        ],
+        [
+          144.87697635312816,
+          -38.41744801203912
+        ],
+        [
+          145.03221235573298,
+          -37.896187839510986
+        ],
+        [
+          144.48568240781404,
+          -38.08532358169927
+        ],
+        [
+          143.6099735861961,
+          -38.80946542740533
+        ],
+        [
+          142.745426873953,
+          -38.538267510737526
+        ],
+        [
+          142.178329705982,
+          -38.38003427505984
+        ],
+        [
+          141.6065816591047,
+          -38.30851409276788
+        ],
+        [
+          140.63857872941324,
+          -38.019332777662555
+        ],
+        [
+          139.99215823787435,
+          -37.40293629328511
+        ],
+        [
+          139.80658816951407,
+          -36.64360279718828
+        ],
+        [
+          139.57414757706525,
+          -36.13836231867067
+        ],
+        [
+          139.0828080588341,
+          -35.73275400161178
+        ],
+        [
+          138.12074791885632,
+          -35.612296237939404
+        ],
+        [
+          138.44946170466503,
+          -35.127261244447894
+        ],
+        [
+          138.2075643251067,
+          -34.38472258884593
+        ],
+        [
+          137.71917036351616,
+          -35.07682504653103
+        ],
+        [
+          136.82940555231474,
+          -35.26053476332862
+        ],
+        [
+          137.3523710471085,
+          -34.70733855564409
+        ],
+        [
+          137.50388634658836,
+          -34.130267836240776
+        ],
+        [
+          137.89011600153768,
+          -33.640478610978334
+        ],
+        [
+          137.81032759007914,
+          -32.90000701266811
+        ],
+        [
+          136.99683719294038,
+          -33.752771498348636
+        ],
+        [
+          136.37206912653167,
+          -34.09476612725619
+        ],
+        [
+          135.98904341038437,
+          -34.89011809666049
+        ],
+        [
+          135.20821251845413,
+          -34.47867034275261
+        ],
+        [
+          135.23921837782916,
+          -33.94795338311498
+        ],
+        [
+          134.6134167827746,
+          -33.22277800876314
+        ],
+        [
+          134.08590376193914,
+          -32.848072198214766
+        ],
+        [
+          134.27390262261704,
+          -32.61723357516696
+        ],
+        [
+          132.99077680880984,
+          -32.011224053680195
+        ],
+        [
+          132.2880806825049,
+          -31.98264698662277
+        ],
+        [
+          131.32633060112093,
+          -31.495803318001048
+        ],
+        [
+          129.5357938986397,
+          -31.590422865527483
+        ],
+        [
+          128.24093753470223,
+          -31.948488864877856
+        ],
+        [
+          127.10286746633831,
+          -32.28226694105105
+        ],
+        [
+          126.14871382050116,
+          -32.21596607842061
+        ],
+        [
+          125.08862348846561,
+          -32.728751316052836
+        ],
+        [
+          124.22164798390494,
+          -32.95948658623607
+        ],
+        [
+          124.02894656788854,
+          -33.483847344701715
+        ],
+        [
+          123.65966678273072,
+          -33.89017913181273
+        ],
+        [
+          122.81103641163364,
+          -33.91446705498984
+        ],
+        [
+          122.18306440642286,
+          -34.003402194964224
+        ],
+        [
+          121.2991907085026,
+          -33.82103606540613
+        ],
+        [
+          120.58026818245814,
+          -33.930176690406626
+        ],
+        [
+          119.89369510302824,
+          -33.976065362281815
+        ],
+        [
+          119.2988993673488,
+          -34.50936614353397
+        ],
+        [
+          119.007340936358,
+          -34.464149265278536
+        ],
+        [
+          118.5057178081008,
+          -34.7468193499151
+        ],
+        [
+          118.02497195848953,
+          -35.064732761374714
+        ],
+        [
+          117.29550744025747,
+          -35.02545867283287
+        ],
+        [
+          116.62510908413495,
+          -35.02509693780683
+        ],
+        [
+          115.56434695847972,
+          -34.386427911111554
+        ],
+        [
+          115.02680870977954,
+          -34.196517022438925
+        ],
+        [
+          115.04861616420679,
+          -33.62342538832203
+        ],
+        [
+          115.5451233256671,
+          -33.48725798923296
+        ],
+        [
+          115.71467370001668,
+          -33.25957162855495
+        ],
+        [
+          115.6793786967614,
+          -32.90036874769413
+        ],
+        [
+          115.80164513556397,
+          -32.20506235120703
+        ],
+        [
+          115.68961063035513,
+          -31.61243702568379
+        ],
+        [
+          115.16090905157697,
+          -30.60159433362246
+        ],
+        [
+          114.99704308477945,
+          -30.030724786094165
+        ],
+        [
+          115.04003787644628,
+          -29.461095472940798
+        ],
+        [
+          114.64197431850201,
+          -28.810230808224713
+        ],
+        [
+          114.61649783738217,
+          -28.516398614213042
+        ],
+        [
+          114.17357913620847,
+          -28.11807667410733
+        ],
+        [
+          114.04888390508816,
+          -27.334765313427127
+        ],
+        [
+          113.4774975932369,
+          -26.543134047147902
+        ],
+        [
+          113.3389530782625,
+          -26.116545098578484
+        ],
+        [
+          113.77835778204026,
+          -26.54902516042918
+        ],
+        [
+          113.44096235560662,
+          -25.621278171493156
+        ],
+        [
+          113.93690107631167,
+          -25.911234633082884
+        ],
+        [
+          114.23285200404732,
+          -26.298446140245872
+        ],
+        [
+          114.21616051641703,
+          -25.786281019801105
+        ],
+        [
+          113.72125532435771,
+          -24.998938897402127
+        ],
+        [
+          113.62534386602405,
+          -24.683971042583153
+        ],
+        [
+          113.39352339076267,
+          -24.38476449961327
+        ],
+        [
+          113.50204389857564,
+          -23.806350192970257
+        ],
+        [
+          113.70699262904517,
+          -23.560215345964068
+        ],
+        [
+          113.8434184102957,
+          -23.059987481378737
+        ],
+        [
+          113.7365515483161,
+          -22.47547535572538
+        ],
+        [
+          114.1497563009219,
+          -21.755881036061012
+        ],
+        [
+          114.22530724493268,
+          -22.517488295178634
+        ],
+        [
+          114.64776207891869,
+          -21.829519952076904
+        ],
+        [
+          115.46016727097933,
+          -21.495173435148544
+        ],
+        [
+          115.94737267462702,
+          -21.06868783944371
+        ],
+        [
+          116.71161543179156,
+          -20.70168181730682
+        ],
+        [
+          117.16631635952771,
+          -20.623598728113805
+        ],
+        [
+          117.44154503791427,
+          -20.746898695562162
+        ],
+        [
+          118.22955895393298,
+          -20.374208265873236
+        ],
+        [
+          118.83608523974273,
+          -20.26331064217483
+        ],
+        [
+          118.98780724495177,
+          -20.044202569257322
+        ],
+        [
+          119.25249393115065,
+          -19.95294198982984
+        ],
+        [
+          119.80522505094457,
+          -19.976506442954985
+        ],
+        [
+          120.85622033089666,
+          -19.68370777758919
+        ],
+        [
+          121.39985639860723,
+          -19.239755547769732
+        ],
+        [
+          121.65513797412909,
+          -18.705317885007133
+        ],
+        [
+          122.24166548064177,
+          -18.19764861417177
+        ],
+        [
+          122.28662397673567,
+          -17.798603204013915
+        ],
+        [
+          122.31277225147544,
+          -17.25496713630345
+        ],
+        [
+          123.01257449757193,
+          -16.405199883695857
+        ],
+        [
+          123.43378909718304,
+          -17.268558037996225
+        ],
+        [
+          123.85934451710662,
+          -17.069035332917252
+        ],
+        [
+          123.50324222218326,
+          -16.596506036040367
+        ],
+        [
+          123.81707319549193,
+          -16.111316013251994
+        ],
+        [
+          124.25828657439988,
+          -16.327943617419564
+        ],
+        [
+          124.37972619028582,
+          -15.567059828353976
+        ],
+        [
+          124.92615278534005,
+          -15.075100192935324
+        ],
+        [
+          125.16727501841389,
+          -14.680395603090004
+        ],
+        [
+          125.67008670461385,
+          -14.510070082256021
+        ],
+        [
+          125.6857963400305,
+          -14.230655612853838
+        ],
+        [
+          126.12514936737611,
+          -14.347340996968953
+        ],
+        [
+          126.14282270721989,
+          -14.095986830301213
+        ],
+        [
+          126.58258914602376,
+          -13.95279143642041
+        ],
+        [
+          127.06586714081735,
+          -13.817967624570926
+        ],
+        [
+          127.80463341686195,
+          -14.276906019755046
+        ],
+        [
+          128.35968997610897,
+          -14.869169610252257
+        ],
+        [
+          128.98554324759593,
+          -14.875990899314742
+        ],
+        [
+          129.62147342337963,
+          -14.969783623924556
+        ],
+        [
+          129.409600050983,
+          -14.420669854391035
+        ],
+        [
+          129.88864057832862,
+          -13.618703301653483
+        ],
+        [
+          130.33946577364296,
+          -13.357375583553477
+        ],
+        [
+          130.183506300986,
+          -13.107520033422304
+        ],
+        [
+          130.617795037967,
+          -12.536392103732467
+        ],
+        [
+          131.22349450086003,
+          -12.183648776908115
+        ],
+        [
+          131.73509118054952,
+          -12.302452894747162
+        ],
+        [
+          132.57529829318312,
+          -12.114040622611014
+        ],
+        [
+          132.55721154188106,
+          -11.603012383676685
+        ],
+        [
+          131.82469811414367,
+          -11.273781833545101
+        ],
+        [
+          132.35722374891142,
+          -11.128519382372644
+        ],
+        [
+          133.01956058159644,
+          -11.376411228076847
+        ],
+        [
+          133.55084598198906,
+          -11.786515394745138
+        ],
+        [
+          134.393068475482,
+          -12.042365411022175
+        ],
+        [
+          134.67863244032705,
+          -11.9411829565947
+        ],
+        [
+          135.29849124566803,
+          -12.248606052299051
+        ],
+        [
+          135.88269331272764,
+          -11.962266940969798
+        ],
+        [
+          136.25838097548947,
+          -12.04934172938161
+        ],
+        [
+          136.49247521377166,
+          -11.857208754120393
+        ],
+        [
+          136.95162031468502,
+          -12.351958916882737
+        ],
+        [
+          136.68512495335577,
+          -12.887223402562057
+        ],
+        [
+          136.30540652887512,
+          -13.291229750219898
+        ],
+        [
+          135.96175825413414,
+          -13.324509372615893
+        ],
+        [
+          136.07761681533256,
+          -13.724278252825783
+        ],
+        [
+          135.78383629775325,
+          -14.223989353088214
+        ],
+        [
+          135.42866417861123,
+          -14.7154322241839
+        ],
+        [
+          135.50018436090318,
+          -14.99774057379443
+        ],
+        [
+          136.29517459528137,
+          -15.550264987859123
+        ],
+        [
+          137.0653601421595,
+          -15.870762220933356
+        ],
+        [
+          137.58047081924482,
+          -16.215082289294084
+        ],
+        [
+          138.303217401279,
+          -16.807604261952658
+        ],
+        [
+          138.5851640158634,
+          -16.806622409739177
+        ],
+        [
+          139.1085429221155,
+          -17.06267913174537
+        ],
+        [
+          139.26057498591823,
+          -17.371600843986187
+        ],
+        [
+          140.2152453960783,
+          -17.710804945550066
+        ],
+        [
+          140.87546349503927,
+          -17.369068698803943
+        ],
+        [
+          141.0711104676963,
+          -16.832047214426723
+        ],
+        [
+          141.27409549373883,
+          -16.388870131091608
+        ],
+        [
+          141.3982222841038,
+          -15.840531508042588
+        ],
+        [
+          141.70218305884467,
+          -15.04492115647693
+        ],
+        [
+          141.5633801617087,
+          -14.56133310308951
+        ],
+        [
+          141.63552046118812,
+          -14.270394789286284
+        ],
+        [
+          141.51986860571898,
+          -13.698078301653808
+        ],
+        [
+          141.650920038011,
+          -12.944687595270565
+        ],
+        [
+          141.84269127824624,
+          -12.74154753993119
+        ],
+        [
+          141.6869901877508,
+          -12.407614434461138
+        ],
+        [
+          141.92862918514757,
+          -11.87746591557878
+        ],
+        [
+          142.118488397388,
+          -11.32804208745162
+        ],
+        [
+          142.14370649634637,
+          -11.042736504768143
+        ],
+        [
+          142.51526004452498,
+          -10.668185723516643
+        ],
+        [
+          142.79731001197408,
+          -11.157354831591519
+        ],
+        [
+          142.8667631369743,
+          -11.784706719614931
+        ],
+        [
+          143.1159468934857,
+          -11.905629571177911
+        ],
+        [
+          143.1586316265588,
+          -12.325655612846191
+        ],
+        [
+          143.5221236512999,
+          -12.834358412327433
+        ],
+        [
+          143.5971578309877,
+          -13.400422051652598
+        ],
+        [
+          143.56181115129996,
+          -13.763655694232213
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Canberra",
+        "ru": "Канберра",
+        "be": "Канбера"
+      },
+      "coords": [
+        -35.306904,
+        149.125529
+      ]
+    },
+    "overview": {
+      "en": "Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands. It is the largest country in Oceania and the world's sixth-largest country by total area.",
+      "ru": "Австралия – это страна, занимающая одноименный материк, который омывается Индийским и Тихим океанами. На побережьях континента находятся такие крупные города, как Сидней, Брисбен, Мельбурн, Перт и Аделаида. Столица Австралии – Канберра – расположена вдали от моря. Интересна фауна Австралии: здесь обитают уникальные виды животных, например кенгуру и утконосы.",
+      "be": "Аўстралія – гэта краіна, якая займае аднайменны мацярык, які абмываецца Індыйскім і Ціхім акіянамі. На ўзбярэжжах кантынента знаходзяцца такія буйныя гарады, як Сіднэй, Брысбэн, Мельбурн, Перт і Адэлаіда. Сталіца Аўстраліі – Канбера – размешчана ўдалечыні ад мора. Цікавая фауна Аўстраліі: тут насяляюць унікальныя віды жывёл, напрыклад кенгуру і качканосы."
+    },
+    "photoURL": "https://kratkoe.com/wp-content/uploads/2020/08/osobennosti-avstralii.jpg",
+    "landmarks": [
+      {
+        "name": {
+          "en": "Great Ocean Road",
+          "ru": "Великая океанская дорога",
+          "be": "Вялікая акіянская дарога"
+        },
+        "photo": "https://cdn.newsapi.com.au/image/v1/2d735ccafa68694f78f0b7f804437bcd?width=1024",
+        "description": {
+          "en": "Australia's Great Ocean Road is one of the world's most iconic drives. The coastal road stretches 151 miles from Torquay to Allansford, and was constructed in the 20s. It's got an unprecedented amount of jaw-dropping scenery, from sheer ocean cliffs to untouched surf beaches, whilst also traversing one of Australia's most cultured rural areas, offering an opportunity to experience some of Australia's most iconic landscapes in one fell swoop. Heading to Apollo Bay, it travels inland through the Otway Region, the Shipwreck Coast and the famous Twelve Apostles.",
+          "ru": "Австралийская Великая океанская дорога - одна из самых знаковых дорог в мире. Прибрежная дорога протянулась на 151 милю от Торки до Алансфорда и была построена в 20-х годах. Он имеет беспрецедентное количество потрясающих пейзажей, от отвесных океанских скал до нетронутых пляжей для серфинга, а также пересекает один из самых культурных сельских районов Австралии, предлагая возможность увидеть некоторые из самых знаковых пейзажей Австралии одним махом.",
+          "be": "Аўстралійская нацыянальная спадчына, 243-кіламетровы адрэзак дарогі ўздоўж паўднёва-ўсходняга ўзбярэжжа Аўстраліі паміж віктарыянскімі гарадамі Торкі і Алансфард. Ён мае незлічоную колькасць ўзрушаючых пейзажаў, ад акіянскіх скал да некранутых пляжаў для серфінгу, а таксама перасякае адзін з самых культурных сельскіх раёнаў Аўстраліі, прапаноўваючы магчымасць убачыць некаторыя з самых знакавых пейзажаў Аўстраліі адным махам."
+        }
       },
       {
-          "name": "Nahanni National Park Reserve of Canada",
-          "photo": "https://lp-cms-production.imgix.net/2019-06/ae9990aec1f7b74566feab305cf55146-nahanni-nationalpark-reserve.jpg",
-          "description": "Nahanni National Park Reserve in the Dehcho Region of the Northwest Territories, Canada, approximately 500 km west of Yellowknife, protects a portion of the Mackenzie Mountains Natural Region. The centrepiece of the park is the South Nahanni River."
+        "name": {
+          "en": "Twelve Apostles",
+          "ru": "Двенадцать апостолов",
+          "be": "Дванаццаць апосталаў"
+        },
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/The_Twelve_Apostles_2011.jpg",
+        "description": {
+          "en": "The Twelve Apostles is a collection of limestone stacks off the shore of Port Campbell National Park, by the Great Ocean Road in Victoria, Australia. Their proximity to one another has made the site a popular tourist attraction.",
+          "ru": "Двенадцать Апостолов — группа известняковых скал в океане возле побережья в национальном парке Порт-Кэмпбелл, расположенных на так называемой Великой океанской дороге в австралийском штате Виктория. Их внешний вид и небольшое расстояние один от другого сделали это место популярной туристической достопримечательностью.",
+          "be": "Дванаццаць апосталаў - гэта калекцыя вапняковых стэпаў ля берага нацыянальнага парку Порт Кэмпбэл, каля Вялікай акіянскай дарогі ў Вікторыі, Аўстралія. Блізкасць адзін да аднаго зрабіла сайт папулярнай турыстычнай славутасцю."
+        }
       },
       {
-          "name": "Notre Dame Basilica",
-          "photo": "https://i.ytimg.com/vi/KdJjZFmg-_o/maxresdefault.jpg",
-          "description": "Notre-Dame Basilica is a basilica in the historic district of Old Montreal, in Montreal, Quebec, Canada. The church is located at 110 Notre-Dame Street West, at the corner of Saint Sulpice Street. It is located next to the Saint-Sulpice Seminary and faces the Place d'Armes square."
+        "name": {
+          "en": "Lake Hillier",
+          "ru": "Хиллиер",
+          "be": "Возера Хільер"
+        },
+        "photo": "https://www.leisurepro.com/blog/wp-content/uploads/2019/04/shutterstock_714405349-1366x800@2x.jpg",
+        "description": {
+          "en": "Lake Hillier is a saline lake on the edge of Middle Island, the largest of the islands and islets that make up the Recherche Archipelago in the Goldfields-Esperance region, off the south coast of Western Australia. It is particularly notable for its pink colour.",
+          "ru": "Хиллиер — озеро на юго-западе Австралии, на острове Мидл-Айленд. Примечательно розовым цветом вод. Озеро по краям окружено песком и эвкалиптовым лесом. Остров и озеро были замечены во время экспедиции британского мореплавателя Мэтью Флиндерса в 1802 году.",
+          "be": "Возера Хільер - гэта салёнае возера на ўскрайку Сярэдняга вострава, найбуйнейшы з астравоў і астраўкоў, якія складаюць архіпелаг Рэчэрш у рэгіёне Голдфілд-Эсперанс, ля паўднёвага ўзбярэжжа Заходняй Аўстраліі. Асабліва характэрны яго ружовы колер. Доўгі і тонкі бераг аддзяляе Паўднёвы акіян ад возера."
+        }
       },
       {
-          "name": "Capilano Suspension Bridge Park",
-          "photo": "https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2015/01/shutterstock_478181668.jpg",
-          "description": "The Capilano Suspension Bridge is a simple suspension bridge crossing the Capilano River in the District of North Vancouver, British Columbia, Canada. The current bridge is 140 metres long and 70 metres above the river."
+        "name": {
+          "en": "Jim Jim Falls",
+          "ru": "Водопады Джим Джим",
+          "be": "Вадаспад Джыма Джыма"
+        },
+        "photo": "https://d19lgisewk9l6l.cloudfront.net/assetbank/The_Jim_Jim_Falls_in_Kakadu_National_Park_331211.jpg",
+        "description": {
+          "en": "The Jim Jim Falls is a plunge waterfall on the Jim Jim Creek that descends over the Arnhem Land escarpment within the UNESCO World Heritage–listed Kakadu National Park in the Northern Territory of Australia. The Jim Jim Falls area is registered on the Australian National Heritage List.",
+          "ru": "Водопад Джим-Джим - это водопад на реке Джим-Джим, который спускается по уступу Арнем-Лед в национальном парке Какаду, внесенном в список объектов Всемирного наследия ЮНЕСКО, на северной территории Австралии. Район Джим-Джим-Фолс (Jim Jim Falls) зарегистрирован в списке национального наследия Австралии.",
+          "be": "Вадаспад Джыма Джыма - гэта вадаспад па рацэ Джым Джым Крык, які спускаецца над эскарпацыяй зямлі Арнем у межах сусветнай спадчыны ЮНЕСКА, унесены ў спіс нацыянальнага парку Какаду на Паўночнай тэрыторыі Аўстраліі. Плошча вадаспаду Джыма Джыма занесена ў спіс нацыянальнай спадчыны Аўстраліі."
+        }
       },
       {
-          "name": "Cape Spear",
-          "photo": "https://images.squarespace-cdn.com/content/v1/588e9740b3db2b428d95cf56/1526868661647-IPMF3397OTTAYISE6FKS/ke17ZwdGBToddI8pDm48kKAwwdAfKsTlKsCcElEApLR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UegTYNQkRo-Jk4EWsyBNhwKrKLo5CceA1-Tdpfgyxoog5ck0MD3_q0rY3jFJjjoLbQ/2015-06-13_5657-HDR.jpg?format=1500w",
-          "description": "Cape Spear is Canada’s easternmost point, its sheer cliffs overlooking the Atlantic Ocean. In addition to stunning sunrises, the cape is an excellent place to spot seabirds, whales and even icebergs. The site is also home to the oldest surviving lighthouse in the province, which was constructed in 1836. A graceful neoclassical cube with a domed light tower in the center, the lighthouse has a restored interior that demonstrates the conditions in which a typical lighthouse keeper and his family would have lived in the mid-19th century."
+        "name": {
+          "en": "Uluru",
+          "ru": "Улуру",
+          "be": "Улуру"
+        },
+        "photo": "https://thebigbus.com.au/wp-content/uploads/2018/11/bigstock-200401003-5.jpg",
+        "description": {
+          "en": "Uluru, or Ayers Rock, is a massive sandstone monolith in the heart of the Northern Territory’s arid \"Red Centre\". The nearest large town is Alice Springs, 450km away. Uluru is sacred to indigenous Australians and is thought to have started forming around 550 million years ago. It’s within Uluru-Kata Tjuta National Park, which also includes the 36 red-rock domes of the Kata Tjuta (colloquially “The Olgas”) formation.",
+          "ru": "Скала Улуру, также известная как Эрс-Рок, представляет собой огромный монолит из песчаника. Она расположена в центре пустыни Северной территории и является священной для австралийских аборигенов. Считается, что массив Улуру начал формироваться около 550 миллионов лет назад. Он находится в национальном парке Улуру-Ката-Тьюта в 450 километрах от города Алис-Спрингс. В этом же парке расположена гора Ката-Тьюта, также известная как Ольга. Она состоит из 36 каменных массивов красного цвета.",
+          "be": "Улуру, таксама вядомы як Айерс-Рок і афіцыйна паведамляецца як Улуру / Айерс-Рок, з'яўляецца буйным каменным утварэннем з пяшчаніку ў паўднёвай частцы Паўночнай тэрыторыі Аўстраліі. Ён знаходзіцца ў 335 км на паўднёвы захад ад бліжэйшага буйнога горада Аліс-Спрынгс."
+        }
       },
       {
-          "name": "Lake Louise",
-          "photo": "https://www.tripsavvy.com/thmb/eNPRdLn3mHQu731s_8NA5Js_jhk=/2121x1193/smart/filters:no_upscale()/LakeLouise_GettyImages-6b1e83ecabbb423c9cc66ea024c0e6bf.jpg",
-          "description": "Lake Louise is a hamlet in Banff National Park in the Canadian Rockies, known for its turquoise, glacier-fed lake ringed by high peaks and overlooked by a stately chateau. Hiking trails wind up to the Lake Agnes Tea House for bird's-eye views. There's a canoe dock in summer, and a skating rink on the frozen lake in winter. The Lake Louise Ski Resort features a wildlife interpretive center at the top of a gondola. "
+        "name": {
+          "en": "Kangaroo Island",
+          "ru": "Остров Кенгуру",
+          "be": "Востраў Кенгуру"
+        },
+        "photo": "https://www.exceptionalkangarooisland.com/wp-content/uploads/2019/07/image-6.jpg",
+        "description": {
+          "en": "Kangaroo Island lies off the mainland of South Australia, southwest of Adelaide. Over a third of the island is protected in nature reserves, home to native wildlife like sea lions, koalas and diverse bird species. In the west, Flinders Chase National Park is known for penguin colonies and striking coastal rock formations, like the sculpted Remarkable Rocks and the stalactite-covered Admirals Arch.",
+          "ru": "Остров Кенгуру расположен близ побережья Южной Австралии, к юго-западу от столицы штата Аделаиды. Более трети территории острова входит в состав заповедников, где обитают морские львы, коалы и разнообразные виды птиц. Национальный парк Флиндерс-Чейc на западе острова известен своими колониями пингвинов и причудливыми скальными образованиями, среди которых напоминающие скульптуры скалы Ремаркабл и покрытая сталактитами Адмиральская арка.",
+          "be": "Востраў Кенгуру, які таксама называюць Карта пінтынга, з'яўляецца трэцім па велічыні выспам Аўстраліі пасля Тасманіі і вострава Мелвіл. Ён знаходзіцца ў штаце Паўднёвая Аўстралія, у 112 км на паўднёвы захад ад Адэлаіды. Нацыянальны парк Фліндэрс-Чэйз на захадзе выспы вядомы сваімі калоніямі пінгвінаў і мудрагелістымі скальнымі ўтварэннямі, сярод якіх нагадваюць скульптуры скалы Рэмаркабл і пакрытая сталактытамі Адміральская арка."
+        }
       }
-  ],
-  "video": "https://www.youtube.com/embed/8Z1eMy2FoX4"
-},
-{
-  "country": "Germany",
-  "capital": {
-      "name": "Berlin",
-      "coords": [52.518654, 13.374711]
+    ],
+    "video": "https://www.youtube.com/embed/QojXRvYgXxo"
   },
-  "overview": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.",
-  "photoURL": "https://wantsee.world/wp-content/uploads/2020/05/Germany-Travel.jpg",
-  "landmarks": [{
-          "name": "Rakotzbrücke",
-          "photo": "https://a.cdn-hotels.com/gdcs/production22/d363/4dc44bd3-3f14-4be0-bea8-a3c1c68bbf06.jpg",
-          "description": "Rakotzbrücke is a masonry bridge within Azalea and Rhododendron Park Kromlau. Built in 1860, it features a half-circled arch with jagged, rocky spires on both ends. When reflected against still water, the bridge gives the illusion of a perfect circle – a popular spot for landscape photography. \n Home to Germany’s largest rhododendron gardens, the park itself attracts nature lovers with its 200-acre landscape and outdoor activities such as picnics and strolls. Entrance to the park and Rakotzbrücke is free year-round."
+  "Cambodia": {
+    "country": {
+      "en": "Cambodia",
+      "ru": "Камбоджа",
+      "be": "Камбоджа"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          103.4972799011397,
+          10.632555446815928
+        ],
+        [
+          103.09068973186724,
+          11.153660590047165
+        ],
+        [
+          102.5849324890267,
+          12.186594956913282
+        ],
+        [
+          102.348099399833,
+          13.394247341358223
+        ],
+        [
+          102.98842207236163,
+          14.225721136934467
+        ],
+        [
+          104.28141808473661,
+          14.416743068901367
+        ],
+        [
+          105.21877689007887,
+          14.273211778210694
+        ],
+        [
+          106.04394616091552,
+          13.881091009979954
+        ],
+        [
+          106.49637332563087,
+          14.570583807834282
+        ],
+        [
+          107.38272749230109,
+          14.202440904186972
+        ],
+        [
+          107.61454796756243,
+          13.535530707244206
+        ],
+        [
+          107.49140302941089,
+          12.337205918827946
+        ],
+        [
+          105.81052371625313,
+          11.567614650921227
+        ],
+        [
+          106.24967003786946,
+          10.961811835163587
+        ],
+        [
+          105.19991499229235,
+          10.889309800658097
+        ],
+        [
+          104.33433475140347,
+          10.48654368737523
+        ],
+        [
+          103.4972799011397,
+          10.632555446815928
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Phnom Penh",
+        "ru": "Пном Пен",
+        "be": "Пномпэнь"
+      },
+      "coords": [
+        11.552889,
+        104.865913
+      ]
+    },
+    "overview": {
+      "en": "Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta, mountains and Gulf of Thailand coastline. Phnom Penh, its capital, is home to the art deco Central Market, glittering Royal Palace and the National Museum's historical and archaeological exhibits. In the country's northwest are the ruins of Angkor Wat, a massive stone temple complex built during the Khmer Empire.",
+      "ru": "Камбоджа – страна в Юго-Восточной Азии с разнообразным рельефом: на ее территории расположены низменные равнины, дельта реки Меконг, горы и побережье Сиамского залива. Столица страны, Пномпень, славится своим Центральным рынком в стиле ар-деко, великолепным Королевским дворцом и Национальным музеем, в экспозиции которого представлены археологические находки и произведения камбоджийского искусства. На северо-западе страны находится огромный каменный храмовый комплекс Ангкор-Ват, построенный во времена Кхмерской империи.",
+      "be": "Камбоджа - краіна ў Паўднёва-Усходняй Азіі з разнастайным рэльефам: на яе тэрыторыі размешчаны нізінныя раўніны, дэльта ракі Меконг, горы і ўзбярэжжа сіямскага заліва. Сталіца краіны, Пномпень, славіцца сваім Цэнтральным рынкам у стылі ар-дэко, цудоўным Каралеўскім палацам і Нацыянальным музеем, у экспазіцыі якога прадстаўлены археалагічныя знаходкі і творы Камбоджыйскага мастацтва. На паўночным захадзе краіны знаходзіцца велізарны каменны храмавы комплекс Ангкор-Ват, пабудаваны ў часы кхмерскай імперыі."
+    },
+    "photoURL": "https://www.eyeonasia.gov.sg/images/asean-countries/Cambodia%20snapshot%20cover.jpg",
+    "landmarks": [
+      {
+        "name": {
+          "en": "Angkor Wat",
+          "ru": "Ангкор-Ват",
+          "be": "Ангкор-Ват"
+        },
+        "photo": "https://www.thecollector.com/wp-content/uploads/2020/05/photo-angkor-wat-cambodia.jpg",
+        "description": {
+          "en": "Angkor Wat is a temple complex in Cambodia and the largest religious monument in the world by land area, measuring 162.6 hectares.It was originally built in the first half of the 12th century as a Hindu temple. Spread across more than 400 acres, Angkor Wat is said to be the largest religious monument in the world.",
+          "ru": "Ангкор-Ват — храмовый комплекс в честь бога Вишну, построенный королём Сурьяварманом II в первой половине XII века в области Ангкор, провинции Сиемреап на севере Камбоджи, в окрестностях Великого озера, где в XI—XIV веках находился район столиц Ангкорской империи и резиденций древних кхмерских царей.",
+          "be": "Ангкор-Ват - храмавы комплекс у Камбоджы і найбуйнейшы рэлігійны помнік у свеце па плошчы, плошчай 162,6 га. Першапачаткова пабудаваны ў якасці асабістага маўзалея караля Сур'явармана II, прысвечаны Вішну ў пачатку 12 стагоддзя, у канцы 12 стагоддзя ён быў перароблены ў будысцкі храм і застаецца такім у наш час."
+        }
       },
       {
-          "name": "Externsteine",
-          "photo": "https://a.cdn-hotels.com/gdcs/production186/d942/6578fc1d-b860-4723-8fa0-3162829396a0.jpg",
-          "description": "The Externsteine is a series of sandstone columns jutting out from Wiembecke, a natural pond within Teutoburg Forest. One of Germany’s most impressive scenery, it dates back to the Ice Age, with several manmade structures added during the Middle Ages. Today, you can visit a grotto, a sarcophagus, and a relief depicting Christ's Descent from the Cross. \n The jagged cliffs range between 13 and 40 metres in height, set against a picturesque backdrop of lush forests, moors, and lakes of Wiembecke Valley. Private gatherings and pagan celebrations often take place at Externsteine, especially during the summer solstice and Walpurgis Night."
+        "name": {
+          "en": "Bayon Temple",
+          "ru": "Байон",
+          "be": "Баён"
+        },
+        "photo": "https://dam-13749.kxcdn.com/wp-content/uploads/2019/12/cropped-bayon-temple-3.jpg",
+        "description": {
+          "en": "The Bayon is a richly decorated Khmer Buddhist temple at Angkor in Cambodia. Built in the late 12th or early 13th century as the state temple of the Mahayana Buddhist King Jayavarman VII, the Bayon stands at the centre of Jayavarman's capital, Angkor Thom.",
+          "ru": "Байон — храмовый комплекс в центре Ангкор-Тхома, построен в XII веке в честь Джаявармана VII. Храм имеет три уровня и его окружают три стены. Основная часть декора храма — изображение бытовой и повседневной жизни кхмеров.",
+          "be": "Баён - багата аформлены кхмерскі будыйскі храм у Ангкоры ў Камбоджы. Пабудаваны ў канцы 12-га ці ў пачатку 13-га стагоддзя як дзяржаўны храм будысцкага караля Махаяны Джаявармана VII, Баён знаходзіцца ў цэнтры сталіцы Джаявармана, Ангкора Тома."
+        }
       },
       {
-          "name": "Romantic Road",
-          "photo": "https://a.cdn-hotels.com/gdcs/production163/d1338/2c6deb71-c305-4c1b-a7f7-505f127da244.jpg",
-          "description": "Germany’s Romantic Road covers around 350 km between Würzburg and Füssen, with plenty of natural and medieval sites dotting the southern region. You can start your journey from Munich, Frankfurt, or Nuremberg, and depending on how many stops you make, spend about 2 days to 1 week to explore the route. "
+        "name": {
+          "en": "Prasat Beng Mealea",
+          "ru": "Бэнгмеалеа",
+          "be": "Боенг Меалія"
+        },
+        "photo": "https://lp-cms-production.imgix.net/2019-06/4dde76e392e03370d55a64ca23c31831-beng-mealea.jpg",
+        "description": {
+          "en": "Beng Mealea, or Boeng Mealea, is a temple from the Angkor Wat period located 40 km east of the main group of temples at Angkor, Cambodia, on the ancient royal highway to Preah Khan Kompong Svay.",
+          "ru": "Бэнгмеалеа — храм в стиле Ангкор-Вата, расположенный в 40 км к востоку от основной группы храмов в Ангкоре, в Камбодже, на древней королевской дороге на Прэахкхан.",
+          "be": "Боенг Меалія, - храм перыяду Ангкор-Ват, размешчаны ў 40 км на ўсход ад асноўнай групы храмаў у Ангкоры, Камбоджа, на старажытнай каралеўскай шашы да Праахан Кампанг Свай."
+        }
       },
       {
-          "name": "Obersee Lake",
-          "photo": "https://a.cdn-hotels.com/gdcs/production192/d208/2190b2eb-6996-46b1-867c-1c1c85ef35fc.jpg",
-          "description": "Obersee Lake is a pristine fjord in Berchtesgaden National Park, about 140 km southeast of Munich. Surrounded by alpine mountains and forests, its emerald waters are so clear you can even see the rocky bottoms. You can reach Obersee Lake by boat – you’ll enjoy an hour-long journey across Lake Königssee to Saletalm Pier. From there, it takes between 30 minutes and 1 hour of hiking on a forested pathway to Lake Obersee. The fjord is open to the public year-round, but the best time to visit is during the summer, when the waters are warm enough for a dip."
+        "name": {
+          "en": "Ta Prohm Temple",
+          "ru": "Та Прохм",
+          "be": "Та Прохм"
+        },
+        "photo": "https://www.renegadetravels.com/wp-content/uploads/2013/07/ta-prohm-22.jpg",
+        "description": {
+          "en": "Ta Prohm is the modern name of the temple in Siem Reap, Cambodia, built in the Bayon style largely in the late 12th and early 13th centuries and originally called Rajavihara.",
+          "ru": "Та Прум, «предок Брахмы» — храм в Ангкоре, построен Джайяварманом VII (королем Кхмерской империи) в честь своей матери, которую он отождествлял с Праджняпарамитой. занимает площадь 180 акров. Был освящён лично Джайяварманом VII в 1186 году.",
+          "be": "Та Прохм - гэта сучасная назва храма ў Сім-Рыпе, Камбоджа, пабудаванага ў стылі Баён у значнай ступені ў канцы 12 - пачатку 13 стагоддзяў і першапачаткова называецца \"Раджавіхара\"."
+        }
       },
       {
-          "name": "Basteibrücke",
-          "photo": "https://a.cdn-hotels.com/gdcs/production78/d981/c26b9c5d-c1bd-4e69-9a88-4734d17cf22d.jpg",
-          "description": "Basteibrücke (Bastion Bridge) is a medieval-era bridge in Saxon Switzerland National Park. Spanning 76.5 metres in length, it dates back to the mid-1800s and connects a cluster of jagged sandstone rocks above the Elbe River.Basteibrücke stands over 182 metres tall, serving as a prominent lookout point in Saxon Switzerland – you can enjoy panoramic views of the surrounding rock formations, Elbe River, Lilienstein Mountain, and the fortress of  Koenigstein."
+        "name": {
+          "en": "Royal Palace",
+          "ru": "Королевский дворец",
+          "be": "Каралеўскі палац"
+        },
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Le_Palais_Royal_%28Phnom_Penh%29_%286997773481%29.jpg",
+        "description": {
+          "en": "The Royal Palace, in Chey Chumneas, Phnom Penh, Cambodia, is a complex of buildings which serves as the royal residence of the King of Cambodia. Its full name in the Khmer language is Preah Barom Reachaviang Chaktomuk Serei Mongkol.",
+          "ru": "Королевский дворец в Пномпене — комплекс зданий в Пномпене, столице Камбоджи, резиденция королей Камбоджи, которые живут здесь с момента постройки дворца в 1860 годах, за исключения времени правления режима красных кхмеров.",
+          "be": "Каралеўскі палац у Чэй-Чумнеасе, Пнампен, Камбоджа, уяўляе сабой комплекс будынкаў, які служыць каралеўскай рэзідэнцыяй караля Камбоджы. Поўная яго назва на кхмерскай мове - Preah Barom Reachaviang Chaktomuk Serei Mongkol."
+        }
       },
       {
-          "name": "Moselle Valley",
-          "photo": "https://a.cdn-hotels.com/gdcs/production179/d524/54350dba-0f0c-44f0-861f-bd9e7937414a.jpg",
-          "description": "Moselle Valley covers some of Germany’s most impressive sights, from terraced vineyards and rolling hills, to medieval villages and hilltop castles. The region is named after the 545-km-long River Mosel, which runs along the borders of southwestern Germany, north-eastern France, and eastern Luxembourg. "
+        "name": {
+          "en": "Wat Phnom",
+          "ru": "Ват Пном",
+          "be": "Ват Пном"
+        },
+        "photo": "https://i.pinimg.com/originals/95/c0/ea/95c0ea41fc1e3a1626f17c433aa17f0e.jpg",
+        "description": {
+          "en": "Wat Phnom is a Buddhist temple is a pagoda that symbolizes the name of Phnom Penh, a historical site in the record of Khmer national identity. Wat Phnom Doun Penh has a total height of 46 meters equal to the height of feet.",
+          "ru": "Ват Пном — буддийский монастырь в Пномпене, Камбоджа. Основан в 1373 г.. Возвышаясь на 27 метров над землей, Ват Пном является самым высоким религиозным зданием города.",
+          "be": "Ват Пном - будысцкі храм - гэта пагода, якая сімвалізуе імя Пнампені, гістарычнага помніка ў кхмерскай нацыянальнай ідэнтычнасці. Ват Пном Даун Пень мае агульную вышыню 46 метраў, роўную вышыні ног. Пагада названа ў гонар бабулі \"Даун Пень\", якая распавядае пра знаходку чатырох статуй: Статуя Вішну Статуя Буды"
+        }
       }
-  ],
-  "video": "https://www.youtube.com/embed/ZHHbpy91O2E"
-},
-{
-  "country": "France",
-  "capital": {
-      "name": "Paris",
-      "coords": [48.856663, 2.351556]
+    ],
+    "video": "https://www.youtube.com/embed/1yc6bSRih-o"
   },
-  "overview": "France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.",
-  "photoURL": "http://www.rustrade.fr/images/Site/France/France.jpg",
-  "landmarks": [{
-          "name": "Eiffel Tower",
-          "photo": "https://cdn.asiatatler.com/asiatatler/i/sg/2019/10/23231025-denys-nevozhai-uzagqg756ou-unsplash_cover_2000x1449.jpg",
-          "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower."
+  "Germany": {
+    "country": {
+      "en": "Germany",
+      "ru": "Германия",
+      "be": "Германія (Нямеччына)"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          9.921906365609232,
+          54.983104153048025
+        ],
+        [
+          9.9395797054529,
+          54.596641954153256
+        ],
+        [
+          10.950112338920519,
+          54.363607082733154
+        ],
+        [
+          10.939466993868448,
+          54.00869334575258
+        ],
+        [
+          11.956252475643282,
+          54.19648550070116
+        ],
+        [
+          12.518440382546714,
+          54.47037059184799
+        ],
+        [
+          13.647467075259499,
+          54.0755109727059
+        ],
+        [
+          14.119686313542559,
+          53.75702912049103
+        ],
+        [
+          14.353315463934168,
+          53.248171291713106
+        ],
+        [
+          14.074521111719434,
+          52.98126251892535
+        ],
+        [
+          14.4375997250022,
+          52.624850165408304
+        ],
+        [
+          14.685026482815713,
+          52.089947414755216
+        ],
+        [
+          14.607098422919648,
+          51.745188096719964
+        ],
+        [
+          15.016995883858781,
+          51.10667409932171
+        ],
+        [
+          14.570718214586122,
+          51.00233938252438
+        ],
+        [
+          14.307013380600665,
+          51.11726776794137
+        ],
+        [
+          14.056227654688314,
+          50.92691762959435
+        ],
+        [
+          13.338131951560397,
+          50.73323436136428
+        ],
+        [
+          12.96683678554325,
+          50.48407644306917
+        ],
+        [
+          12.240111118222671,
+          50.26633779560723
+        ],
+        [
+          12.415190870827473,
+          49.96912079528062
+        ],
+        [
+          12.521024204161336,
+          49.54741526956275
+        ],
+        [
+          13.031328973043514,
+          49.30706818297324
+        ],
+        [
+          13.595945672264577,
+          48.877171942737164
+        ],
+        [
+          13.243357374737116,
+          48.41611481382903
+        ],
+        [
+          12.884102817443873,
+          48.28914581968786
+        ],
+        [
+          13.025851271220517,
+          47.63758352313595
+        ],
+        [
+          12.932626987366064,
+          47.467645575544
+        ],
+        [
+          12.620759718484521,
+          47.672387600284424
+        ],
+        [
+          12.141357456112871,
+          47.70308340106578
+        ],
+        [
+          11.426414015354851,
+          47.52376618101306
+        ],
+        [
+          10.544504021861597,
+          47.5663992376538
+        ],
+        [
+          10.402083774465325,
+          47.30248769793916
+        ],
+        [
+          9.896068149463188,
+          47.580196845075704
+        ],
+        [
+          9.594226108446376,
+          47.5250580918202
+        ],
+        [
+          8.522611932009795,
+          47.83082754169135
+        ],
+        [
+          8.317301466514095,
+          47.61357982033627
+        ],
+        [
+          7.466759067422288,
+          47.62058197691192
+        ],
+        [
+          7.593676385131062,
+          48.33301911070373
+        ],
+        [
+          8.099278598674855,
+          49.01778351500343
+        ],
+        [
+          6.658229607783709,
+          49.20195831969164
+        ],
+        [
+          6.186320428094177,
+          49.463802802114515
+        ],
+        [
+          6.242751092156993,
+          49.90222565367873
+        ],
+        [
+          6.043073357781111,
+          50.128051662794235
+        ],
+        [
+          6.156658155958779,
+          50.80372101501058
+        ],
+        [
+          5.988658074577813,
+          51.851615709025054
+        ],
+        [
+          6.589396599970826,
+          51.852029120483394
+        ],
+        [
+          6.842869500362383,
+          52.22844025329755
+        ],
+        [
+          7.092053256873896,
+          53.14404328064489
+        ],
+        [
+          6.905139601274129,
+          53.48216217713064
+        ],
+        [
+          7.100424838905268,
+          53.69393219666267
+        ],
+        [
+          7.936239454793962,
+          53.74829580343379
+        ],
+        [
+          8.121706170289485,
+          53.52779246684429
+        ],
+        [
+          8.800734490604668,
+          54.020785630908904
+        ],
+        [
+          8.572117954145368,
+          54.39564647075405
+        ],
+        [
+          8.526229282270208,
+          54.96274363872516
+        ],
+        [
+          9.282048780971136,
+          54.83086538351631
+        ],
+        [
+          9.921906365609232,
+          54.983104153048025
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Berlin",
+        "ru": "Берлин",
+        "be": "Берлін"
+      },
+      "coords": [
+        52.518654,
+        13.374711
+      ]
+    },
+    "overview": {
+      "en": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.",
+      "ru": "Германия – государство в Западной Европе с лесами, реками, горными хребтами и пляжными курортами Северного моря. История страны охватывает период в более чем две тысячи лет. В столице, Берлине, кипит культурная и ночная жизнь. Многие достопримечательности города, в частности Бранденбургские ворота, напоминают о событиях Второй мировой войны. Мюнхен знаменит фестивалем Октоберфест и пивными ресторанами. Самый известный из них – \"Хофбройхаус\", открывшийся ещё в XVI веке. Франкфурт – город небоскребов, именно здесь находится штаб-квартира Европейского центрального банка.",
+      "be": "Фэдэратыўная Рэспубліка Нямеччына ці Германія  — краіна ў цэнтральнай Эўропе з выхадам да Балтыйскага і Паўночнага мораў, мяжуе з Польшчай і Чэхіяй на ўсходзе, Аўстрыяй і Швайцарыяй на поўдні, Францыяй, Люксэмбургам, Бэльгіяй і Нідэрляндамі на захадзе, Даніяй на поўначы. Нямеччына зьяўляецца фэдэральнай парлямэнцкай рэспублікай і складаецца з 16 адміністрацыйных адзінак, вядомых як «зямля». Кожная зь земляў захоўвае абмежаваны сувэрэнітэт. Улічваючы 80,6 млн чалавек насельніцтва Нямеччыны, краіна зьяўляецца самым густанаселеным чальцом Эўрапейскага Зьвязу. Нямеччына ёсьць адной з асноўных эканамічных і палітычных сілаў на эўрапейскім кантынэнце і гістарычным лідэрам у шматлікіх культурных і тэхнічных абласьцёх."
+    },
+    "photoURL": "https://wantsee.world/wp-content/uploads/2020/05/Germany-Travel.jpg",
+    "landmarks": [
+      {
+        "name": {
+          "en": "Rakotzbrücke",
+          "ru": "Рододендронпарк Кромлау",
+          "be": "Рададэндран Кромлаў"
+        },
+        "photo": "https://a.cdn-hotels.com/gdcs/production22/d363/4dc44bd3-3f14-4be0-bea8-a3c1c68bbf06.jpg",
+        "description": {
+          "en": "Rakotzbrücke is a masonry bridge within Azalea and Rhododendron Park Kromlau. Built in 1860, it features a half-circled arch with jagged, rocky spires on both ends. When reflected against still water, the bridge gives the illusion of a perfect circle – a popular spot for landscape photography. \n Home to Germany’s largest rhododendron gardens, the park itself attracts nature lovers with its 200-acre landscape and outdoor activities such as picnics and strolls. Entrance to the park and Rakotzbrücke is free year-round.",
+          "ru": "Парк азалий и рододендронов — природный заповедник, ландшафтный парк в Верхней Лужице, находящийся на территории сельского населённого пункта Кромлау коммуны Габленц района Гёрлиц федеральной земли Саксония. Памятник культуры и истории земли Саксония.",
+          "be": "Парк Азалія і Рададэндран Кромлаў - гэта добраўпарадкаваны парк плошчай 200 гектараў у горадзе Габленц, Германія. Ён быў пабудаваны ў ХІХ стагоддзі. Парк з'яўляецца прыкладам ангельскага пейзажнага саду, і ў ім шмат невялікіх сажалак і азёр."
+        }
       },
       {
-          "name": "Louvre Museum",
-          "photo": "https://www.airtecnics.com/media/6385/Louvre-museum-in-Paris.jpg",
-          "description": "The Louvre, or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France, and is best known for being the home of the Mona Lisa. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement."
+        "name": {
+          "en": "Externsteine",
+          "ru": "Эксерские камни",
+          "be": "Экстэрстэйн"
+        },
+        "photo": "https://a.cdn-hotels.com/gdcs/production186/d942/6578fc1d-b860-4723-8fa0-3162829396a0.jpg",
+        "description": {
+          "en": "The Externsteine is a series of sandstone columns jutting out from Wiembecke, a natural pond within Teutoburg Forest. One of Germany’s most impressive scenery, it dates back to the Ice Age, with several manmade structures added during the Middle Ages. Today, you can visit a grotto, a sarcophagus, and a relief depicting Christ's Descent from the Cross. \n The jagged cliffs range between 13 and 40 metres in height, set against a picturesque backdrop of lush forests, moors, and lakes of Wiembecke Valley. Private gatherings and pagan celebrations often take place at Externsteine, especially during the summer solstice and Walpurgis Night.",
+          "ru": "Эксерские камни - группа скал в Тевтобургском Лесу вблизи Хорн-Бад-Майнберга, в районе Липпе, в Северном Рейне-Вестфалии. Она состоит из тянущегося с северо-запада на юго-восток на протяжении почти километра ряда колоссальных столбов и глыб песчаника, кое-где повалившихся и представляющих огромные, почти отвесные стены. Внизу самой высокой и широкой из этих скал вырублена пещерная часовня, освященная в 1115 году. Снаружи, у входа в эту часовню, высечены на скале, по всей вероятности, около того же времени, с одной стороны фигура апостола Петра, а с другой — рельеф высотой приблизительно в 5, шириной приблизительно в 4 метра, изображающий в верхней своей части «Снятие со креста» — одно из замечательнейших произведений византийско-романского искусства.",
+          "be": "Экстэрстэйн - гэта адметная горная парода пяшчаніку, размешчаная ў лесе Тэўтобург, побач з горадам Рог-Бад-Майнберг у раёне Ліп, нямецкага штата Паўночны Рэйн-Вестфалія. Утварэнне ўяўляе сабой тор, які складаецца з некалькіх высокіх каменных калон, якія рэзка падымаюцца з навакольных лясістых пагоркаў. Звонку, ля ўваходу ў гэтую капліцу, высечаныя на скале, па ўсёй верагоднасці, каля таго ж часу, з аднаго боку фігура апостала Пятра, а з другога — рэльеф вышынёй прыблізна ў 5, шырынёй прыблізна ў 4 метра, які паказвае ў верхняй сваёй частцы «зняцце са крыжа» — адно з выдатных твораў візантыйска-раманскага мастацтва."
+        }
       },
       {
-          "name": "Cathédrale Notre-Dame de Paris",
-          "photo": "https://images2.minutemediacdn.com/image/upload/c_crop,h_2138,w_3809,x_0,y_0/v1554744380/shape/mentalfloss/556629-istock-852755038_primary.jpg?itok=HrgIMUwd",
-          "description": "Notre-Dame de Paris, referred to simply as Notre-Dame, is a medieval Catholic cathedral on the Île de la Cité in the 4th arrondissement of Paris. The cathedral was consecrated to the Virgin Mary and considered to be one of the finest examples of French Gothic architecture."
+        "name": {
+          "en": "Romantic Road",
+          "ru": "Романтише штрассе (\"Романтическая дорога\")",
+          "be": "Рамантычная дарога"
+        },
+        "photo": "https://a.cdn-hotels.com/gdcs/production163/d1338/2c6deb71-c305-4c1b-a7f7-505f127da244.jpg",
+        "description": {
+          "en": "Germany’s Romantic Road covers around 350 km between Würzburg and Füssen, with plenty of natural and medieval sites dotting the southern region. You can start your journey from Munich, Frankfurt, or Nuremberg, and depending on how many stops you make, spend about 2 days to 1 week to explore the route. ",
+          "ru": "«Романтическая дорога» — разработанный в 1950-е гг. маршрут по историческим городам юга Германии. Начинается от реки Майн и ведёт с востока Франконии в баварскую Швабию, по части территории Верхней Баварии, до границы Оштальгау в Альпах. Маршрут имеет протяженность 366 километров.",
+          "be": "Рамантычная дарога - «тэматычны маршрут», распрацаваны турыстычнымі агентамі, якія займаюцца прасоўваннем па службе, у 1950-х. У ім апісана 460 кіламетраў наземных дарог паміж Вюрцбургам і Фюсэнам на поўдні Германіі, у прыватнасці ў Баварыі і Бадэн-Вюртэмбергу, якія звязваюць шэраг маляўнічых гарадоў і замкаў."
+        }
       },
       {
-          "name": "Palace of Versailles",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Versailles-Chateau-Jardins02_%28cropped%29.jpg",
-          "description": "The Palace of Versailles was the principal royal residence of France from 1682, under Louis XIV, until the start of the French Revolution in 1789, under Louis XVI. It is located in the department of Yvelines, in the region of Île-de-France, about 20 kilometres southwest of the centre of Paris."
+        "name": {
+          "en": "Obersee Lake",
+          "ru": "Озеро Обер",
+          "be": "Оберзее"
+        },
+        "photo": "https://a.cdn-hotels.com/gdcs/production192/d208/2190b2eb-6996-46b1-867c-1c1c85ef35fc.jpg",
+        "description": {
+          "en": "Obersee Lake is a pristine fjord in Berchtesgaden National Park, about 140 km southeast of Munich. Surrounded by alpine mountains and forests, its emerald waters are so clear you can even see the rocky bottoms. You can reach Obersee Lake by boat – you’ll enjoy an hour-long journey across Lake Königssee to Saletalm Pier. From there, it takes between 30 minutes and 1 hour of hiking on a forested pathway to Lake Obersee. The fjord is open to the public year-round, but the best time to visit is during the summer, when the waters are warm enough for a dip.",
+          "ru": "Озеро Обер (\"Оберзее\") - это природное озеро в крайнем юго-восточном районе земли Берхтесгаден в немецком государстве Бавария, недалеко от австрийской границы. Все озеро находится в национальном парке Берхтесгаден. Он расположен к юго-востоку от гораздо большего Кенигзее. Два озера разделены мореной.",
+          "be": "Оберзее - гэта прыроднае возера ў крайнім паўднёвым усходзе зямельнага ўчастка Берхтэсгадэнер нямецкага штата Баварыя, недалёка ад аўстрыйскай мяжы. Усё возера знаходзіцца ў нацыянальным парку Берхтэсгадэн. Ён знаходзіцца на паўднёвым усходзе ад значна большага Кёнігсэ. Абодва азёры падзелены марэнай."
+        }
       },
       {
-          "name": "Arc de Triomphe",
-          "photo": "https://afar-production.imgix.net/uploads/images/afar_post_headers/images/9429LsS7l2/original_shutterstock_214344625.jpg",
-          "description": "The Arc de Triomphe de l'Étoile is one of the most famous monuments in Paris, France, standing at the western end of the Champs-Élysées at the centre of Place Charles de Gaulle, formerly named Place de l'Étoile—the étoile or \"star\" of the juncture formed by its twelve radiating avenues."
+        "name": {
+          "en": "Bastion Bridge",
+          "ru": "Бастай",
+          "be": "Бастэі"
+        },
+        "photo": "https://a.cdn-hotels.com/gdcs/production78/d981/c26b9c5d-c1bd-4e69-9a88-4734d17cf22d.jpg",
+        "description": {
+          "en": "Bastion Bridge (Basteibrücke) is a medieval-era bridge in Saxon Switzerland National Park. Spanning 76.5 metres in length, it dates back to the mid-1800s and connects a cluster of jagged sandstone rocks above the Elbe River.Basteibrücke stands over 182 metres tall, serving as a prominent lookout point in Saxon Switzerland – you can enjoy panoramic views of the surrounding rock formations, Elbe River, Lilienstein Mountain, and the fortress of  Koenigstein.",
+          "ru": "Бастай — формация из песчаных скал со смотровой площадкой в Саксонской Швейцарии на правом берегу реки Эльба между курортом Ратен и городом Велен. Скалы возвышаются над Эльбой на высоту 194 метра. Бастай входит в число самых посещаемых туристических достопримечательностей Саксонской Швейцарии.",
+          "be": "Бастэі - гэта горная парода, якая ўзвышаецца на 194 метры над ракой Эльба ў горных пясках Эльбы Германіі. Дасягнуўшы вышыні 305 метраў над узроўнем мора, зубчастыя скалы Бастэя ўтварыліся воднай эрозіяй больш за мільён гадоў таму."
+        }
       },
       {
-          "name": "Sacré-Cœur",
-          "photo": "https://lp-cms-production.imgix.net/2019-06/7ad4233f75ec81e3a9a38897ee57353d-basilique-du-sacre-coeur.jpg",
-          "description": "The Basilica of the Sacred Heart of Paris, commonly known as Sacré-Cœur Basilica and often simply Sacré-Cœur, is a Roman Catholic church and minor basilica in Paris, France, dedicated to the Sacred Heart of Jesus. Sacré-Cœur Basilica is located at the summit of the butte Montmartre, the highest point in the city."
+        "name": {
+          "en": "Moselle Valley",
+          "ru": "Мозельская долина",
+          "be": "Даліна Мозель"
+        },
+        "photo": "https://a.cdn-hotels.com/gdcs/production179/d524/54350dba-0f0c-44f0-861f-bd9e7937414a.jpg",
+        "description": {
+          "en": "Moselle Valley covers some of Germany’s most impressive sights, from terraced vineyards and rolling hills, to medieval villages and hilltop castles. The region is named after the 545-km-long River Mosel, which runs along the borders of southwestern Germany, north-eastern France, and eastern Luxembourg. ",
+          "ru": "Мозельская долина занимает территорию, расположенную на северо-востоке Франции, юго-западе Германии и востоке Люксембурга. Этот регион является сердцем винодельческой промышленности Люксембурга. Здесь с XIX века производят известное белое Мозельское вино.",
+          "be": "Даліна Мозель - рэгіён на паўночным усходзе Францыі, паўднёва-заходняй Германіі і ўсходнім Люксембургу, з цэнтрам на даліне ракі, утворанай Мозелем. Мозель праходзіць праз тры краіны і ўздоўж межаў і сцякае чацвёртую Бельгію."
+        }
       }
-  ],
-  "video": "https://www.youtube.com/embed/r9qq0GHJeUc"
-},
-{
-  "country": "Spain",
-  "capital": {
-      "name": "Madrid",
-      "coords": [40.419348, -3.700897]
+    ],
+    "video": "https://www.youtube.com/embed/ZHHbpy91O2E"
   },
-  "overview": "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.",
-  "photoURL": "https://cdn.iz.ru/sites/default/files/styles/1920x1080/public/article-2018-06/8%20june%20d.jpg?itok=gtlmbe2v",
-  "landmarks": [{
-          "name": "La Sagrada Familia",
-          "photo": "https://lp-cms-production.imgix.net/2019-06/8ae1c56041e64517e29372a889f1beb7-la-sagrada-familia.jpg",
-          "description": "The Basílica de la Sagrada Família, also known as the Sagrada Família, is a large unfinished Roman Catholic minor basilica in the Eixample district of Barcelona, Catalonia, Spain. Designed by Spanish/Catalan architect Antoni Gaudí, his work on the building is part of a UNESCO World Heritage Site."
+  "France": {
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "be": "Францыя"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          -52.55642473001839,
+          2.504705308437053
+        ],
+        [
+          -52.93965715189498,
+          2.124857692875622
+        ],
+        [
+          -53.418465135295264,
+          2.053389187016037
+        ],
+        [
+          -53.554839240113495,
+          2.334896551925965
+        ],
+        [
+          -53.77852067728889,
+          2.376702785650053
+        ],
+        [
+          -54.08806250671728,
+          2.105556545414629
+        ],
+        [
+          -54.52475419779975,
+          2.311848863123785
+        ],
+        [
+          -54.27122962097578,
+          2.738747870286943
+        ],
+        [
+          -54.18428402364474,
+          3.194172268075235
+        ],
+        [
+          -54.01150387227682,
+          3.622569891774858
+        ],
+        [
+          -54.399542202356514,
+          4.212611395683481
+        ],
+        [
+          -54.47863298197922,
+          4.896755682795643
+        ],
+        [
+          -53.95804460307093,
+          5.756548163267809
+        ],
+        [
+          -53.618452928264844,
+          5.646529038918402
+        ],
+        [
+          -52.88214128275408,
+          5.409850979021599
+        ],
+        [
+          -51.82334286152593,
+          4.565768133966145
+        ],
+        [
+          -51.65779741067888,
+          4.156232408053029
+        ],
+        [
+          -52.24933753112398,
+          3.241094468596287
+        ],
+        [
+          -52.55642473001839,
+          2.504705308437053
+        ]
+      ],
+      [
+        [
+          9.560016310269134,
+          42.15249197037957
+        ],
+        [
+          9.229752231491773,
+          41.38000682226445
+        ],
+        [
+          8.77572309737536,
+          41.58361196549444
+        ],
+        [
+          8.54421268070783,
+          42.25651662858308
+        ],
+        [
+          8.746009148807588,
+          42.62812185319396
+        ],
+        [
+          9.390000848028905,
+          43.00998484961474
+        ],
+        [
+          9.560016310269134,
+          42.15249197037957
+        ]
+      ],
+      [
+        [
+          3.588184441755715,
+          50.37899241800358
+        ],
+        [
+          4.28602298342514,
+          49.907496649772554
+        ],
+        [
+          4.799221632515753,
+          49.98537303323633
+        ],
+        [
+          5.674051954784885,
+          49.52948354755745
+        ],
+        [
+          5.897759230176376,
+          49.44266714130717
+        ],
+        [
+          6.186320428094206,
+          49.46380280211446
+        ],
+        [
+          6.658229607783539,
+          49.20195831969155
+        ],
+        [
+          8.099278598674772,
+          49.01778351500337
+        ],
+        [
+          7.593676385131062,
+          48.33301911070373
+        ],
+        [
+          7.46675906742223,
+          47.620581976911865
+        ],
+        [
+          7.192202182655535,
+          47.44976552997099
+        ],
+        [
+          6.736571079138088,
+          47.54180125588289
+        ],
+        [
+          6.768713820023634,
+          47.28770823830368
+        ],
+        [
+          6.037388950228972,
+          46.72577871356191
+        ],
+        [
+          6.022609490593567,
+          46.272989813820516
+        ],
+        [
+          6.500099724970454,
+          46.42967275652944
+        ],
+        [
+          6.843592970414562,
+          45.99114655210067
+        ],
+        [
+          6.802355177445662,
+          45.70857982032867
+        ],
+        [
+          7.096652459347837,
+          45.333098863295874
+        ],
+        [
+          6.749955275101711,
+          45.02851797136759
+        ],
+        [
+          7.007562290076663,
+          44.25476675066139
+        ],
+        [
+          7.549596388386163,
+          44.12790110938482
+        ],
+        [
+          7.435184767291843,
+          43.69384491634918
+        ],
+        [
+          6.529245232783068,
+          43.12889232031836
+        ],
+        [
+          4.556962517931396,
+          43.39965098731158
+        ],
+        [
+          3.10041059735272,
+          43.075200507167125
+        ],
+        [
+          2.985998976258486,
+          42.47301504166989
+        ],
+        [
+          1.826793247087181,
+          42.34338471126566
+        ],
+        [
+          0.701590610363922,
+          42.79573436133265
+        ],
+        [
+          0.338046909190581,
+          42.579546006839564
+        ],
+        [
+          -1.502770961910471,
+          43.03401439063049
+        ],
+        [
+          -1.901351284177735,
+          43.42280202897834
+        ],
+        [
+          -1.384225226232957,
+          44.02261037859017
+        ],
+        [
+          -1.193797573237362,
+          46.014917710954876
+        ],
+        [
+          -2.225724249673789,
+          47.06436269793821
+        ],
+        [
+          -2.963276129559574,
+          47.570326646507965
+        ],
+        [
+          -4.491554938159481,
+          47.95495433205642
+        ],
+        [
+          -4.592349819344747,
+          48.68416046812695
+        ],
+        [
+          -3.295813971357745,
+          48.901692409859635
+        ],
+        [
+          -1.616510789384932,
+          48.644421291694584
+        ],
+        [
+          -1.933494025063254,
+          49.776341864615766
+        ],
+        [
+          -0.98946895995536,
+          49.347375800160876
+        ],
+        [
+          1.338761020522753,
+          50.12717316344526
+        ],
+        [
+          1.6390010921385,
+          50.946606350297515
+        ],
+        [
+          2.513573032246171,
+          51.14850617126185
+        ],
+        [
+          2.658422071960331,
+          50.79684804951566
+        ],
+        [
+          3.123251580425716,
+          50.78036326761452
+        ],
+        [
+          3.588184441755715,
+          50.37899241800358
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Paris",
+        "ru": "Париж",
+        "be": "Парыж"
+      },
+      "coords": [
+        48.856663,
+        2.351556
+      ]
+    },
+    "overview": {
+      "en": "France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.",
+      "ru": "Франция – это страна в Западной Европе, на территории которой находятся средневековые города, альпийские деревни и пляжи Средиземного моря. Париж, столица государства, славится своими домами моды, старейшими художественными музеями, в числе которых Лувр, и достопримечательностями, такими как Эйфелева башня. Франция известна своими винами и изысканной кухней. Наскальная живопись в пещере Ласко, амфитеатр Трех Галлий в Лионе и огромный Версальский дворец свидетельствуют о богатой истории этих мест.",
+      "be": "Францыя - гэта краіна ў Заходняй Еўропе, на тэрыторыі якой знаходзяцца сярэднявечныя горада, альпійскія вёскі і пляжы Міжземнага мора. Парыж, сталіца дзяржавы, славіцца сваімі дамамі моды, найстарэйшымі мастацкімі музеямі, у ліку якіх Луўр, і славутасцямі, такімі як Эйфелева вежа. Францыя вядомая сваімі вінамі і вытанчанай кухняй. Наскальны жывапіс у пячоры Ласко, амфітэатр трох Галій ў Леонэ і велізарны Версальскі палац сведчаць аб багатай гісторыі гэтых месцаў."
+    },
+    "photoURL": "http://www.rustrade.fr/images/Site/France/France.jpg",
+    "landmarks": [
+      {
+        "name": {
+          "en": "Eiffel Tower",
+          "ru": "Эйфелева башня",
+          "be": "Эйфелева вежа"
+        },
+        "photo": "https://cdn.asiatatler.com/asiatatler/i/sg/2019/10/23231025-denys-nevozhai-uzagqg756ou-unsplash_cover_2000x1449.jpg",
+        "description": {
+          "en": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.",
+          "ru": "Эйфелева ба́шня — металлическая башня в центре Парижа, самая узнаваемая его архитектурная достопримечательность. Названа в честь главного конструктора Гюстава Эйфеля; сам Эйфель называл её просто «300-метровой башней».",
+          "be": "Эйфелева вежа - каваная кратаваная вежа на Марсавым полі ў Парыжы, Францыя. Ён названы ў гонар інжынера Гюстава Эйфеля, кампанія якога спраектавала і пабудавала вежу. Мясцовая мянушка \"La dame de fer\" была пабудавана з 1887 па 1889 год як уваход на Сусветную выставу 1889 г."
+        }
       },
       {
-          "name": "Park Güell",
-          "photo": "https://images.musement.com/cover/0002/15/park-guell-fotolia-39543467-subscription-xl-resize-jpg_header-114423.jpeg?w=1200&h=630&q=95&fit=crop",
-          "description": "Parc Güell is a public park system composed of gardens and architectural elements located on Carmel Hill, in Barcelona, Catalonia, Spain. Carmel Hill belongs to the mountain range of Collserola – the Parc del Carmel is located on the northern face."
+        "name": {
+          "en": "Louvre Museum",
+          "ru": "Лувр",
+          "be": "Луўр"
+        },
+        "photo": "https://www.airtecnics.com/media/6385/Louvre-museum-in-Paris.jpg",
+        "description": {
+          "en": "The Louvre, or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France, and is best known for being the home of the Mona Lisa. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement.",
+          "ru": "Музей Лувра — один из крупнейших и самый популярный художественный музей мира. Музей расположен в центре Парижа, на правом берегу Сены, на улице Риволи, в 1-м округе столицы. В 2018 году число посетителей Лувра превысило 10 млн человек, что является рекордом. Здание музея — старинный королевский дворец.",
+          "be": "Луўр - гэта найбуйнейшы ў свеце мастацкі музей і гістарычны помнік у Парыжы, Францыя, і найбольш вядомы тым, што з'яўляецца домам Мона Лізы. Цэнтральная славутасць горада, ён размешчаны на Правым беразе Сены ў 1-м акрузе горада."
+        }
       },
       {
-          "name": "Alhambra",
-          "photo": "https://cdn.getyourguide.com/img/location/60096d8b4abac.jpeg/88.jpg",
-          "description": "The Alhambra is a palace and fortress complex located in Granada, Andalucia, Spain. It was originally constructed as a small fortress in 889 CE on the remains of Roman fortifications,. The Alhambra is a UNESCO World Heritage Site."
+        "name": {
+          "en": "Cathédrale Notre-Dame de Paris",
+          "ru": "Нотр-Дам-де-Пари",
+          "be": "Нотр-Дам дэ Парыж"
+        },
+        "photo": "https://images2.minutemediacdn.com/image/upload/c_crop,h_2138,w_3809,x_0,y_0/v1554744380/shape/mentalfloss/556629-istock-852755038_primary.jpg?itok=HrgIMUwd",
+        "description": {
+          "en": "Notre-Dame de Paris, referred to simply as Notre-Dame, is a medieval Catholic cathedral on the Île de la Cité in the 4th arrondissement of Paris. The cathedral was consecrated to the Virgin Mary and considered to be one of the finest examples of French Gothic architecture.",
+          "ru": "Собор Парижской Богоматери, также парижский собор Нотр-Дам или Нотр-Дам-де-Пари — католический храм в центре Парижа, один из символов французской столицы. Кафедральный собор архиепархии Парижа.",
+          "be": "Нотр-Дам дэ Парыж, які называюць проста Нотр-Дам, - сярэднявечны каталіцкі сабор на Іль-дэ-ла-Сітэ ў 4-м акрузе Парыжа. Сабор быў асвечаны Дзевай Марыі і лічыўся адным з лепшых узораў французскай гатычнай архітэктуры."
+        }
       },
       {
-          "name": "Casa Milà",
-          "photo": "https://casambi.com/wp-content/uploads/2020/05/casamila1-scaled.jpg",
-          "description": "Casa Milà, popularly known as La Pedrera or \"The stone quarry\", a reference to its unconventional rough-hewn appearance, is a modernist building in Barcelona, Catalonia, Spain. It was the last private residence designed by architect Antoni Gaudí and was built between 1906 and 1912."
+        "name": {
+          "en": "Palace of Versailles",
+          "ru": "Версаль",
+          "be": "Версальскі палац"
+        },
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Versailles-Chateau-Jardins02_%28cropped%29.jpg",
+        "description": {
+          "en": "The Palace of Versailles was the principal royal residence of France from 1682, under Louis XIV, until the start of the French Revolution in 1789, under Louis XVI. It is located in the department of Yvelines, in the region of Île-de-France, about 20 kilometres southwest of the centre of Paris.",
+          "ru": "Версаль — дворцово-парковый ансамбль во Франции, бывшая резиденция французских королей в городе Версале, ныне являющемся пригородом Парижа; центр туризма мирового значения. Версаль сооружался под руководством Людовика XIV с 1661 года и стал своеобразным памятником эпохи «короля-солнца», художественно-архитектурным выражением идеи абсолютизма.",
+          "be": "Версальскі палац быў галоўнай каралеўскай рэзідэнцыяй Францыі з 1682 г. пры Людовіку XIV, да пачатку французскай рэвалюцыі 1789 г. пры Людовіку XVI. Ён знаходзіцца ў дэпартаменце Іўлін, у рэгіёне Іль-дэ-Франс, прыкладна ў 20 кіламетрах на паўднёвы захад ад цэнтра Парыжа."
+        }
       },
       {
-          "name": "Casa Batlló",
-          "photo": "https://www.barcelona.com/var/plain/storage/images/barcelona_tickets/casa_batllo_tickets/header_container/casa_batllo_main_header/10251430-1-eng-GB/casa_batllo_main_header_header.jpg",
-          "description": "Casa Batlló is a building in the center of Barcelona. It was designed by Antoni Gaudí, and is considered one of his masterpieces. A remodel of a previously built house, it was redesigned in 1904 by Gaudí and has been refurbished several times after that."
+        "name": {
+          "en": "Arc de Triomphe",
+          "ru": "Триумфальная арка",
+          "be": "Трыумфальная арка"
+        },
+        "photo": "https://afar-production.imgix.net/uploads/images/afar_post_headers/images/9429LsS7l2/original_shutterstock_214344625.jpg",
+        "description": {
+          "en": "The Arc de Triomphe de l'Étoile is one of the most famous monuments in Paris, France, standing at the western end of the Champs-Élysées at the centre of Place Charles de Gaulle, formerly named Place de l'Étoile—the étoile or \"star\" of the juncture formed by its twelve radiating avenues.",
+          "ru": "Триумфальная арка — монумент в 8-м округе Парижа на площади Шарля де Голля, возведённый в 1806—1836 годах по проекту архитектора французского ампира Жана-Франсуа Шальгрена. Проект арки «в древнеримском стиле» был разработан по распоряжению Наполеона Бонапарта в ознаменование побед его «Великой армии».",
+          "be": "Трыумфальная арка дэ l'Étoile - адзін з самых вядомых помнікаў у Парыжы, Францыя, які стаіць у заходнім канцы Елісейскіх палёў у цэнтры плошчы Шарля дэ Голя, які раней называўся Place de l'Étoile - этуаль альбо \"зорка\" гэтага пераходу ўтварыла яго дванаццаць выпраменьвальных праспектаў."
+        }
       },
       {
-          "name": "La Rambla",
-          "photo": "https://hotelarclarambla.com/wp-content/uploads/2019/11/Las-ramblas-de-Barcelona.jpg",
-          "description": "La Rambla is a street in central Barcelona. A tree-lined pedestrian street, it stretches for 1.2 km connecting the Plaça de Catalunya in its center with the Christopher Columbus Monument at Port Vell. La Rambla forms the boundary between the neighbourhoods of the Barri Gòtic to the east and the El Raval to the west."
+        "name": {
+          "en": "Sacre Coeur Basilica",
+          "ru": "Базилика Сакре-Кёр",
+          "be": "Базыліка Сакрэ-Кёр"
+        },
+        "photo": "https://lp-cms-production.imgix.net/2019-06/7ad4233f75ec81e3a9a38897ee57353d-basilique-du-sacre-coeur.jpg",
+        "description": {
+          "en": "The Basilica of the Sacred Heart of Paris, commonly known as Sacré-Cœur Basilica and often simply Sacré-Cœur, is a Roman Catholic church and minor basilica in Paris, France, dedicated to the Sacred Heart of Jesus. Sacré-Cœur Basilica is located at the summit of the butte Montmartre, the highest point in the city.",
+          "ru": "Базили́ка Сакре́-Кёр — католический храм в Париже, построенный в 1875—1914 годах по проекту архитектора Поля Абади в римско-византийском стиле, расположенный на вершине холма Монмартр, в самой высокой точке города.",
+          "be": "Базіліка Найсвяцейшага Сэрца Парыжа, шырока вядомая як Базіліка Сакрэ-Кер і часта проста Сакра-Кёр, - рымска-каталіцкая царква і другасная базіліка ў Парыжы, Францыя, прысвечаная Найсвяцейшаму Сэрцу Езуса. Базіліка Сакрэ-Кёр знаходзіцца на вяршыні Б'ют Манмартр, самай высокай кропцы горада."
+        }
       }
-  ],
-  "video": "https://www.youtube.com/embed/XUIZOdls3XY"
-},
-{
-  "country": "Italy",
-  "capital": {
-      "name": "Rome",
-      "coords": [41.902689, 12.496176]
+    ],
+    "video": "https://www.youtube.com/embed/r9qq0GHJeUc"
   },
-  "overview": "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s \"David\" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.",
-  "photoURL": "https://abstour.by/upload/iblock/814/814ae5cb81981d50d9cf99181e3d4b86.jpg",
-  "landmarks": [{
-          "name": "Colosseum",
-          "photo": "https://cdn.getyourguide.com/img/location/60096e0d90302.jpeg/88.jpg",
-          "description": "The Colosseum, is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum and is the largest ancient amphitheatre ever built, and is still the largest standing amphitheater in the world today, despite its age."
+  "Spain": {
+    "country": {
+      "en": "Spain",
+      "ru": "Испания",
+      "be": "Іспанія (Гішпанія)"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          -9.034817674180246,
+          41.88057058365967
+        ],
+        [
+          -8.984433152695672,
+          42.59277517350627
+        ],
+        [
+          -9.392883673530648,
+          43.0266246608127
+        ],
+        [
+          -7.978189663108309,
+          43.748337714200986
+        ],
+        [
+          -6.754491746436756,
+          43.567909450853925
+        ],
+        [
+          -5.411886359061596,
+          43.574239813809676
+        ],
+        [
+          -4.347842779955783,
+          43.40344920508504
+        ],
+        [
+          -3.51753170410609,
+          43.4559007838613
+        ],
+        [
+          -1.901351284177764,
+          43.42280202897834
+        ],
+        [
+          -1.502770961910528,
+          43.03401439063043
+        ],
+        [
+          0.338046909190581,
+          42.57954600683954
+        ],
+        [
+          0.701590610363894,
+          42.7957343613326
+        ],
+        [
+          1.826793247087153,
+          42.34338471126569
+        ],
+        [
+          2.985998976258458,
+          42.47301504166986
+        ],
+        [
+          3.039484083680549,
+          41.892120266276905
+        ],
+        [
+          2.091841668312185,
+          41.22608856868309
+        ],
+        [
+          0.810524529635188,
+          41.01473196060934
+        ],
+        [
+          0.721331007499401,
+          40.678318386389236
+        ],
+        [
+          0.106691521819869,
+          40.12393362076202
+        ],
+        [
+          -0.278711310212941,
+          39.30997813573272
+        ],
+        [
+          0.111290724293838,
+          38.73851430923303
+        ],
+        [
+          -0.467123582349103,
+          38.29236583104115
+        ],
+        [
+          -0.683389451490598,
+          37.642353827457825
+        ],
+        [
+          -1.438382127274849,
+          37.443063666324214
+        ],
+        [
+          -2.146452602538119,
+          36.67414419203728
+        ],
+        [
+          -3.415780808923387,
+          36.65889964451118
+        ],
+        [
+          -4.368900926114719,
+          36.677839056946155
+        ],
+        [
+          -4.995219285492211,
+          36.32470815687964
+        ],
+        [
+          -5.377159796561457,
+          35.946850083961465
+        ],
+        [
+          -5.866432257500904,
+          36.02981659600606
+        ],
+        [
+          -6.236693894872175,
+          36.367677110330334
+        ],
+        [
+          -6.520190802425404,
+          36.94291331638732
+        ],
+        [
+          -7.453725551778092,
+          37.09778758396607
+        ],
+        [
+          -7.537105475281024,
+          37.42890432387623
+        ],
+        [
+          -7.166507941099865,
+          37.803894354802225
+        ],
+        [
+          -7.029281175148796,
+          38.07576406508977
+        ],
+        [
+          -7.374092169616318,
+          38.37305858006492
+        ],
+        [
+          -7.098036668313128,
+          39.03007274022378
+        ],
+        [
+          -7.498632371439725,
+          39.62957103124181
+        ],
+        [
+          -7.066591559263529,
+          39.71189158788277
+        ],
+        [
+          -7.026413133156595,
+          40.184524237624245
+        ],
+        [
+          -6.864019944679385,
+          40.33087189387483
+        ],
+        [
+          -6.851126674822552,
+          41.11108266861753
+        ],
+        [
+          -6.389087693700915,
+          41.381815497394655
+        ],
+        [
+          -6.668605515967656,
+          41.883386949219584
+        ],
+        [
+          -7.251308966490824,
+          41.91834605566505
+        ],
+        [
+          -7.422512986673795,
+          41.79207469335983
+        ],
+        [
+          -8.013174607769912,
+          41.790886135417125
+        ],
+        [
+          -8.263856980817792,
+          42.28046865495034
+        ],
+        [
+          -8.67194576662672,
+          42.13468943945496
+        ],
+        [
+          -9.034817674180246,
+          41.88057058365967
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Madrid",
+        "ru": "Мадрид",
+        "be": "Мадрыд"
+      },
+      "coords": [
+        40.419348,
+        -3.700897
+      ]
+    },
+    "overview": {
+      "en": "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.",
+      "ru": "Испания – европейская страна, расположенная на Пиренейском полуострове. Территория Испании разделена на 17 автономных регионов. В столице страны, Мадриде, находятся Королевский дворец и музей Прадо, где хранятся произведения европейских мастеров. В Сеговии можно посетить средневековый замок (Алькасар) и увидеть хорошо сохранившийся римский акведук. Барселона – столица автономного сообщества Каталония. Облик этого города определяют многочисленные причудливо-фантастические творения архитектора Антонио Гауди, среди которых храм Святого Семейства.",
+      "be": "Іспанія – еўрапейская краіна, размешчаная на Пірынейскім паўвостраве. Тэрыторыя Іспаніі падзелена на 17 аўтаномных рэгіёнаў. У сталіцы краіны, Мадрыдзе, знаходзяцца Каралеўскі палац і музей Прада, дзе захоўваюцца творы еўрапейскіх майстроў. У Сеговіі можна наведаць сярэднявечны замак (Алькасар) і ўбачыць добра захаваўся рымскі акведук. Барселона - сталіца аўтаномнай супольнасці Каталонія. Аблічча гэтага горада вызначаюць шматлікія мудрагеліста-фантастычныя тварэння архітэктара Антоніа Гаўдзі, сярод якіх храм Святога Сямейства."
+    },
+    "photoURL": "https://cdn.iz.ru/sites/default/files/styles/1920x1080/public/article-2018-06/8%20june%20d.jpg?itok=gtlmbe2v",
+    "landmarks": [
+      {
+        "name": {
+          "en": "La Sagrada Familia",
+          "ru": "Храм Святого Семейства",
+          "be": "Саграда Фамілья"
+        },
+        "photo": "https://lp-cms-production.imgix.net/2019-06/8ae1c56041e64517e29372a889f1beb7-la-sagrada-familia.jpg",
+        "description": {
+          "en": "The Basílica de la Sagrada Família, also known as the Sagrada Família, is a large unfinished Roman Catholic minor basilica in the Eixample district of Barcelona, Catalonia, Spain. Designed by Spanish/Catalan architect Antoni Gaudí, his work on the building is part of a UNESCO World Heritage Site.",
+          "ru": "Искупительный храм Святого Семейства — церковь в Барселоне, в районе Эшампле, строящаяся с 1882 года.Первый проект был разработан архитектором Франсиско дель Вильяр, на место которого в конце 1883 года был приглашён Антонио Гауди, значительно изменивший первоначальный проект. По решению инициаторов строительства храма финансирование работ должно выполняться исключительно за счёт пожертвований прихожан, что является одной из причин столь длительного строительства.",
+          "be": "Базіліка-дэ-ла-Саграда-Фамілія, таксама вядомая як Саграда-Фамілія, - вялікая недабудаваная рымска-каталіцкая другасная базіліка ў раёне Барселоны Эшампле, Каталонія, Іспанія."
+        }
       },
       {
-          "name": "Cinque Terre",
-          "photo": "https://lp-cms-production.imgix.net/features/2015/12/Manarola_cs.jpg?format=auto",
-          "description": "Cinque Terre is a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, harbors are filled with fishing boats and trattorias turn out seafood specialties along with the Liguria region’s famous sauce, pesto. The Sentiero Azzurro cliffside hiking trail links the villages and offers sweeping sea vistas."
+        "name": {
+          "en": "Park Güell",
+          "ru": "Парк Гуэля",
+          "be": "Парк Гуэль"
+        },
+        "photo": "https://images.musement.com/cover/0002/15/park-guell-fotolia-39543467-subscription-xl-resize-jpg_header-114423.jpeg?w=1200&h=630&q=95&fit=crop",
+        "description": {
+          "en": "Parc Güell is a public park system composed of gardens and architectural elements located on Carmel Hill, in Barcelona, Catalonia, Spain. Carmel Hill belongs to the mountain range of Collserola – the Parc del Carmel is located on the northern face.",
+          "ru": "Парк Гуэль — парк в верхней части Барселоны, созданный Антонио Гауди в 1900—1914 годах. Представляет собой сочетание садов и жилых зон, площадь парка составляет 17,18 га.",
+          "be": "Парк Гуэль - гэта сістэма грамадскага парку, якая складаецца з садоў і архітэктурных элементаў, размешчаных на ўзгорку Кармель у Барселоне, Каталонія, Іспанія. Пагорак Кармель належыць да горнага масіва Колсерола - Парк дэль Кармель размешчаны на паўночнай грані."
+        }
       },
       {
-          "name": "Cathedral of Santa Maria del Fiore",
-          "photo": "https://cdn.britannica.com/71/8671-050-2EE6A745/Cathedral-Florence-Santa-Maria-del-Fiore.jpg",
-          "description": "Florence Cathedral, formally the Cattedrale di Santa Maria del Fiore, is the cathedral of Florence, Italy. It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome engineered by Filippo Brunelleschi."
+        "name": {
+          "en": "Alhambra",
+          "ru": "Альгамбра",
+          "be": "Вялікая акіянская дарога"
+        },
+        "photo": "https://cdn.getyourguide.com/img/location/60096d8b4abac.jpeg/88.jpg",
+        "description": {
+          "en": "The Alhambra is a palace and fortress complex located in Granada, Andalucia, Spain. It was originally constructed as a small fortress in 889 CE on the remains of Roman fortifications. The Alhambra is a UNESCO World Heritage Site.",
+          "ru": "Альгáмбра — архитектурно-парковый ансамбль, расположенный на холмистой террасе в восточной части города Гранада в Южной Испании. Альгамбра является объектом Всемирного наследия ЮНЕСКО.",
+          "be": "Альгамбра - архітэктурна-паркавы ансамбль, размешчаны на пагорыстай тэрасе ва ўсходняй частцы горада Гранада ў Паўднёвай Іспаніі. Альгамбра з'яўляецца аб'ектам Сусветнай спадчыны ЮНЕСКА."
+        }
       },
       {
-          "name": "Pantheon",
-          "photo": "https://www.learnreligions.com/thmb/Ab0Nl8iWXE9EIZwYPCPhoJ3PMzo=/3864x2173/smart/filters:no_upscale()/pantheon--rome--italy-870287362-5a87671b6bf06900375c06f2.jpg",
-          "description": "The Pantheon is a former Roman temple, now a Catholic church, in Rome, Italy, on the site of an earlier temple commissioned by Marcus Agrippa during the reign of Augustus. It was rebuilt by the emperor Hadrian and probably dedicated around 126AD."
+        "name": {
+          "en": "Casa Milà",
+          "ru": "Дом Мила",
+          "be": "Каза Міла"
+        },
+        "photo": "https://casambi.com/wp-content/uploads/2020/05/casamila1-scaled.jpg",
+        "description": {
+          "en": "Casa Milà, popularly known as La Pedrera or \"The stone quarry\", a reference to its unconventional rough-hewn appearance, is a modernist building in Barcelona, Catalonia, Spain. It was the last private residence designed by architect Antoni Gaudí and was built between 1906 and 1912.",
+          "ru": "Каса-Мила́ — жилой дом, построенный в 1906—1910 годах в Барселоне архитектором Антони Гауди для семьи Мила, одна из достопримечательностей каталонской столицы. Здание расположено на пересечении бульвара Пасео-де-Грасия с улицей Карре-де-Провенса.",
+          "be": "Каза Міла, вядомы ў народзе пад назвай Ла-Пэдэра альбо \"Каменны кар'ер\", спасылка на яго нетрадыцыйны знешні выгляд, з'яўляецца мадэрнісцкім будынкам у Барселоне, Каталонія, Іспанія. Гэта была апошняя прыватная рэзідэнцыя, спраектаваная архітэктарам Антоніем Гаўдзі, і была пабудавана паміж 1906 і 1912 гг. "
+        }
       },
       {
-          "name": "Trevi Fountain",
-          "photo": "https://inspirations.blacktomato.com/wp-content/uploads/2019/11/Trevi-Fountain-in-Rome-daylight.jpg",
-          "description": "The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others. Standing 26.3 metres high and 49.15 metres wide, it is the largest Baroque fountain in the city and one of the most famous fountains in the world."
+        "name": {
+          "en": "Casa Batlló",
+          "ru": "Дом Бальо",
+          "be": "Дом Бальё"
+        },
+        "photo": "https://www.barcelona.com/var/plain/storage/images/barcelona_tickets/casa_batllo_tickets/header_container/casa_batllo_main_header/10251430-1-eng-GB/casa_batllo_main_header_header.jpg",
+        "description": {
+          "en": "Casa Batlló is a building in the center of Barcelona. It was designed by Antoni Gaudí, and is considered one of his masterpieces. A remodel of a previously built house, it was redesigned in 1904 by Gaudí and has been refurbished several times after that.",
+          "ru": "Каса-Батльо́ — жилой дом, построенный в 1877 году для текстильного магната Жозепа Бальо-и-Касановаса по адресу: Пасео-де-Грасия, 43 в районе Эшампле, Барселона и перестроенный архитектором Антони Гауди в 1904—1906 годах.",
+          "be": "Casa Batlló - будынак у цэнтры Барселоны. Ён быў распрацаваны Антоніем Гаўдзі і лічыцца адным з яго шэдэўраў. Перабудаваны раней пабудаваны дом, ён быў перароблены ў 1904 годзе Гаўдзі і пасля гэтага некалькі разоў адрамантаваны."
+        }
       },
       {
-          "name": "Uffizi Gallery",
-          "photo": "https://www.uffiziticket.com/wp-content/uploads/2019/11/Slide-4.jpg",
-          "description": "The Uffizi Gallery is a prominent art museum located adjacent to the Piazza della Signoria in the Historic Centre of Florence in the region of Tuscany, Italy."
+        "name": {
+          "en": "La Rambla",
+          "ru": "Рамбла",
+          "be": "Рамбла"
+        },
+        "photo": "https://hotelarclarambla.com/wp-content/uploads/2019/11/Las-ramblas-de-Barcelona.jpg",
+        "description": {
+          "en": "La Rambla is a street in central Barcelona. A tree-lined pedestrian street, it stretches for 1.2 km connecting the Plaça de Catalunya in its center with the Christopher Columbus Monument at Port Vell. La Rambla forms the boundary between the neighbourhoods of the Barri Gòtic to the east and the El Raval to the west.",
+          "ru": "Рамбла — пешеходная улица в центре Барселоны. Граница между Готическим кварталом и кварталом Эль Раваль. Идёт от площади Каталонии до площади Портал де ла Пау. Протяжённость — 1,2 км.",
+          "be": "Рамбла - пешаходная вуліца ў цэнтры Барселоны. Мяжа паміж гатычным кварталам і кварталам Эль Раваль. Ідзе ад плошчы Каталоніі да плошчы Партал дэ ла паў. Працягласць-1,2 км."
+        }
       }
-  ],
-  "video": "https://www.youtube.com/embed/jLgcah7bpl4"
-},
-{
-  "country": "Japan",
-  "capital": {
-      "name": "Tokyo",
-      "coords": [35.6817, 139.753882]
+    ],
+    "video": "https://www.youtube.com/embed/XUIZOdls3XY"
   },
-  "overview": "Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south.",
-  "photoURL": "https://smolensk-travel.com/assets/galleries/58/jap-4.jpg",
-  "landmarks": [{
-          "name": "Mount Fuji",
-          "photo": "https://www.liveabout.com/thmb/xmHHjutbUKGMvgxh5Dr1F_BVXB8=/3435x2576/smart/filters:no_upscale()/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg",
-          "description": "Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige."
+  "Italy": {
+    "country": {
+      "en": "Italy",
+      "ru": "Италия",
+      "be": "Італія"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          15.520376010813834,
+          38.23115509699147
+        ],
+        [
+          15.160242954171736,
+          37.44404551853782
+        ],
+        [
+          15.309897902089006,
+          37.1342194687318
+        ],
+        [
+          15.099988234119449,
+          36.6199872909954
+        ],
+        [
+          14.335228712632016,
+          36.996630967754754
+        ],
+        [
+          13.826732618879928,
+          37.10453135838019
+        ],
+        [
+          12.431003859108813,
+          37.61294993748381
+        ],
+        [
+          12.570943637755136,
+          38.12638113051968
+        ],
+        [
+          13.741156447004585,
+          38.03496552179536
+        ],
+        [
+          14.76124922044616,
+          38.143873602850505
+        ],
+        [
+          15.520376010813834,
+          38.23115509699147
+        ]
+      ],
+      [
+        [
+          9.210011834356266,
+          41.20999136002422
+        ],
+        [
+          9.809975213264977,
+          40.5000088567661
+        ],
+        [
+          9.669518670295673,
+          39.177376410471794
+        ],
+        [
+          9.21481774255949,
+          39.240473334300134
+        ],
+        [
+          8.80693566247973,
+          38.90661774347847
+        ],
+        [
+          8.428302443077115,
+          39.17184703221662
+        ],
+        [
+          8.38825320805094,
+          40.378310858718805
+        ],
+        [
+          8.15999840661766,
+          40.95000722916379
+        ],
+        [
+          8.709990675500109,
+          40.89998444270523
+        ],
+        [
+          9.210011834356266,
+          41.20999136002422
+        ]
+      ],
+      [
+        [
+          12.376485223040843,
+          46.76755910906987
+        ],
+        [
+          13.806475457421556,
+          46.50930613869119
+        ],
+        [
+          13.698109978905478,
+          46.016778062517375
+        ],
+        [
+          13.937630242578335,
+          45.591015936864665
+        ],
+        [
+          13.141606479554298,
+          45.73669179949541
+        ],
+        [
+          12.328581170306306,
+          45.38177806251485
+        ],
+        [
+          12.383874952858605,
+          44.88537425391908
+        ],
+        [
+          12.261453484759159,
+          44.600482082694015
+        ],
+        [
+          12.589237094786483,
+          44.091365871754476
+        ],
+        [
+          13.526905958722494,
+          43.5877273626379
+        ],
+        [
+          14.029820997787027,
+          42.76100779883248
+        ],
+        [
+          15.142569614327956,
+          41.955139675456905
+        ],
+        [
+          15.926191033601896,
+          41.96131500911574
+        ],
+        [
+          16.169897088290412,
+          41.74029490820342
+        ],
+        [
+          15.889345737377797,
+          41.5410822617182
+        ],
+        [
+          16.785001661860576,
+          41.179605617836586
+        ],
+        [
+          17.519168735431208,
+          40.87714345963224
+        ],
+        [
+          18.376687452882575,
+          40.35562490494266
+        ],
+        [
+          18.4802470231954,
+          40.168866278639825
+        ],
+        [
+          18.293385044028096,
+          39.81077444107325
+        ],
+        [
+          17.738380161213286,
+          40.2776710068303
+        ],
+        [
+          16.869595981522338,
+          40.44223460546385
+        ],
+        [
+          16.448743116937322,
+          39.79540070246648
+        ],
+        [
+          17.1714896989715,
+          39.42469981542072
+        ],
+        [
+          17.05284061042934,
+          38.9028712021373
+        ],
+        [
+          16.635088331781844,
+          38.8435724960824
+        ],
+        [
+          16.100960727613057,
+          37.98589874933418
+        ],
+        [
+          15.684086948314501,
+          37.90884918878703
+        ],
+        [
+          15.687962680736321,
+          38.214592800441864
+        ],
+        [
+          15.891981235424707,
+          38.750942491199226
+        ],
+        [
+          16.109332309644312,
+          38.96454702407769
+        ],
+        [
+          15.718813510814641,
+          39.544072374014945
+        ],
+        [
+          15.413612501698822,
+          40.04835683853517
+        ],
+        [
+          14.998495721098237,
+          40.17294871679093
+        ],
+        [
+          14.70326826341477,
+          40.604550279292624
+        ],
+        [
+          14.060671827865264,
+          40.78634796809544
+        ],
+        [
+          13.627985060285397,
+          41.188287258461656
+        ],
+        [
+          12.88808190273042,
+          41.25308950455562
+        ],
+        [
+          12.10668257004491,
+          41.70453481705741
+        ],
+        [
+          11.191906365614187,
+          42.35542531998967
+        ],
+        [
+          10.511947869517797,
+          42.931462510747224
+        ],
+        [
+          10.200028924204048,
+          43.920006822274615
+        ],
+        [
+          9.702488234097814,
+          44.03627879493132
+        ],
+        [
+          8.88894616052687,
+          44.36633616797954
+        ],
+        [
+          8.428560825238577,
+          44.23122813575242
+        ],
+        [
+          7.850766635783201,
+          43.76714793555524
+        ],
+        [
+          7.435184767291843,
+          43.69384491634918
+        ],
+        [
+          7.549596388386163,
+          44.12790110938482
+        ],
+        [
+          7.007562290076663,
+          44.25476675066139
+        ],
+        [
+          6.749955275101711,
+          45.02851797136759
+        ],
+        [
+          7.096652459347837,
+          45.333098863295874
+        ],
+        [
+          6.802355177445662,
+          45.70857982032867
+        ],
+        [
+          6.843592970414562,
+          45.99114655210067
+        ],
+        [
+          7.273850945676685,
+          45.77694774025076
+        ],
+        [
+          7.755992058959833,
+          45.82449005795928
+        ],
+        [
+          8.31662967289438,
+          46.163642483090854
+        ],
+        [
+          8.489952426801295,
+          46.00515086525175
+        ],
+        [
+          8.966305779667834,
+          46.036931871111165
+        ],
+        [
+          9.182881707403112,
+          46.44021474871698
+        ],
+        [
+          9.922836541390353,
+          46.31489940040919
+        ],
+        [
+          10.363378126678668,
+          46.483571275409844
+        ],
+        [
+          10.442701450246602,
+          46.893546250997446
+        ],
+        [
+          11.048555942436508,
+          46.7513585475464
+        ],
+        [
+          11.164827915093326,
+          46.94157949481274
+        ],
+        [
+          12.153088006243081,
+          47.11539317482644
+        ],
+        [
+          12.376485223040843,
+          46.76755910906987
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Rome",
+        "ru": "Рим",
+        "be": "Рым"
+      },
+      "coords": [
+        41.902689,
+        12.496176
+      ]
+    },
+    "overview": {
+      "en": "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s \"David\" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.",
+      "ru": "Италия – средиземноморское государство в Южной Европе с длинной береговой линией, которое оказало огромное влияние на западную культуру и кухню. На территории столицы страны, Рима, находится государство Ватикан, а также всемирно известные музеи и древние руины. Другие крупные города Италии – Флоренция, где можно увидеть шедевры эпохи Возрождения, например статую Давида работы Микеланджело и собор Дуомо, созданный по проекту архитектора Брунеллески, а также город каналов Венеция и столица моды Милан.",
+      "be": "Італія - міжземнаморская дзяржава ў Паўднёвай Еўропе з доўгай берагавой лініяй, якая аказала велізарны ўплыў на заходнюю культуру і кухню. На тэрыторыі сталіцы краіны, Рыма, знаходзіцца дзяржава Ватыкан, а таксама сусветна вядомыя музеі і старажытныя руіны. Іншыя буйныя гарады Італіі - Фларэнцыя, дзе можна ўбачыць шэдэўры эпохі Адраджэння, напрыклад статую Давіда працы Мікеланджэла і сабор Дуомо, створаны па праекце архітэктара Брунелескі, а таксама горад каналаў Венецыя і сталіца моды Мілан."
+    },
+    "photoURL": "https://abstour.by/upload/iblock/814/814ae5cb81981d50d9cf99181e3d4b86.jpg",
+    "landmarks": [
+      {
+        "name": {
+          "en": "Colosseum",
+          "ru": "Колизей",
+          "be": "Калізей"
+        },
+        "photo": "https://cdn.getyourguide.com/img/location/60096e0d90302.jpeg/88.jpg",
+        "description": {
+          "en": "The Colosseum, is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum and is the largest ancient amphitheatre ever built, and is still the largest standing amphitheater in the world today, despite its age.",
+          "ru": "Колизей, или амфитеатр Флавиев — амфитеатр, памятник архитектуры Древнего Рима, наиболее известное и одно из самых грандиозных сооружений Древнего мира, сохранившихся до нашего времени. Находится в Риме, в низине между Эсквилинским, Палатинским и Целиевым холмами.",
+          "be": "Калізей - гэта авальны амфітэатр у цэнтры горада Рым, Італія, на ўсход ад Рымскага форуму, і з'яўляецца самым вялікім антычным амфітэатрам, калі-небудзь пабудаваным, і да гэтага часу з'яўляецца самым вялікім амфітэатрам у свеце, нягледзячы на ​​свой узрост."
+        }
       },
       {
-          "name": "Kinkaku-ji",
-          "photo": "https://lp-cms-production.imgix.net/2019-06/015e2ab56932a07a3cb5f7f2decd418c0623bf47d28d262a8ab8199eb8797ad8.jpg",
-          "description": "Kinkaku-ji, officially named Rokuon-ji, is a Zen Buddhist temple in Kyoto, Japan. It is one of the most popular buildings in Kyoto, attracting many visitors annually."
+        "name": {
+          "en": "Cinque Terre",
+          "ru": "Чинкве-Терре",
+          "be": "Чынкуе Тэрэ"
+        },
+        "photo": "https://lp-cms-production.imgix.net/features/2015/12/Manarola_cs.jpg?format=auto",
+        "description": {
+          "en": "Cinque Terre is a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, harbors are filled with fishing boats and trattorias turn out seafood specialties along with the Liguria region’s famous sauce, pesto. The Sentiero Azzurro cliffside hiking trail links the villages and offers sweeping sea vistas.",
+          "ru": "Чинкве-Терре представляет собой цепь из пяти старинных поселений на Итальянской Ривьере – скалистой узкой полосе побережья. Они славятся своими красочными домами, виноградниками на крутых террасах, гаванями, где пришвартованы рыболовецкие судна, и тратториями, в которых подают морепродукты со знаменитым лигурийским соусом песто. Поселения Чинкве-Терре связывает проложенная вдоль скал Лазурная тропа, с которой открывается великолепный вид на море.",
+          "be": "Чынкуе Тэрэ - прыбярэжная зона ў межах Лігурыі, на паўночным захадзе Італіі. Ён знаходзіцца на захадзе правінцыі Ла-Спецыя і ўключае пяць вёсак: Мантэроса-аль-Марэ, Вернацца, Карнілья, Манарола і Рыамаджорэ."
+        }
       },
       {
-          "name": "Fushimi Inari Taisha",
-          "photo": "https://dskyoto.s3.amazonaws.com/gallery/full/8514/5559/7797/08-20131216_FushimiInari_Mainspot-307.jpg",
-          "description": "Fushimi Inari-taisha is the head shrine of the kami Inari, located in Fushimi-ku, Kyoto, Kyoto Prefecture, Japan."
+        "name": {
+          "en": "Cathedral of Santa Maria del Fiore",
+          "ru": "Санта - Мария - Дель - Фьоре",
+          "be": "Санта-Марыя-дэль-Ф'ёрэ"
+        },
+        "photo": "https://cdn.britannica.com/71/8671-050-2EE6A745/Cathedral-Florence-Santa-Maria-del-Fiore.jpg",
+        "description": {
+          "en": "Florence Cathedral, formally the Cattedrale di Santa Maria del Fiore, is the cathedral of Florence, Italy. It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome engineered by Filippo Brunelleschi.",
+          "ru": "Собор Санта-Мария-дель-Фьоре — кафедральный собор во Флоренции, самое знаменитое из архитектурных сооружений флорентийского кватроченто. Находится в центре города, на Соборной площади.",
+          "be": "Сабор Фларэнцыі, афіцыйна катэдральны Санта-Марыя-дэль-Фіёрэ, з'яўляецца саборам Фларэнцыі, Італія. Ён быў пачаты ў 1296 годзе ў стылі готыкі паводле дызайну Арнольфа дзі Камбіё і быў канструктыўна завершаны ў 1436 годзе, а купал распрацаваны Філіпам Брунелескі."
+        }
       },
       {
-          "name": "Kiyomizu-dera",
-          "photo": "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2017/07/Kiyomizudera-Temple-Kyoto.jpg",
-          "description": "Kiyomizu-dera, formally Otowa-san Kiyomizu-dera, is a Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site."
+        "name": {
+          "en": "Pantheon",
+          "ru": "Пантеон",
+          "be": "Пантэон"
+        },
+        "photo": "https://www.learnreligions.com/thmb/Ab0Nl8iWXE9EIZwYPCPhoJ3PMzo=/3864x2173/smart/filters:no_upscale()/pantheon--rome--italy-870287362-5a87671b6bf06900375c06f2.jpg",
+        "description": {
+          "en": "The Pantheon is a former Roman temple, now a Catholic church, in Rome, Italy, on the site of an earlier temple commissioned by Marcus Agrippa during the reign of Augustus. It was rebuilt by the emperor Hadrian and probably dedicated around 126AD.",
+          "ru": "Пантеон – это  античный храм, посвященный древнеримским богам и воплощение величия Римской Империи. Предполагается, что он  был построен во 2 веке н.э. на месте храма, построенного в 27 веке до н.э. Марком Агриппой. В 7 веке Пантеон был переосвящён в католический храм. Сегодня это достижение античности находится на площади дела Ротонда (Piazza della Rotonda).",
+          "be": "Пантэон - былы рымскі храм, цяпер каталіцкі храм, у Рыме, Італія, на месцы ранейшага храма, замоўленага Маркусам Агрыпай падчас праўлення Аўгуста. Ён быў перабудаваны імператарам Адрыянам і, верагодна, прысвечаны прыблізна ў 126 г. н. Э."
+        }
       },
       {
-          "name": "Tokyo Skytree",
-          "photo": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2017/07/iStock-skytree-Torsakarin.jpg",
-          "description": "Tokyo Skytree is a broadcasting and observation tower in Sumida, Tokyo. It became the tallest structure in Japan in 2010 and reached its full height of 634 meters in March 2011, making it the tallest tower in the world, displacing the Canton Tower, and the second tallest structure in the world after the Burj Khalifa."
+        "name": {
+          "en": "Trevi Fountain",
+          "ru": "Фонтан Треви",
+          "be": "Фантан Трэві"
+        },
+        "photo": "https://inspirations.blacktomato.com/wp-content/uploads/2019/11/Trevi-Fountain-in-Rome-daylight.jpg",
+        "description": {
+          "en": "The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others. Standing 26.3 metres high and 49.15 metres wide, it is the largest Baroque fountain in the city and one of the most famous fountains in the world.",
+          "ru": "Фонтан Треви — самый крупный фонтан Рима, вместе с фасадом здания, являющимся частью архитектурно-скульптурной композиции, имеет высоту 25,9 м и ширину 49,8 м. Фонтан построен в 1732—1762 годах по проекту архитектора Николо Сальви. Он примыкает к фасаду Палаццо Поли.",
+          "be": "Перакладзена з англійскай мовы-Фантан Трэві - гэта фантан у раёне Трэві ў Рыме, Італія, распрацаваны італьянскім архітэктарам Нікала Сальві і завершаны Джузэпэ Паніні і шэрагам іншых. Вышыня 26,3 метра і шырыня 49,15 метраў, гэта самы буйны ў горадзе барочны фантан і адзін з самых вядомых фантанаў у свеце."
+        }
       },
       {
-          "name": "Sensō-ji",
-          "photo": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/05/sensoji-temple-iStock-1083328636.jpg",
-          "description": "Sensō-ji is an ancient Buddhist temple located in Asakusa, Tokyo, Japan. It is Tokyo's oldest temple, and one of its most significant. Formerly associated with the Tendai sect of Buddhism, it became independent after World War II."
+        "name": {
+          "en": "Uffizi Gallery",
+          "ru": "Уффици",
+          "be": "Уфіцы"
+        },
+        "photo": "https://www.uffiziticket.com/wp-content/uploads/2019/11/Slide-4.jpg",
+        "description": {
+          "en": "The Uffizi Gallery is a prominent art museum located adjacent to the Piazza della Signoria in the Historic Centre of Florence in the region of Tuscany, Italy.",
+          "ru": "Галере́я Уффи́ци — музей во Флоренции, один из наиболее старых музеев в Европе. Уффици обладает сгруппированной в одном месте богатой коллекцией, позволяющей организовать разнообразные тематические и исторические маршруты, альтернативные по своей сути привычному способу посещения галерей.",
+          "be": "Галерэя Уфіцы - выдатны мастацкі музей, размешчаны побач з плошчай Сіньёрыі ў Гістарычным цэнтры Фларэнцыі ў рэгіёне Таскана, Італія. Уфіцы валодае згрупаванай у адным месцы багатай калекцыяй, якая дазваляе арганізаваць разнастайныя тэматычныя і гістарычныя маршруты, альтэрнатыўныя па сваёй сутнасці звыкламу спосабу наведвання галерэй."
+        }
       }
-  ],
-  "video": "https://www.youtube.com/embed/IQy0FPmZpRo"
-},
-{
-  "country": "Switzerland",
-  "capital": {
-      "name": "Bern",
-      "coords": [46.947978, 7.440386]
+    ],
+    "video": "https://www.youtube.com/embed/jLgcah7bpl4"
   },
-  "overview": "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.",
-  "photoURL": "https://www.expatica.com/app/uploads/sites/9/2017/07/cost-of-living-thun.jpg",
-  "landmarks": [{
-          "name": "Mount Pilatus",
-          "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/mount_pilatus.jpg?v=5d8ecb3f56d223081d50aab24d85ae31",
-          "description": "Mount Pilatus in the Lake Lucerne region is full of legends. The name of the mountain comes from a rumor that the famous biblical Roman governor Pontius Pilate may have been buried there. Medieval Europeans believed that the mountain formed as a dragon rock falling from the sky. The 2,100 meter (7000 foot) peak offers views of the Swiss and French Alps, as well as Lake Lucerne below. The winter boasts a high-altitude Christmas market, and the summer offers hiking opportunities galore. This region can be reached with the steepest railway in the world, boasting grades over 48%."
+  "Japan": {
+    "country": {
+      "en": "Japan",
+      "ru": "Япония",
+      "be": "Японiя"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          134.63842817600388,
+          34.14923371025642
+        ],
+        [
+          134.7663790223585,
+          33.80633474378368
+        ],
+        [
+          134.20341596897086,
+          33.20117788342964
+        ],
+        [
+          133.7929500672765,
+          33.5219851750976
+        ],
+        [
+          133.28026818250888,
+          33.28957042086495
+        ],
+        [
+          133.01485802625788,
+          32.70456736910478
+        ],
+        [
+          132.3631148621927,
+          32.98938202568137
+        ],
+        [
+          132.37117638563018,
+          33.46364248304007
+        ],
+        [
+          132.9243725933148,
+          34.06029857028204
+        ],
+        [
+          133.49296837782222,
+          33.9446208765967
+        ],
+        [
+          133.90410607313638,
+          34.36493113864262
+        ],
+        [
+          134.63842817600388,
+          34.14923371025642
+        ]
+      ],
+      [
+        [
+          140.9763875673053,
+          37.14207428644016
+        ],
+        [
+          140.59976972876214,
+          36.343983466124534
+        ],
+        [
+          140.77407433488264,
+          35.84287710219024
+        ],
+        [
+          140.25327925024513,
+          35.13811391859365
+        ],
+        [
+          138.97552778539622,
+          34.66760000257611
+        ],
+        [
+          137.21759891169123,
+          34.60628591566186
+        ],
+        [
+          135.7929830262689,
+          33.46480520276663
+        ],
+        [
+          135.12098270074543,
+          33.84907115328906
+        ],
+        [
+          135.07943484918272,
+          34.59654490817482
+        ],
+        [
+          133.340316196832,
+          34.37593821872076
+        ],
+        [
+          132.15677086805132,
+          33.90493337659652
+        ],
+        [
+          130.98614464734348,
+          33.88576142021628
+        ],
+        [
+          132.00003624891005,
+          33.149992377244615
+        ],
+        [
+          131.33279015515737,
+          31.450354519164843
+        ],
+        [
+          130.68631798718596,
+          31.029579169228242
+        ],
+        [
+          130.20241987520498,
+          31.418237616495418
+        ],
+        [
+          130.44767622286216,
+          32.319474595665724
+        ],
+        [
+          129.8146916037189,
+          32.61030955660439
+        ],
+        [
+          129.40846316947258,
+          33.29605581311759
+        ],
+        [
+          130.35393517468466,
+          33.6041507024417
+        ],
+        [
+          130.87845096244715,
+          34.232742824840045
+        ],
+        [
+          131.88422936414392,
+          34.74971385348791
+        ],
+        [
+          132.61767296766251,
+          35.43339305270942
+        ],
+        [
+          134.6083008159778,
+          35.73161774346582
+        ],
+        [
+          135.67753787652893,
+          35.527134100886826
+        ],
+        [
+          136.72383060114245,
+          37.30498423924038
+        ],
+        [
+          137.3906116070045,
+          36.827390651998826
+        ],
+        [
+          138.85760216690628,
+          37.82748464614346
+        ],
+        [
+          139.4264046571429,
+          38.21596222589764
+        ],
+        [
+          140.0547900738121,
+          39.438807481436385
+        ],
+        [
+          139.88337934789988,
+          40.563312486323696
+        ],
+        [
+          140.30578250545372,
+          41.19500519465956
+        ],
+        [
+          141.3689734234267,
+          41.37855988216029
+        ],
+        [
+          141.91426313697048,
+          39.99161611587868
+        ],
+        [
+          141.884600864835,
+          39.180864569651504
+        ],
+        [
+          140.9594893739458,
+          38.17400096287658
+        ],
+        [
+          140.9763875673053,
+          37.14207428644016
+        ]
+      ],
+      [
+        [
+          143.9101619813795,
+          44.17409983985373
+        ],
+        [
+          144.61342654843963,
+          43.960882880217525
+        ],
+        [
+          145.3208252300831,
+          44.38473297787544
+        ],
+        [
+          145.54313724180278,
+          43.262088324550604
+        ],
+        [
+          144.0596618999999,
+          42.98835826270056
+        ],
+        [
+          143.18384972551732,
+          41.9952147486992
+        ],
+        [
+          141.61149092017249,
+          42.67879059505608
+        ],
+        [
+          141.06728641170665,
+          41.58459381770799
+        ],
+        [
+          139.95510623592108,
+          41.569555975911044
+        ],
+        [
+          139.81754357315995,
+          42.5637588567744
+        ],
+        [
+          140.31208703019323,
+          43.33327261003265
+        ],
+        [
+          141.38054894426003,
+          43.388824774746496
+        ],
+        [
+          141.67195234595394,
+          44.77212535255148
+        ],
+        [
+          141.967644891528,
+          45.55148346616135
+        ],
+        [
+          143.14287031470982,
+          44.510358384776964
+        ],
+        [
+          143.9101619813795,
+          44.17409983985373
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Tokyo",
+        "ru": "Токио",
+        "be": "Токіа"
+      },
+      "coords": [
+        35.6817,
+        139.753882
+      ]
+    },
+    "overview": {
+      "en": "Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south.",
+      "ru": "Япония – островное государство в Тихом океане, которое славится своими густонаселенными городами, императорскими дворцами, национальными парками, храмами и святилищами. Сеть высокоскоростных железных дорог \"Синкансэн\" представлена на всех основных островах Японского архипелага: Кюсю с субтропическими пляжами Окинавы, Хонсю, на котором расположены Токио и Хиросима с мемориалом жертвам атомной бомбардировки, и Хоккайдо с горнолыжными курортами. Столица страны Токио – центр японской поп-культуры, известный своими небоскребами и магазинами.",
+      "be": "Японія - астраўная дзяржава ў Ціхім акіяне, якое славіцца сваімі густанаселенымі гарадамі, імператарскімі палацамі, нацыянальнымі паркамі, храмамі і свяцілішчамі. Сетка высакахуткасных чыгунак \"Сінкансэн\" прадстаўлена на ўсіх асноўных астравах Японскага архіпелага: Кюсю з субтрапічнымі пляжамі Акінавы, Хансю, на якім размешчаны Токіа і Хірасіма з мемарыялам ахвярам атамнай бамбардзіроўкі, і Хакайда з гарналыжнымі курортамі. Сталіца краіны Токіо-цэнтр японскай поп-культуры, вядомы сваімі хмарачосамі і крамамі."
+    },
+    "photoURL": "https://smolensk-travel.com/assets/galleries/58/jap-4.jpg",
+    "landmarks": [
+      {
+        "name": {
+          "en": "Mount Fuji",
+          "ru": "Фудзияма",
+          "be": "Фудзіяма"
+        },
+        "photo": "https://www.liveabout.com/thmb/xmHHjutbUKGMvgxh5Dr1F_BVXB8=/3435x2576/smart/filters:no_upscale()/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg",
+        "description": {
+          "en": "Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige.",
+          "ru": "Фудзияма — действующий стратовулкан на японском острове Хонсю в 90 километрах к юго-западу от Токио. Высота вулкана — 3776 м. В настоящее время вулкан считается слабоактивным, последнее извержение было в 1707—1708 годах.",
+          "be": "Гара Фудзі, размешчаная на востраве Хонсю, - самая высокая гара Японіі, вышыня 3776,24 м. Гэта другі па вышыні вулкан, размешчаны на востраве ў Азіі, і сёмы па вышыні пік выспы на Зямлі. Гара Фудзі - гэта актыўны стратавулкан, які апошні раз вывяргаўся з 1707 па 1708 год."
+        }
       },
       {
-          "name": "Jet d'Eau",
-          "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/jet_deau.jpg?v=1",
-          "description": "This giant water fountain is one of Geneva’s most famous landmarks. Shooting 140 meters (460 feet) into the air, the Jet d’Eau sits where Lake Geneva empties into the Rhone river, and is so large that it can be seen from miles away. At any one time, 7 tons of water is in the air, much of which sprays spectators on the pier beneath. Two or three times a year it is illuminated pink, blue or another color to mark a humanitarian occasion. The local swimming area, known as the Bains de Paquis, is one of the best areas to view the fountain."
+        "name": {
+          "en": "Kinkaku-ji",
+          "ru": "Кинкаку-дзи",
+          "be": "Кінкаку-дзі"
+        },
+        "photo": "https://lp-cms-production.imgix.net/2019-06/015e2ab56932a07a3cb5f7f2decd418c0623bf47d28d262a8ab8199eb8797ad8.jpg",
+        "description": {
+          "en": "Kinkaku-ji, officially named Rokuon-ji, is a Zen Buddhist temple in Kyoto, Japan. It is one of the most popular buildings in Kyoto, attracting many visitors annually.",
+          "ru": "Кинкаку́-дзи — один из храмов в комплексе Рокуон-дзи в районе Кита города Киото, Япония. Павильон был построен в 1397 как вилла для отдыха сёгуна Асикага Ёсимицу, здесь он провёл последние годы своей жизни, утратив всякий интерес к политической жизни страны. Главной святыней монастыря является статуя Авалокитешвары.",
+          "be": "Кінкаку-дзі, афіцыйна названы Рокуон-дзі, - дзэн-будысцкі храм у Кіёта, Японія. Гэта адзін з самых папулярных будынкаў у Кіёта, які штогод прыцягвае шмат наведвальнікаў."
+        }
       },
       {
-          "name": "Grindelwald",
-          "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/grindelwald.jpg?v=31200f8a8a74438751da02807bd77e97",
-          "description": "The mountain town of Grindelwald is the largest ski resort town in the Jungfrau region. This lovely alpine town is both a summer and winter activity region. Tourists who visit in the summer can enjoy spectacular hiking trails and some of Europe’s most loved rock climbing locations. Winter tourists can ski or even try the local toboggan run. A number of locally accessible mountain peaks and passes makes this a beautiful choice for photographers and nature lovers alike. Festival lovers will love the ice sculptures at the world snow festival."
+        "name": {
+          "en": "Fushimi Inari Taisha",
+          "ru": "Святилище Фусими Инари",
+          "be": "Фушымі Інары-тайша"
+        },
+        "photo": "https://dskyoto.s3.amazonaws.com/gallery/full/8514/5559/7797/08-20131216_FushimiInari_Mainspot-307.jpg",
+        "description": {
+          "en": "Fushimi Inari Shrine is an important Shinto shrine in southern Kyoto. It is famous for its thousands of vermilion torii gates, which straddle a network of trails behind its main buildings. The trails lead into the wooded forest of the sacred Mount Inari, which stands at 233 meters and belongs to the shrine grounds.",
+          "ru": "Величественный храмовый комплекс Фусими-Инари Тайся был построен семейством Хата в 8-ом столетии и посвящен главной синтоистской богине Инари, покровительнице воинов и кузнецов, богине риса (и сельского хозяйства в целом), изобилия и успеха. По мере развития японской промышленности и снижения значимости сельского хозяйства, богиня «переориентировалась» и стала покровительствовать промышленному производству и преуспеванию в бизнесе. Сегодня Фусими-Инари – один из самых популярных храмов Японии и главный храм среди более 30000 храмов Инари, разбросанных по всей стране.",
+          "be": "Фушымі Інары-тайша - галоўная святыня камі Інары, размешчаная ў Фушымі-ку, Кіёта, Прэфектура Кіёта, Японія. Сёння Фусими-Інара - адзін з самых папулярных храмаў Японіі і галоўны храм сярод больш за 30000 храмаў Інара, якія былі раскіданыя па ўсёй краіне."
+        }
       },
       {
-          "name": "Rhine Falls",
-          "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/rhine_falls.jpg?v=1",
-          "description": "Rhine falls, near Schaffausen, is Europe’s largest waterfall. This amazing sight can be reached via a boat tour, which will also show visitors to Switzerland the lovely basin, riverside castles, and spectacular boulder perched in the middle of the river at the top of the falls. There are viewing platforms that reach out over the falls and allow guests to feel like they’re hovering directly above. A children’s playground, historical museum region and adventure trail make the visitor’s center a wonderful way to cap off the trip."
+        "name": {
+          "en": "Kiyomizu-dera",
+          "ru": "Киёмидзу-дэра",
+          "be": "Кіёмідзу-дэра"
+        },
+        "photo": "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2017/07/Kiyomizudera-Temple-Kyoto.jpg",
+        "description": {
+          "en": "Kiyomizu-dera, formally Otowa-san Kiyomizu-dera, is a Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site.",
+          "ru": "Киёмидзу-дэра — буддийский храмовый комплекс в районе Хигасияма города Киото. Полное название — Отовасан Киёмидзудэра в восточном Киото, это одна из основных достопримечательностей города Киото. Храм был основан в 778, но современные строения относятся к 1633.",
+          "be": "Кіёмідзу-дэра, фармальна Атова-сан Кіёмідзю-дзера, - будысцкі храм на ўсходзе Кіёта. Храм з'яўляецца часткай гістарычных помнікаў старажытнага Кіёта, якія ўваходзяць у спіс Сусветнай спадчыны ЮНЕСКА."
+        }
       },
       {
-          "name": "Zytglogge",
-          "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/zytglogge.jpg?v=ae60a3cbd0e2a95f1b307e6f3b407644",
-          "description": "The clock tower gate in Bern is the oldest city gate in town, and is a great historical site. The gate was built in the 1100s, and the clock that graces the tower is one of the most spectacular and oldest clocks that can be visited anywhere in the world. Built in 1530, this clock was the city’s master clock for centuries. The Baroque style with gold accents is a beautiful picture for both amateur and professional photographers. The tower boasts an astronomical clock, figurines, hour chimes, and two tower clocks that are all driven by a single central mechanism. This is one of the items that has secured Switzerland as one of the premiere clockmaking regions in the world."
+        "name": {
+          "en": "Tokyo Skytree",
+          "ru": "Небесное дерево Токио",
+          "be": "Нябеснае дрэва Токіо"
+        },
+        "photo": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2017/07/iStock-skytree-Torsakarin.jpg",
+        "description": {
+          "en": "Tokyo Skytree is a broadcasting and observation tower in Sumida, Tokyo. It became the tallest structure in Japan in 2010 and reached its full height of 634 meters in March 2011, making it the tallest tower in the world, displacing the Canton Tower, and the second tallest structure in the world after the Burj Khalifa.",
+          "ru": "Небесное дерево Токио (Tokyo Skytree) — телевизионная башня в районе Сумида, Токио, Япония, самая высокая среди телебашен мира и второе по высоте сооружение в мире после «Бурдж-Халифа».",
+          "be": "Tokyo Skytree - вяшчальная і назіральная вежа ў Сумідзе, Токіо. У 2010 годзе яна стала самай высокай будынкам у Японіі, а ў сакавіку 2011 года дасягнула поўнай вышыні 634 метра, што зрабіла яе самай высокай вежай у свеце, якая выцясняе вежу Кантона, і другой па вышыні будынкам у свеце пасля Бурдж-Халіфы."
+        }
       },
       {
-          "name": "Bernina Express",
-          "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/bernina_express.jpg?v=8800068a3c2bf281ae37521162d641ad",
-          "description": "The Bernina Express is a brightly colored scarlet train that crosses the Alps beginning in the town of Chur and ends in Tirano, just across the border in northern Italy. Arguable the most scenic Swiss train ride, the route takes about 4hours, and goes over 196 bridges and through 55 tunnels. Views of glaciers and mountain peaks and towns, bridges spanning across 60 meter (200 foot) drops and many more breathtaking sights are speeding by outside of the train, while porters bring snacks and drinks directly to your seat. This is not a trip to miss."
+        "name": {
+          "en": "Sensō-ji",
+          "ru": "Сэнсодзи",
+          "be": "Сэнс-Джы"
+        },
+        "photo": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/05/sensoji-temple-iStock-1083328636.jpg",
+        "description": {
+          "en": "Sensō-ji is an ancient Buddhist temple located in Asakusa, Tokyo, Japan. It is Tokyo's oldest temple, and one of its most significant. Formerly associated with the Tendai sect of Buddhism, it became independent after World War II.",
+          "ru": "Сэнсо-дзи, или Асакусадэра — храм буддийской школы Сёканнон в районе Асакуса, Тайто, Токио. Полное официальное название — Кинрюдзан Сэнсо-дзи. Сэнсо-дзи является самым старым буддийским храмом на территории Токио. Согласно преданиям, храм был основан в 628 году на месте обнаружения статуи бодхисаттвы Каннон.",
+          "be": "Сэнс-Джы - старажытны будысцкі храм, размешчаны ў Асакусе, Токіо, Японія. Гэта найстарэйшы храм у Токіо і адзін з самых значных. Раней звязаная з тэндайскай сектай будызму, яна стала незалежнай пасля Другой сусветнай вайны."
+        }
       }
-  ],
-  "video": "https://www.youtube.com/embed/dapluVS0lgg"
+    ],
+    "video": "https://www.youtube.com/embed/IQy0FPmZpRo"
+  },
+  "Switzerland": {
+    "country": {
+      "en": "Switzerland",
+      "ru": "Швейцария",
+      "be": "Швайцарыя"
+    },
+    "polygonCoordinates": [
+      [
+        [
+          9.59422610844635,
+          47.52505809182027
+        ],
+        [
+          9.632931756232978,
+          47.34760122332999
+        ],
+        [
+          9.479969516649021,
+          47.10280996356337
+        ],
+        [
+          9.932448357796659,
+          46.92072805438296
+        ],
+        [
+          10.44270145024663,
+          46.89354625099743
+        ],
+        [
+          10.363378126678612,
+          46.48357127540986
+        ],
+        [
+          9.92283654139038,
+          46.31489940040919
+        ],
+        [
+          9.182881707403055,
+          46.44021474871698
+        ],
+        [
+          8.966305779667806,
+          46.036931871111186
+        ],
+        [
+          8.489952426801324,
+          46.005150865251686
+        ],
+        [
+          8.31662967289438,
+          46.16364248309086
+        ],
+        [
+          7.755992058959833,
+          45.82449005795931
+        ],
+        [
+          7.273850945676656,
+          45.776947740250776
+        ],
+        [
+          6.843592970414504,
+          45.99114655210061
+        ],
+        [
+          6.500099724970425,
+          46.42967275652944
+        ],
+        [
+          6.022609490593537,
+          46.27298981382047
+        ],
+        [
+          6.037388950229001,
+          46.725778713561866
+        ],
+        [
+          6.768713820023606,
+          47.2877082383037
+        ],
+        [
+          6.736571079138059,
+          47.541801255882845
+        ],
+        [
+          7.192202182655507,
+          47.44976552997102
+        ],
+        [
+          7.46675906742223,
+          47.62058197691181
+        ],
+        [
+          8.317301466514152,
+          47.61357982033626
+        ],
+        [
+          8.522611932009765,
+          47.830827541691285
+        ],
+        [
+          9.59422610844635,
+          47.52505809182027
+        ]
+      ]
+    ],
+    "capital": {
+      "name": {
+        "en": "Bern",
+        "ru": "Берн",
+        "be": "Берн"
+      },
+      "coords": [
+        46.947978,
+        7.440386
+      ]
+    },
+    "overview": {
+      "en": "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.",
+      "ru": "Швейцариия, расположенная в Центральной Европе, – это страна бесчисленных озер, деревушек и высокогорных Альп. Во многих городах сохранились средневековые районы. Среди популярных достопримечательностей этой эпохи – Часовая башня в Берне и часовенный деревянный мост в Люцерне. Страна славится своими горнолыжными курортами и пешеходными маршрутами. Банковские и финансовые учреждения играют ведущую роль в экономике страны, а швейцарские часы и шоколад известны во всем мире.",
+      "be": "Швейцарыя - гэта краіна незлічоных азёр, вёсачак і высакагорных Альпаў. У многіх гарадах захаваліся сярэднявечныя раёны. Сярод папулярных славутасцяў гэтай эпохі – Гадзінная вежа ў Берне і часовенный драўляны мост у Люцэрне. Краіна славіцца сваімі гарналыжнымі курортамі і пешаходнымі маршрутамі. Банкаўскія і фінансавыя ўстановы гуляюць вядучую ролю ў эканоміцы краіны, а швейцарскі гадзіннік і шакалад вядомыя ва ўсім свеце."
+    },
+    "photoURL": "https://www.expatica.com/app/uploads/sites/9/2017/07/cost-of-living-thun.jpg",
+    "landmarks": [
+      {
+        "name": {
+          "en": "Mount Pilatus",
+          "ru": "Пилатус",
+          "be": "Пілатус"
+        },
+        "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/mount_pilatus.jpg?v=5d8ecb3f56d223081d50aab24d85ae31",
+        "description": {
+          "en": "Mount Pilatus in the Lake Lucerne region is full of legends. The name of the mountain comes from a rumor that the famous biblical Roman governor Pontius Pilate may have been buried there. Medieval Europeans believed that the mountain formed as a dragon rock falling from the sky. The 2,100 meter (7000 foot) peak offers views of the Swiss and French Alps, as well as Lake Lucerne below. The winter boasts a high-altitude Christmas market, and the summer offers hiking opportunities galore. This region can be reached with the steepest railway in the world, boasting grades over 48%.",
+          "ru": "Пилатус — горный массив в швейцарских Альпах, на границе кантонов Обвальден, Нидвальден и Люцерн, и его главная вершина. По легенде название горы происходит от имени Понтия Пилата, потому что на склоне горы будто бы находилась его могила. В действительности в основе названия лежит латинское слово pilleatus.(«в войлочной шляпе» — имелась в виду, надо полагать, облачная шапка вокруг вершины).",
+          "be": "Пілат, які таксама называюць гарой Пілат, - гэта горны масіў з відам на Люцэрн у Цэнтральнай Швейцарыі. Ён складаецца з некалькіх вяршынь, з якіх найвышэйшая названа Томлішорн."
+        }
+      },
+      {
+        "name": {
+          "en": "The Geneva Water Fountain",
+          "ru": "Фонтан Же-До",
+          "be": "Жэнеўскі фантан"
+        },
+        "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/jet_deau.jpg?v=1",
+        "description": {
+          "en": "This giant water fountain is one of Geneva’s most famous landmarks. Shooting 140 meters (460 feet) into the air, the Jet d’Eau sits where Lake Geneva empties into the Rhone river, and is so large that it can be seen from miles away. At any one time, 7 tons of water is in the air, much of which sprays spectators on the pier beneath. Two or three times a year it is illuminated pink, blue or another color to mark a humanitarian occasion. The local swimming area, known as the Bains de Paquis, is one of the best areas to view the fountain.",
+          "ru": "Фонтан Же-До — фонтан на Женевском озере в Женеве, важная достопримечательность города и один из самых больших фонтанов в мире. Высота фонтана составляет 147 м. Скорость потока — 500 литров в секунду, потребляемая мощность каждого из 2-х насосов, работающих от сети с напряжением 2400 В, — 500 кВт.",
+          "be": "Жэнеўскі фантан - гэта вялікі фантан у Жэневе, Швейцарыя, і з'яўляецца адной з самых вядомых славутасцяў горада, размешчаны на афіцыйным турыстычным сайце горада і ў афіцыйным лагатыпе правядзення ў Жэневе матчаў групавога этапу на Еўра-2008 УЕФА."
+        }
+      },
+      {
+        "name": {
+          "en": "Grindelwald",
+          "ru": "Гриндельвальд",
+          "be": "Грындэльвальд"
+        },
+        "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/grindelwald.jpg?v=31200f8a8a74438751da02807bd77e97",
+        "description": {
+          "en": "The mountain town of Grindelwald is the largest ski resort town in the Jungfrau region. This lovely alpine town is both a summer and winter activity region. Tourists who visit in the summer can enjoy spectacular hiking trails and some of Europe’s most loved rock climbing locations. Winter tourists can ski or even try the local toboggan run. A number of locally accessible mountain peaks and passes makes this a beautiful choice for photographers and nature lovers alike. Festival lovers will love the ice sculptures at the world snow festival.",
+          "ru": "Гриндельвальд, деревня в Бернских Альпах в Швейцарии, – это популярный курорт в регионе Юнгфрау, где зимой катаются на лыжах, а летом занимаются пешим туризмом. Отсюда можно совершить альпинистское восхождение на знаменитую северную стену горы Эйгер. Недалеко от Гриндельвальда находится ледниковое ущелье Глетчершлюхт, известное благодаря живописным туристическим тропам с указателями, водопадам и разноцветным известняковым стенам.",
+          "be": "Грындэльвальд - вёска і муніцыпалітэт у адміністрацыйным акрузе Інтэрлакен-Оберхаслі ў кантоне Берн у Швейцарыі. Акрамя вёскі Грындэльвальд, у склад муніцыпалітэту ўваходзяць таксама паселішчы Альпіглен, Бурглауэн, Грунд, Ітрамен, Мюхлебах, Швэндзі, Цынгельберг і Варгіштал."
+        }
+      },
+      {
+        "name": {
+          "en": "Rhine Falls",
+          "ru": "Рейнский водопад",
+          "be": "Рэйнскі вадаспад"
+        },
+        "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/rhine_falls.jpg?v=1",
+        "description": {
+          "en": "Rhine falls, near Schaffausen, is Europe’s largest waterfall. This amazing sight can be reached via a boat tour, which will also show visitors to Switzerland the lovely basin, riverside castles, and spectacular boulder perched in the middle of the river at the top of the falls. There are viewing platforms that reach out over the falls and allow guests to feel like they’re hovering directly above. A children’s playground, historical museum region and adventure trail make the visitor’s center a wonderful way to cap off the trip.",
+          "ru": "Рейнский водопа́д — водопад на реке Рейн в швейцарском кантоне Шаффхаузен, рядом с городком Нойхаузен-ам-Райнфалль. Рейнский водопад считается самым большим равнинным водопадом в Европе. Высота водопада — 23 м, ширина — 150 м. Средний расход воды зимой — 250 м³/с, летом — 700 м³/с.",
+          "be": "Рэйнскі вадаспад - вадаспад, размешчаны ў Швейцарыі і самы магутны вадаспад у Еўропе. Паданні знаходзяцца на Вялікім Рэйне на мяжы паміж кантонамі Шаффхаузен і Цюрых, паміж муніцыпалітэтамі Нойхаузен-ам-Рэйн-Фолс і Лауфен-Ухвісен / Даксен, побач з горадам Шаффхаузен на поўначы Швейцарыі."
+        }
+      },
+      {
+        "name": {
+          "en": "Zytglogge",
+          "ru": "Цитглогге",
+          "be": "Цитглогге"
+        },
+        "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/zytglogge.jpg?v=ae60a3cbd0e2a95f1b307e6f3b407644",
+        "description": {
+          "en": "The clock tower gate in Bern is the oldest city gate in town, and is a great historical site. The gate was built in the 1100s, and the clock that graces the tower is one of the most spectacular and oldest clocks that can be visited anywhere in the world. Built in 1530, this clock was the city’s master clock for centuries. The Baroque style with gold accents is a beautiful picture for both amateur and professional photographers. The tower boasts an astronomical clock, figurines, hour chimes, and two tower clocks that are all driven by a single central mechanism. This is one of the items that has secured Switzerland as one of the premiere clockmaking regions in the world.",
+          "ru": "Цитглогге, или Часовая башня — часовая башня средневекового происхождения с астрономическими часами в исторической части Берна — носит почётный титул одной из самых старых часовых башен страны, её возведение относится к началу 13 века. На первый взгляд простое дело «показа» времени выливается здесь в целый спектакль: кукарекает петух, шут бьёт в колокола, шествуют медведи, бог Кронос переворачивает часочные часы...",
+          "be": "Zytglogge - знакавая сярэднявечная вежа ў швейцарскім Берне. Пабудаваны ў пачатку 13 стагоддзя, ён служыў гораду як вежа аховы, турма, вежа з гадзінамі, цэнтр гарадскога жыцця і грамадзянскі мемарыял."
+        }
+      },
+      {
+        "name": {
+          "en": "Bernina Express",
+          "ru": "Бернина экспресс",
+          "be": "Чыгунка Берніна"
+        },
+        "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/bernina_express.jpg?v=8800068a3c2bf281ae37521162d641ad",
+        "description": {
+          "en": "The Bernina Express is a brightly colored scarlet train that crosses the Alps beginning in the town of Chur and ends in Tirano, just across the border in northern Italy. Arguable the most scenic Swiss train ride, the route takes about 4hours, and goes over 196 bridges and through 55 tunnels. Views of glaciers and mountain peaks and towns, bridges spanning across 60 meter (200 foot) drops and many more breathtaking sights are speeding by outside of the train, while porters bring snacks and drinks directly to your seat. This is not a trip to miss.",
+          "ru": "«Бернина Экспресс» — это пассажирский поезд, соединяющий Кур в Швейцарии и Поскьяво и Тирано в Италии, пересекающий швейцарские Энгадинские Альпы. Бóльшую часть своего пути поезд идет по объекту Всемирного наследия, известному как Ретийская железная дорога в культурном ландшафте Альбулы и Бернины.",
+          "be": "Чыгунка Берніна - гэта аднакалейная чыгуначная лінія каляіны 1000 мм, якая ўваходзіць у Рэцінскую чыгунку. Ён звязвае курорт Санкт-Морыц у кантоне Граўбюндэн, Швейцарыя, з мястэчкам Тырана ў правінцыі Сондрыё, Італія, праз перавал Берніна."
+        }
+      }
+    ],
+    "video": "https://www.youtube.com/embed/dapluVS0lgg"
+  }
 }
-]
 
 export default data;

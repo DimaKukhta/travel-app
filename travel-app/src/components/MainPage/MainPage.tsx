@@ -4,13 +4,36 @@ import CountriesCards from './CountriesCards/CountriesCards';
 import Footer from '../Footer/Footer';
 import './MainPage.css'
 
-export default class MainPage extends Component {
+interface MainPageState {
+  search: string,
+}
+
+export default class MainPage extends Component<{}, MainPageState> {
+  state = {
+    search: '',
+  }
+
+  updateSearch = (input: string): void => {
+    this.setState({
+      search: input
+    })
+  }
+
+  componentDidMount() {
+
+  }
+
+  componentWillUnmount() {
+
+  }
 
   render() {
+    const { search } = this.state;
+
     return (
       <div className='container'>
-        <Header />
-        <CountriesCards />
+        <Header updateSearch={this.updateSearch}/>
+        <CountriesCards search={search}/>
         <Footer />
       </div>
     );
