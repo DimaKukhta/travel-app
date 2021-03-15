@@ -9,8 +9,8 @@ interface CountriesCardsProps {
 }
 
 export default function CountriesCards({search}: CountriesCardsProps) {
-
-  const isMainEmpty = [...data].every(({country, capital: { name }}) => {
+  const dataArray = Object.values(data);
+  const isMainEmpty = [...dataArray].every(({country, capital: { name }}) => {
     return !(country.en.toLowerCase().includes(search.toLowerCase())
       || name.en.toLowerCase().includes(search.toLowerCase()))
   });
@@ -26,7 +26,7 @@ export default function CountriesCards({search}: CountriesCardsProps) {
   return (
     <div className='main'>
       { isMainEmpty ? <div>No data available for this search query...</div> : 
-        [...data].map(countryObj => {
+        [...dataArray].map(countryObj => {
           const { photoURL, country, capital: { name } } = countryObj;
           const isSearchSucces = [country.en, name.en].some( elem => elem.toLowerCase().includes(search.toLowerCase()));
           const isCountryFind = country.en.toLowerCase().includes(search.toLowerCase());
@@ -37,6 +37,7 @@ export default function CountriesCards({search}: CountriesCardsProps) {
                 key={country}
                 className={`country-card`}
                 href='/'
+                data-country={country.en}
                 >
                 <Image src={photoURL} />
                 <Card.Content>
