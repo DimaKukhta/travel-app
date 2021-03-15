@@ -2,37 +2,41 @@ import React, { useState } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import countriesData from "../../countriesData/data";
-import "./Gallery.scss";
-
-const images: {
-  original: string;
-  thumbnail: string;
-  description: string;
-  originalTitle: string;
-}[] = [];
-countriesData[0].landmarks.forEach(
-  (element: { photo: string; name: string; description: string }) => {
-    images.push({
-      original: element.photo,
-      thumbnail: element.photo,
-      description: element.description,
-      originalTitle: element.name,
-    });
-  }
-);
+import "./Gallery.css";
 
 const Gallery = () => {
   const [imgId, setImgId] = useState(0);
 
-  const showSlideInfo = (id: number) => {
-    console.log(id);
-    setImgId(id);
-  };
+  const images: {
+    original: string;
+    thumbnail: string;
+    description: string;
+    originalTitle: string;
+  }[] = [];
+  countriesData.Germany.landmarks.forEach(
+    //TODO: set country
+    (element: {
+      photo: string;
+      name: { en: string };
+      description: { en: string };
+    }) => {
+      images.push({
+        original: element.photo,
+        thumbnail: element.photo,
+        description: element.description.en,
+        originalTitle: element.name.en,
+      });
+    }
+  );
 
   return (
     <div className="Gallery">
       <h2>{images[imgId].originalTitle}</h2>
-      <ImageGallery items={images} onSlide={showSlideInfo} lazyLoad={true} />
+      <ImageGallery
+        items={images}
+        onSlide={(id) => setImgId(id)}
+        lazyLoad={true}
+      />
     </div>
   );
 };

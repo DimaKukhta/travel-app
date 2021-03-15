@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   YMaps,
   Map,
@@ -6,8 +6,8 @@ import {
   FullscreenControl,
   Polygon,
 } from "react-yandex-maps";
-import countriesData from "../../countriesInfo.json";
-import "./Map.scss";
+import countriesData from "../../countriesData/data";
+import "./Map.css";
 
 function changeCoordinates(coords: number[][][] | number[][]) {
   return coords.map((item: any[]) => {
@@ -17,21 +17,31 @@ function changeCoordinates(coords: number[][][] | number[][]) {
 }
 
 const MapComponent: React.FC<React.ReactNode> = () => {
+  const [mapWidth, setMapWidth] = useState<number>(
+    document.documentElement.clientWidth / 2
+  );
+
+  useEffect(() => {
+    const handleResize = () =>
+      setMapWidth(document.documentElement.clientWidth / 2);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
   // TODO: get country
-  const capitalCoordinates = countriesData[0].capital.coords;
-  const polygons = changeCoordinates(countriesData[0].polygonCoordinates);
+  const capitalCoordinates = countriesData.Germany.capital.coords;
+  const polygons = changeCoordinates(countriesData.Germany.polygonCoordinates);
   return (
     <div className="Map">
-      <h2>Map</h2>
       <YMaps
         query={{
-          lang: "ru_RU", // TODO: get language
+          lang: "en_US", // TODO: get language
         }}
       >
         <Map
-          width={600}
-          height={400}
-          defaultState={{ center: capitalCoordinates, zoom: 5 }}
+          width={mapWidth}
+          defaultState={{ center: capitalCoordinates, zoom: 6 }}
         >
           <Placemark geometry={capitalCoordinates} />
           <FullscreenControl />
