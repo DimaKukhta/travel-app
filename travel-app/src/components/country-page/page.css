@@ -1,0 +1,33 @@
+.country_page_wrapper {
+    margin: 0 auto;
+    max-width: 1264px;
+    display: flex;
+    justify-content: center;
+}
+
+.wraper_capital_img {
+    display: flex;
+}
+
+.capital_img {
+    margin-left: -1rem;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.274) 7px 7px 5px;
+}
+
+.wraper_2capital_img {
+    display: flex;
+    align-items: center;
+}
+
+.slider_wrapper {
+    height: 30rem;
+}
+
+.left_bar_wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 2px;
+}
