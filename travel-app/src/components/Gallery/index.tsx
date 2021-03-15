@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import countriesData from "../../countriesInfo.json";
+import "./Gallery.scss";
 
 const images: {
   original: string;

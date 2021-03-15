@@ -1,5 +1,9 @@
 [{
-        "country": "Australia",
+        "country": {
+            "en": "Australia",
+            "ru": "Австралия",
+            "be": "Аўстралія"
+        },
         "polygonCoordinates": [
             [
                 [145.39797814349484, -40.79254851660589],
@@ -248,46 +252,106 @@
             ]
         ],
         "capital": {
-            "name": "Canberra",
+            "name": {
+                "en": "Canberra",
+                "ru": "Канберра",
+                "be": "Канбера"
+            },
             "coords": [-35.306904, 149.125529]
         },
-        "overview": "Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands. It is the largest country in Oceania and the world's sixth-largest country by total area.",
+        "overview": {
+            "en": "Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland of the Australian continent, the island of Tasmania, and numerous smaller islands. It is the largest country in Oceania and the world's sixth-largest country by total area.",
+            "ru": "Австралия – это страна, занимающая одноименный материк, который омывается Индийским и Тихим океанами. На побережьях континента находятся такие крупные города, как Сидней, Брисбен, Мельбурн, Перт и Аделаида. Столица Австралии – Канберра – расположена вдали от моря. Интересна фауна Австралии: здесь обитают уникальные виды животных, например кенгуру и утконосы.",
+            "be": "Аўстралія – гэта краіна, якая займае аднайменны мацярык, які абмываецца Індыйскім і Ціхім акіянамі. На ўзбярэжжах кантынента знаходзяцца такія буйныя гарады, як Сіднэй, Брысбэн, Мельбурн, Перт і Адэлаіда. Сталіца Аўстраліі – Канбера – размешчана ўдалечыні ад мора. Цікавая фауна Аўстраліі: тут насяляюць унікальныя віды жывёл, напрыклад кенгуру і качканосы."
+        },
         "photoURL": "https://kratkoe.com/wp-content/uploads/2020/08/osobennosti-avstralii.jpg",
         "landmarks": [{
-                "name": "Great Ocean Road",
+                "name": {
+                    "en": "Great Ocean Road",
+                    "ru": "Великая океанская дорога",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://cdn.newsapi.com.au/image/v1/2d735ccafa68694f78f0b7f804437bcd?width=1024",
-                "description": "Australia's Great Ocean Road is one of the world's most iconic drives. The coastal road stretches 151 miles from Torquay to Allansford, and was constructed in the 20s. It's got an unprecedented amount of jaw-dropping scenery, from sheer ocean cliffs to untouched surf beaches, whilst also traversing one of Australia's most cultured rural areas, offering an opportunity to experience some of Australia's most iconic landscapes in one fell swoop. Heading to Apollo Bay, it travels inland through the Otway Region, the Shipwreck Coast and the famous Twelve Apostles."
+                "description": {
+                    "en": "Australia's Great Ocean Road is one of the world's most iconic drives. The coastal road stretches 151 miles from Torquay to Allansford, and was constructed in the 20s. It's got an unprecedented amount of jaw-dropping scenery, from sheer ocean cliffs to untouched surf beaches, whilst also traversing one of Australia's most cultured rural areas, offering an opportunity to experience some of Australia's most iconic landscapes in one fell swoop. Heading to Apollo Bay, it travels inland through the Otway Region, the Shipwreck Coast and the famous Twelve Apostles.",
+                    "ru": "Австралийская Великая океанская дорога - одна из самых знаковых дорог в мире. Прибрежная дорога протянулась на 151 милю от Торки до Алансфорда и была построена в 20-х годах. Он имеет беспрецедентное количество потрясающих пейзажей, от отвесных океанских скал до нетронутых пляжей для серфинга, а также пересекает один из самых культурных сельских районов Австралии, предлагая возможность увидеть некоторые из самых знаковых пейзажей Австралии одним махом. Направляясь к заливу Аполлона, он путешествует вглубь страны через район Отуэй, побережье кораблекрушений и знаменитые Двенадцать Апостолов.",
+                    "be": "Аўстралійская нацыянальная спадчына, 243-кіламетровы адрэзак дарогі ўздоўж паўднёва-ўсходняга ўзбярэжжа Аўстраліі паміж віктарыянскімі гарадамі Торкі і Алансфард."
+                }
             },
             {
-                "name": "Twelve Apostles",
+                "name": {
+                    "en": "Twelve Apostles",
+                    "ru": "Двенадцать апостолов",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/The_Twelve_Apostles_2011.jpg",
-                "description": "The Twelve Apostles is a collection of limestone stacks off the shore of Port Campbell National Park, by the Great Ocean Road in Victoria, Australia. Their proximity to one another has made the site a popular tourist attraction."
+                "description": {
+                    "en": "The Twelve Apostles is a collection of limestone stacks off the shore of Port Campbell National Park, by the Great Ocean Road in Victoria, Australia. Their proximity to one another has made the site a popular tourist attraction.",
+                    "ru": "Двенадцать Апостолов — группа известняковых скал в океане возле побережья в национальном парке Порт-Кэмпбелл, расположенных на так называемой Великой океанской дороге в австралийском штате Виктория. Их внешний вид и небольшое расстояние один от другого сделали это место популярной туристической достопримечательностью.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Lake Hillier",
+                "name": {
+                    "en": "Lake Hillier",
+                    "ru": "Хиллиер",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.leisurepro.com/blog/wp-content/uploads/2019/04/shutterstock_714405349-1366x800@2x.jpg",
-                "description": "Lake Hillier is a saline lake on the edge of Middle Island, the largest of the islands and islets that make up the Recherche Archipelago in the Goldfields-Esperance region, off the south coast of Western Australia. It is particularly notable for its pink colour."
+                "description": {
+                    "en": "Lake Hillier is a saline lake on the edge of Middle Island, the largest of the islands and islets that make up the Recherche Archipelago in the Goldfields-Esperance region, off the south coast of Western Australia. It is particularly notable for its pink colour.",
+                    "ru": "Хиллиер — озеро на юго-западе Австралии, на острове Мидл-Айленд. Примечательно розовым цветом вод. Озеро по краям окружено песком и эвкалиптовым лесом. Остров и озеро были замечены во время экспедиции британского мореплавателя Мэтью Флиндерса в 1802 году.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Jim Jim Falls",
+                "name": {
+                    "en": "Jim Jim Falls",
+                    "ru": "Водопады Джим Джим",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://d19lgisewk9l6l.cloudfront.net/assetbank/The_Jim_Jim_Falls_in_Kakadu_National_Park_331211.jpg",
-                "description": "The Jim Jim Falls is a plunge waterfall on the Jim Jim Creek that descends over the Arnhem Land escarpment within the UNESCO World Heritage–listed Kakadu National Park in the Northern Territory of Australia. The Jim Jim Falls area is registered on the Australian National Heritage List."
+                "description": {
+                    "en": "The Jim Jim Falls is a plunge waterfall on the Jim Jim Creek that descends over the Arnhem Land escarpment within the UNESCO World Heritage–listed Kakadu National Park in the Northern Territory of Australia. The Jim Jim Falls area is registered on the Australian National Heritage List.",
+                    "ru": "Водопад Джим-Джим - это водопад на реке Джим-Джим, который спускается по уступу Арнем-Лед в национальном парке Какаду, внесенном в список объектов Всемирного наследия ЮНЕСКО, на северной территории Австралии. Район Джим-Джим-Фолс (Jim Jim Falls) зарегистрирован в списке национального наследия Австралии.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Uluru",
+                "name": {
+                    "en": "Uluru",
+                    "ru": "Улуру",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://thebigbus.com.au/wp-content/uploads/2018/11/bigstock-200401003-5.jpg",
-                "description": "Uluru, or Ayers Rock, is a massive sandstone monolith in the heart of the Northern Territory’s arid \"Red Centre\". The nearest large town is Alice Springs, 450km away. Uluru is sacred to indigenous Australians and is thought to have started forming around 550 million years ago. It’s within Uluru-Kata Tjuta National Park, which also includes the 36 red-rock domes of the Kata Tjuta (colloquially “The Olgas”) formation."
+                "description": {
+                    "en": "Uluru, or Ayers Rock, is a massive sandstone monolith in the heart of the Northern Territory’s arid \"Red Centre\". The nearest large town is Alice Springs, 450km away. Uluru is sacred to indigenous Australians and is thought to have started forming around 550 million years ago. It’s within Uluru-Kata Tjuta National Park, which also includes the 36 red-rock domes of the Kata Tjuta (colloquially “The Olgas”) formation.",
+                    "ru": "Скала Улуру, также известная как Эрс-Рок, представляет собой огромный монолит из песчаника. Она расположена в центре пустыни Северной территории и является священной для австралийских аборигенов. Считается, что массив Улуру начал формироваться около 550 миллионов лет назад. Он находится в национальном парке Улуру-Ката-Тьюта в 450 километрах от города Алис-Спрингс. В этом же парке расположена гора Ката-Тьюта, также известная как Ольга. Она состоит из 36 каменных массивов красного цвета.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Kangaroo Island",
+                "name": {
+                    "en": "Kangaroo Island",
+                    "ru": "Остров Кенгуру",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.exceptionalkangarooisland.com/wp-content/uploads/2019/07/image-6.jpg",
-                "description": "Kangaroo Island lies off the mainland of South Australia, southwest of Adelaide. Over a third of the island is protected in nature reserves, home to native wildlife like sea lions, koalas and diverse bird species. In the west, Flinders Chase National Park is known for penguin colonies and striking coastal rock formations, like the sculpted Remarkable Rocks and the stalactite-covered Admirals Arch."
+                "description": {
+                    "en": "Kangaroo Island lies off the mainland of South Australia, southwest of Adelaide. Over a third of the island is protected in nature reserves, home to native wildlife like sea lions, koalas and diverse bird species. In the west, Flinders Chase National Park is known for penguin colonies and striking coastal rock formations, like the sculpted Remarkable Rocks and the stalactite-covered Admirals Arch.",
+                    "ru": "Остров Кенгуру расположен близ побережья Южной Австралии, к юго-западу от столицы штата Аделаиды. Более трети территории острова входит в состав заповедников, где обитают морские львы, коалы и разнообразные виды птиц. Национальный парк Флиндерс-Чейc на западе острова известен своими колониями пингвинов и причудливыми скальными образованиями, среди которых напоминающие скульптуры скалы Ремаркабл и покрытая сталактитами Адмиральская арка.",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/QojXRvYgXxo"
     },
     {
-        "country": "Cambodia",
+        "country": {
+            "en": "Cambodia",
+            "ru": "Камбоджа",
+            "be": "Вялікая акіянская дарога"
+        },
         "polygonCoordinates": [
             [
                 [103.4972799011397, 10.632555446815928],
@@ -310,46 +374,106 @@
             ]
         ],
         "capital": {
-            "name": "Phnom Penh",
+            "name": {
+                "en": "Phnom Penh",
+                "ru": "Пном Пен",
+                "be": "Вялікая акіянская дарога"
+            },
             "coords": [11.552889, 104.865913]
         },
-        "overview": "Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta, mountains and Gulf of Thailand coastline. Phnom Penh, its capital, is home to the art deco Central Market, glittering Royal Palace and the National Museum's historical and archaeological exhibits. In the country's northwest are the ruins of Angkor Wat, a massive stone temple complex built during the Khmer Empire.",
+        "overview": {
+            "en": "Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta, mountains and Gulf of Thailand coastline. Phnom Penh, its capital, is home to the art deco Central Market, glittering Royal Palace and the National Museum's historical and archaeological exhibits. In the country's northwest are the ruins of Angkor Wat, a massive stone temple complex built during the Khmer Empire.",
+            "ru": "Камбоджа – страна в Юго-Восточной Азии с разнообразным рельефом: на ее территории расположены низменные равнины, дельта реки Меконг, горы и побережье Сиамского залива. Столица страны, Пномпень, славится своим Центральным рынком в стиле ар-деко, великолепным Королевским дворцом и Национальным музеем, в экспозиции которого представлены археологические находки и произведения камбоджийского искусства. На северо-западе страны находится огромный каменный храмовый комплекс Ангкор-Ват, построенный во времена Кхмерской империи.",
+            "be": "Вялікая акіянская дарога"
+        },
         "photoURL": "https://www.eyeonasia.gov.sg/images/asean-countries/Cambodia%20snapshot%20cover.jpg",
         "landmarks": [{
-                "name": "Angkor Wat",
+                "name": {
+                    "en": "Angkor Wat",
+                    "ru": "Ангкор-Ват",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.thecollector.com/wp-content/uploads/2020/05/photo-angkor-wat-cambodia.jpg",
-                "description": "Angkor Wat is a temple complex in Cambodia and the largest religious monument in the world by land area, measuring 162.6 hectares.It was originally built in the first half of the 12th century as a Hindu temple. Spread across more than 400 acres, Angkor Wat is said to be the largest religious monument in the world."
+                "description": {
+                    "en": "Angkor Wat is a temple complex in Cambodia and the largest religious monument in the world by land area, measuring 162.6 hectares.It was originally built in the first half of the 12th century as a Hindu temple. Spread across more than 400 acres, Angkor Wat is said to be the largest religious monument in the world.",
+                    "ru": "Ангко́р-Ват — храмовый комплекс в честь бога Вишну, построенный королём Сурьяварманом II в первой половине XII века в области Ангкор, провинции Сиемреап на севере Камбоджи, в окрестностях Великого озера, где в XI—XIV веках находился район столиц Ангкорской империи и резиденций древних кхмерских царей.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Bayon Temple",
+                "name": {
+                    "en": "Bayon Temple",
+                    "ru": "Байон",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://dam-13749.kxcdn.com/wp-content/uploads/2019/12/cropped-bayon-temple-3.jpg",
-                "description": "The Bayon is a richly decorated Khmer Buddhist temple at Angkor in Cambodia. Built in the late 12th or early 13th century as the state temple of the Mahayana Buddhist King Jayavarman VII, the Bayon stands at the centre of Jayavarman's capital, Angkor Thom."
+                "description": {
+                    "en": "The Bayon is a richly decorated Khmer Buddhist temple at Angkor in Cambodia. Built in the late 12th or early 13th century as the state temple of the Mahayana Buddhist King Jayavarman VII, the Bayon stands at the centre of Jayavarman's capital, Angkor Thom.",
+                    "ru": "Байон — храмовый комплекс в центре Ангкор-Тхома, построен в XII веке в честь Джаявармана VII. Храм имеет три уровня и его окружают три стены. Основная часть декора храма — изображение бытовой и повседневной жизни кхмеров.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Prasat Beng Mealea",
+                "name": {
+                    "en": "Prasat Beng Mealea",
+                    "ru": "Бэнгмеалеа",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://lp-cms-production.imgix.net/2019-06/4dde76e392e03370d55a64ca23c31831-beng-mealea.jpg",
-                "description": "Beng Mealea, or Boeng Mealea, is a temple from the Angkor Wat period located 40 km east of the main group of temples at Angkor, Cambodia, on the ancient royal highway to Preah Khan Kompong Svay."
+                "description": {
+                    "en": "Beng Mealea, or Boeng Mealea, is a temple from the Angkor Wat period located 40 km east of the main group of temples at Angkor, Cambodia, on the ancient royal highway to Preah Khan Kompong Svay.",
+                    "ru": "Бэнгмеалеа — храм в стиле Ангкор-Вата, расположенный в 40 км к востоку от основной группы храмов в Ангкоре, в Камбодже, на древней королевской дороге на Прэахкхан.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Ta Prohm Temple",
+                "name": {
+                    "en": "Ta Prohm Temple",
+                    "ru": "Та Прохм",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.renegadetravels.com/wp-content/uploads/2013/07/ta-prohm-22.jpg",
-                "description": "Ta Prohm is the modern name of the temple in Siem Reap, Cambodia, built in the Bayon style largely in the late 12th and early 13th centuries and originally called Rajavihara."
+                "description": {
+                    "en": "Ta Prohm is the modern name of the temple in Siem Reap, Cambodia, built in the Bayon style largely in the late 12th and early 13th centuries and originally called Rajavihara.",
+                    "ru": "Та Прум, «предок Брахмы» — храм в Ангкоре, построен Джайяварманом VII (королем Кхмерской империи) в честь своей матери, которую он отождествлял с Праджняпарамитой. занимает площадь 180 акров. Был освящён лично Джайяварманом VII в 1186 году.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Royal Palace",
+                "name": {
+                    "en": "Royal Palace",
+                    "ru": "Королевский дворец",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Le_Palais_Royal_%28Phnom_Penh%29_%286997773481%29.jpg",
-                "description": "The Royal Palace, in Chey Chumneas, Phnom Penh, Cambodia, is a complex of buildings which serves as the royal residence of the King of Cambodia. Its full name in the Khmer language is Preah Barom Reachaviang Chaktomuk Serei Mongkol."
+                "description": {
+                    "en": "The Royal Palace, in Chey Chumneas, Phnom Penh, Cambodia, is a complex of buildings which serves as the royal residence of the King of Cambodia. Its full name in the Khmer language is Preah Barom Reachaviang Chaktomuk Serei Mongkol.",
+                    "ru": "Королевский дворец в Пномпене — комплекс зданий в Пномпене, столице Камбоджи, резиденция королей Камбоджи, которые живут здесь с момента постройки дворца в 1860 годах, за исключения времени правления режима красных кхмеров.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Wat Phnom",
+                "name": {
+                    "en": "Wat Phnom",
+                    "ru": "Ват Пном",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://i.pinimg.com/originals/95/c0/ea/95c0ea41fc1e3a1626f17c433aa17f0e.jpg",
-                "description": "Wat Phnom is a Buddhist temple is a pagoda that symbolizes the name of Phnom Penh, a historical site in the record of Khmer national identity. Wat Phnom Doun Penh has a total height of 46 meters equal to the height of feet."
+                "description": {
+                    "en": "Wat Phnom is a Buddhist temple is a pagoda that symbolizes the name of Phnom Penh, a historical site in the record of Khmer national identity. Wat Phnom Doun Penh has a total height of 46 meters equal to the height of feet.",
+                    "ru": "Ват Пном — буддийский монастырь в Пномпене, Камбоджа. Основан в 1373 г.. Возвышаясь на 27 метров над землей, Ват Пном является самым высоким религиозным зданием города.",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/1yc6bSRih-o"
     },
     {
-        "country": "Germany",
+        "country": {
+            "en": "Germany",
+            "ru": "Германия",
+            "be": "Вялікая акіянская дарога"
+        },
         "polygonCoordinates": [
             [
                 [9.921906365609232, 54.983104153048025],
@@ -413,46 +537,106 @@
             ]
         ],
         "capital": {
-            "name": "Berlin",
+            "name": {
+                "en": "Berlin",
+                "ru": "Берлин",
+                "be": "Вялікая акіянская дарога"
+            },
             "coords": [52.518654, 13.374711]
         },
-        "overview": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.",
+        "overview": {
+            "en": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.",
+            "ru": "Германия – государство в Западной Европе с лесами, реками, горными хребтами и пляжными курортами Северного моря. История страны охватывает период в более чем две тысячи лет. В столице, Берлине, кипит культурная и ночная жизнь. Многие достопримечательности города, в частности Бранденбургские ворота, напоминают о событиях Второй мировой войны. Мюнхен знаменит фестивалем Октоберфест и пивными ресторанами. Самый известный из них – \"Хофбройхаус\", открывшийся ещё в XVI веке. Франкфурт – город небоскребов, именно здесь находится штаб-квартира Европейского центрального банка.",
+            "be": "Вялікая акіянская дарога"
+        },
         "photoURL": "https://wantsee.world/wp-content/uploads/2020/05/Germany-Travel.jpg",
         "landmarks": [{
-                "name": "Rakotzbrücke",
+                "name": {
+                    "en": "Rakotzbrücke",
+                    "ru": "Рододендронпарк Кромлау",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://a.cdn-hotels.com/gdcs/production22/d363/4dc44bd3-3f14-4be0-bea8-a3c1c68bbf06.jpg",
-                "description": "Rakotzbrücke is a masonry bridge within Azalea and Rhododendron Park Kromlau. Built in 1860, it features a half-circled arch with jagged, rocky spires on both ends. When reflected against still water, the bridge gives the illusion of a perfect circle – a popular spot for landscape photography. \n Home to Germany’s largest rhododendron gardens, the park itself attracts nature lovers with its 200-acre landscape and outdoor activities such as picnics and strolls. Entrance to the park and Rakotzbrücke is free year-round."
+                "description": {
+                    "en": "Rakotzbrücke is a masonry bridge within Azalea and Rhododendron Park Kromlau. Built in 1860, it features a half-circled arch with jagged, rocky spires on both ends. When reflected against still water, the bridge gives the illusion of a perfect circle – a popular spot for landscape photography. \n Home to Germany’s largest rhododendron gardens, the park itself attracts nature lovers with its 200-acre landscape and outdoor activities such as picnics and strolls. Entrance to the park and Rakotzbrücke is free year-round.",
+                    "ru": "Парк азалий и рододендронов — природный заповедник, ландшафтный парк в Верхней Лужице, находящийся на территории сельского населённого пункта Кромлау коммуны Габленц района Гёрлиц федеральной земли Саксония. Памятник культуры и истории земли Саксония.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Externsteine",
+                "name": {
+                    "en": "Externsteine",
+                    "ru": "Эксерские камни",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://a.cdn-hotels.com/gdcs/production186/d942/6578fc1d-b860-4723-8fa0-3162829396a0.jpg",
-                "description": "The Externsteine is a series of sandstone columns jutting out from Wiembecke, a natural pond within Teutoburg Forest. One of Germany’s most impressive scenery, it dates back to the Ice Age, with several manmade structures added during the Middle Ages. Today, you can visit a grotto, a sarcophagus, and a relief depicting Christ's Descent from the Cross. \n The jagged cliffs range between 13 and 40 metres in height, set against a picturesque backdrop of lush forests, moors, and lakes of Wiembecke Valley. Private gatherings and pagan celebrations often take place at Externsteine, especially during the summer solstice and Walpurgis Night."
+                "description": {
+                    "en": "The Externsteine is a series of sandstone columns jutting out from Wiembecke, a natural pond within Teutoburg Forest. One of Germany’s most impressive scenery, it dates back to the Ice Age, with several manmade structures added during the Middle Ages. Today, you can visit a grotto, a sarcophagus, and a relief depicting Christ's Descent from the Cross. \n The jagged cliffs range between 13 and 40 metres in height, set against a picturesque backdrop of lush forests, moors, and lakes of Wiembecke Valley. Private gatherings and pagan celebrations often take place at Externsteine, especially during the summer solstice and Walpurgis Night.",
+                    "ru": "Эксерские камни - группа скал в Тевтобургском Лесу вблизи Хорн-Бад-Майнберга, в районе Липпе, в Северном Рейне-Вестфалии. Она состоит из тянущегося с северо-запада на юго-восток на протяжении почти километра ряда колоссальных столбов и глыб песчаника, кое-где повалившихся и представляющих огромные, почти отвесные стены.Внизу самой высокой и широкой из этих скал вырублена пещерная часовня, освященная в 1115 году. Снаружи, у входа в эту часовню, высечены на скале, по всей вероятности, около того же времени, с одной стороны фигура апостола Петра, а с другой — рельеф высотой приблизительно в 5, шириной приблизительно в 4 метра, изображающий в верхней своей части «Снятие со креста» — одно из замечательнейших произведений византийско-романского искусства.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Romantic Road",
+                "name": {
+                    "en": "Romantic Road",
+                    "ru": "Романтише штрассе (\"Романтическая дорога\")",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://a.cdn-hotels.com/gdcs/production163/d1338/2c6deb71-c305-4c1b-a7f7-505f127da244.jpg",
-                "description": "Germany’s Romantic Road covers around 350 km between Würzburg and Füssen, with plenty of natural and medieval sites dotting the southern region. You can start your journey from Munich, Frankfurt, or Nuremberg, and depending on how many stops you make, spend about 2 days to 1 week to explore the route. "
+                "description": {
+                    "en": "Germany’s Romantic Road covers around 350 km between Würzburg and Füssen, with plenty of natural and medieval sites dotting the southern region. You can start your journey from Munich, Frankfurt, or Nuremberg, and depending on how many stops you make, spend about 2 days to 1 week to explore the route. ",
+                    "ru": "«Романтическая дорога» — разработанный в 1950-е гг. маршрут по историческим городам юга Германии. Начинается от реки Майн и ведёт с востока Франконии в баварскую Швабию, по части территории Верхней Баварии, до границы Оштальгау в Альпах. Маршрут имеет протяженность 366 километров.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Obersee Lake",
+                "name": {
+                    "en": "Obersee Lake",
+                    "ru": "Озеро Обер",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://a.cdn-hotels.com/gdcs/production192/d208/2190b2eb-6996-46b1-867c-1c1c85ef35fc.jpg",
-                "description": "Obersee Lake is a pristine fjord in Berchtesgaden National Park, about 140 km southeast of Munich. Surrounded by alpine mountains and forests, its emerald waters are so clear you can even see the rocky bottoms. You can reach Obersee Lake by boat – you’ll enjoy an hour-long journey across Lake Königssee to Saletalm Pier. From there, it takes between 30 minutes and 1 hour of hiking on a forested pathway to Lake Obersee. The fjord is open to the public year-round, but the best time to visit is during the summer, when the waters are warm enough for a dip."
+                "description": {
+                    "en": "Obersee Lake is a pristine fjord in Berchtesgaden National Park, about 140 km southeast of Munich. Surrounded by alpine mountains and forests, its emerald waters are so clear you can even see the rocky bottoms. You can reach Obersee Lake by boat – you’ll enjoy an hour-long journey across Lake Königssee to Saletalm Pier. From there, it takes between 30 minutes and 1 hour of hiking on a forested pathway to Lake Obersee. The fjord is open to the public year-round, but the best time to visit is during the summer, when the waters are warm enough for a dip.",
+                    "ru": "Озеро Обер (\"Оберзее\") - это природное озеро в крайнем юго-восточном районе земли Берхтесгаден в немецком государстве Бавария, недалеко от австрийской границы. Все озеро находится в национальном парке Берхтесгаден. Он расположен к юго-востоку от гораздо большего Кенигзее. Два озера разделены мореной.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Basteibrücke",
+                "name": {
+                    "en": "Bastion Bridge",
+                    "ru": "Баштай",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://a.cdn-hotels.com/gdcs/production78/d981/c26b9c5d-c1bd-4e69-9a88-4734d17cf22d.jpg",
-                "description": "Basteibrücke (Bastion Bridge) is a medieval-era bridge in Saxon Switzerland National Park. Spanning 76.5 metres in length, it dates back to the mid-1800s and connects a cluster of jagged sandstone rocks above the Elbe River.Basteibrücke stands over 182 metres tall, serving as a prominent lookout point in Saxon Switzerland – you can enjoy panoramic views of the surrounding rock formations, Elbe River, Lilienstein Mountain, and the fortress of  Koenigstein."
+                "description": {
+                    "en": "Bastion Bridge (Basteibrücke) is a medieval-era bridge in Saxon Switzerland National Park. Spanning 76.5 metres in length, it dates back to the mid-1800s and connects a cluster of jagged sandstone rocks above the Elbe River.Basteibrücke stands over 182 metres tall, serving as a prominent lookout point in Saxon Switzerland – you can enjoy panoramic views of the surrounding rock formations, Elbe River, Lilienstein Mountain, and the fortress of  Koenigstein.",
+                    "ru": "Бастай — формация из песчаных скал со смотровой площадкой в Саксонской Швейцарии на правом берегу реки Эльба между курортом Ратен и городом Велен. Скалы возвышаются над Эльбой на высоту 194 метра. Бастай входит в число самых посещаемых туристических достопримечательностей Саксонской Швейцарии.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Moselle Valley",
+                "name": {
+                    "en": "Moselle Valley",
+                    "ru": "Мозельская долина",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://a.cdn-hotels.com/gdcs/production179/d524/54350dba-0f0c-44f0-861f-bd9e7937414a.jpg",
-                "description": "Moselle Valley covers some of Germany’s most impressive sights, from terraced vineyards and rolling hills, to medieval villages and hilltop castles. The region is named after the 545-km-long River Mosel, which runs along the borders of southwestern Germany, north-eastern France, and eastern Luxembourg. "
+                "description": {
+                    "en": "Moselle Valley covers some of Germany’s most impressive sights, from terraced vineyards and rolling hills, to medieval villages and hilltop castles. The region is named after the 545-km-long River Mosel, which runs along the borders of southwestern Germany, north-eastern France, and eastern Luxembourg. ",
+                    "ru": "Мозельская долина занимает территорию, расположенную на северо-востоке Франции, юго-западе Германии и востоке Люксембурга. Этот регион является сердцем винодельческой промышленности Люксембурга. Здесь с XIX века производят известное белое Мозельское вино.",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/ZHHbpy91O2E"
     },
     {
-        "country": "France",
+        "country": {
+            "en": "France",
+            "ru": "Франция",
+            "be": "Вялікая акіянская дарога"
+        },
         "polygonCoordinates": [
             [
                 [-52.55642473001839, 2.504705308437053],
@@ -536,46 +720,106 @@
             ]
         ],
         "capital": {
-            "name": "Paris",
+            "name": {
+                "en": "Paris",
+                "ru": "Париж",
+                "be": "Вялікая акіянская дарога"
+            },
             "coords": [48.856663, 2.351556]
         },
-        "overview": "France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.",
+        "overview": {
+            "en": "France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.",
+            "ru": "Франция – это страна в Западной Европе, на территории которой находятся средневековые города, альпийские деревни и пляжи Средиземного моря. Париж, столица государства, славится своими домами моды, старейшими художественными музеями, в числе которых Лувр, и достопримечательностями, такими как Эйфелева башня. Франция известна своими винами и изысканной кухней. Наскальная живопись в пещере Ласко, амфитеатр Трех Галлий в Лионе и огромный Версальский дворец свидетельствуют о богатой истории этих мест.",
+            "be": "Вялікая акіянская дарога"
+        },
         "photoURL": "http://www.rustrade.fr/images/Site/France/France.jpg",
         "landmarks": [{
-                "name": "Eiffel Tower",
+                "name": {
+                    "en": "Eiffel Tower",
+                    "ru": "Эйфелева башня",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://cdn.asiatatler.com/asiatatler/i/sg/2019/10/23231025-denys-nevozhai-uzagqg756ou-unsplash_cover_2000x1449.jpg",
-                "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower."
+                "description": {
+                    "en": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.",
+                    "ru": "Эйфелева ба́шня — металлическая башня в центре Парижа, самая узнаваемая его архитектурная достопримечательность. Названа в честь главного конструктора Гюстава Эйфеля; сам Эйфель называл её просто «300-метровой башней».",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Louvre Museum",
+                "name": {
+                    "en": "Louvre Museum",
+                    "ru": "Лувр",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.airtecnics.com/media/6385/Louvre-museum-in-Paris.jpg",
-                "description": "The Louvre, or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France, and is best known for being the home of the Mona Lisa. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement."
+                "description": {
+                    "en": "The Louvre, or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France, and is best known for being the home of the Mona Lisa. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement.",
+                    "ru": "Музей Лувра — один из крупнейших и самый популярный художественный музей мира. Музей расположен в центре Парижа, на правом берегу Сены, на улице Риволи, в 1-м округе столицы. В 2018 году число посетителей Лувра превысило 10 млн человек, что является рекордом. Здание музея — старинный королевский дворец.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Cathédrale Notre-Dame de Paris",
+                "name": {
+                    "en": "Cathédrale Notre-Dame de Paris",
+                    "ru": "Нотр-Дам-де-Пари",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://images2.minutemediacdn.com/image/upload/c_crop,h_2138,w_3809,x_0,y_0/v1554744380/shape/mentalfloss/556629-istock-852755038_primary.jpg?itok=HrgIMUwd",
-                "description": "Notre-Dame de Paris, referred to simply as Notre-Dame, is a medieval Catholic cathedral on the Île de la Cité in the 4th arrondissement of Paris. The cathedral was consecrated to the Virgin Mary and considered to be one of the finest examples of French Gothic architecture."
+                "description": {
+                    "en": "Notre-Dame de Paris, referred to simply as Notre-Dame, is a medieval Catholic cathedral on the Île de la Cité in the 4th arrondissement of Paris. The cathedral was consecrated to the Virgin Mary and considered to be one of the finest examples of French Gothic architecture.",
+                    "ru": "Собор Парижской Богоматери, также парижский собор Нотр-Дам или Нотр-Дам-де-Пари — католический храм в центре Парижа, один из символов французской столицы. Кафедральный собор архиепархии Парижа.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Palace of Versailles",
+                "name": {
+                    "en": "Palace of Versailles",
+                    "ru": "Версаль",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Versailles-Chateau-Jardins02_%28cropped%29.jpg",
-                "description": "The Palace of Versailles was the principal royal residence of France from 1682, under Louis XIV, until the start of the French Revolution in 1789, under Louis XVI. It is located in the department of Yvelines, in the region of Île-de-France, about 20 kilometres southwest of the centre of Paris."
+                "description": {
+                    "en": "The Palace of Versailles was the principal royal residence of France from 1682, under Louis XIV, until the start of the French Revolution in 1789, under Louis XVI. It is located in the department of Yvelines, in the region of Île-de-France, about 20 kilometres southwest of the centre of Paris.",
+                    "ru": "Версаль — дворцово-парковый ансамбль во Франции, бывшая резиденция французских королей в городе Версале, ныне являющемся пригородом Парижа; центр туризма мирового значения. Версаль сооружался под руководством Людовика XIV с 1661 года и стал своеобразным памятником эпохи «короля-солнца», художественно-архитектурным выражением идеи абсолютизма.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Arc de Triomphe",
+                "name": {
+                    "en": "Arc de Triomphe",
+                    "ru": "Триумфальная арка",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://afar-production.imgix.net/uploads/images/afar_post_headers/images/9429LsS7l2/original_shutterstock_214344625.jpg",
-                "description": "The Arc de Triomphe de l'Étoile is one of the most famous monuments in Paris, France, standing at the western end of the Champs-Élysées at the centre of Place Charles de Gaulle, formerly named Place de l'Étoile—the étoile or \"star\" of the juncture formed by its twelve radiating avenues."
+                "description": {
+                    "en": "The Arc de Triomphe de l'Étoile is one of the most famous monuments in Paris, France, standing at the western end of the Champs-Élysées at the centre of Place Charles de Gaulle, formerly named Place de l'Étoile—the étoile or \"star\" of the juncture formed by its twelve radiating avenues.",
+                    "ru": "Триумфальная арка — монумент в 8-м округе Парижа на площади Шарля де Голля, возведённый в 1806—1836 годах по проекту архитектора французского ампира Жана-Франсуа Шальгрена. Проект арки «в древнеримском стиле» был разработан по распоряжению Наполеона Бонапарта в ознаменование побед его «Великой армии».",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Sacré-Cœur",
+                "name": {
+                    "en": "Sacre Coeur Basilica",
+                    "ru": "Базилика Сакре-Кёр",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://lp-cms-production.imgix.net/2019-06/7ad4233f75ec81e3a9a38897ee57353d-basilique-du-sacre-coeur.jpg",
-                "description": "The Basilica of the Sacred Heart of Paris, commonly known as Sacré-Cœur Basilica and often simply Sacré-Cœur, is a Roman Catholic church and minor basilica in Paris, France, dedicated to the Sacred Heart of Jesus. Sacré-Cœur Basilica is located at the summit of the butte Montmartre, the highest point in the city."
+                "description": {
+                    "en": "The Basilica of the Sacred Heart of Paris, commonly known as Sacré-Cœur Basilica and often simply Sacré-Cœur, is a Roman Catholic church and minor basilica in Paris, France, dedicated to the Sacred Heart of Jesus. Sacré-Cœur Basilica is located at the summit of the butte Montmartre, the highest point in the city.",
+                    "ru": "Базили́ка Сакре́-Кёр — католический храм в Париже, построенный в 1875—1914 годах по проекту архитектора Поля Абади в римско-византийском стиле, расположенный на вершине холма Монмартр, в самой высокой точке города.",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/r9qq0GHJeUc"
     },
     {
-        "country": "Spain",
+        "country": {
+            "en": "Spain",
+            "ru": "Испания",
+            "be": "Вялікая акіянская дарога"
+        },
         "polygonCoordinates": [
             [
                 [-9.034817674180246, 41.88057058365967],
@@ -632,46 +876,106 @@
             ]
         ],
         "capital": {
-            "name": "Madrid",
+            "name": {
+                "en": "Madrid",
+                "ru": "Мадрид",
+                "be": "Вялікая акіянская дарога"
+            },
             "coords": [40.419348, -3.700897]
         },
-        "overview": "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.",
+        "overview": {
+            "en": "Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.",
+            "ru": "Испания – европейская страна, расположенная на Пиренейском полуострове. Территория Испании разделена на 17 автономных регионов. В столице страны, Мадриде, находятся Королевский дворец и музей Прадо, где хранятся произведения европейских мастеров. В Сеговии можно посетить средневековый замок (Алькасар) и увидеть хорошо сохранившийся римский акведук. Барселона – столица автономного сообщества Каталония. Облик этого города определяют многочисленные причудливо-фантастические творения архитектора Антонио Гауди, среди которых храм Святого Семейства.",
+            "be": "Вялікая акіянская дарога"
+        },
         "photoURL": "https://cdn.iz.ru/sites/default/files/styles/1920x1080/public/article-2018-06/8%20june%20d.jpg?itok=gtlmbe2v",
         "landmarks": [{
-                "name": "La Sagrada Familia",
+                "name": {
+                    "en": "La Sagrada Familia",
+                    "ru": "Храм Святого Семейства",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://lp-cms-production.imgix.net/2019-06/8ae1c56041e64517e29372a889f1beb7-la-sagrada-familia.jpg",
-                "description": "The Basílica de la Sagrada Família, also known as the Sagrada Família, is a large unfinished Roman Catholic minor basilica in the Eixample district of Barcelona, Catalonia, Spain. Designed by Spanish/Catalan architect Antoni Gaudí, his work on the building is part of a UNESCO World Heritage Site."
+                "description": {
+                    "en": "The Basílica de la Sagrada Família, also known as the Sagrada Família, is a large unfinished Roman Catholic minor basilica in the Eixample district of Barcelona, Catalonia, Spain. Designed by Spanish/Catalan architect Antoni Gaudí, his work on the building is part of a UNESCO World Heritage Site.",
+                    "ru": "Искупительный храм Святого Семейства — церковь в Барселоне, в районе Эшампле, строящаяся с 1882 года.Первый проект был разработан архитектором Франсиско дель Вильяр, на место которого в конце 1883 года был приглашён Антонио Гауди, значительно изменивший первоначальный проект. По решению инициаторов строительства храма финансирование работ должно выполняться исключительно за счёт пожертвований прихожан, что является одной из причин столь длительного строительства.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Park Güell",
+                "name": {
+                    "en": "Park Güell",
+                    "ru": "Парк Гуэля",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://images.musement.com/cover/0002/15/park-guell-fotolia-39543467-subscription-xl-resize-jpg_header-114423.jpeg?w=1200&h=630&q=95&fit=crop",
-                "description": "Parc Güell is a public park system composed of gardens and architectural elements located on Carmel Hill, in Barcelona, Catalonia, Spain. Carmel Hill belongs to the mountain range of Collserola – the Parc del Carmel is located on the northern face."
+                "description": {
+                    "en": "Parc Güell is a public park system composed of gardens and architectural elements located on Carmel Hill, in Barcelona, Catalonia, Spain. Carmel Hill belongs to the mountain range of Collserola – the Parc del Carmel is located on the northern face.",
+                    "ru": "Парк Гуэль — парк в верхней части Барселоны, созданный Антонио Гауди в 1900—1914 годах. Представляет собой сочетание садов и жилых зон, площадь парка составляет 17,18 га.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Alhambra",
+                "name": {
+                    "en": "Alhambra",
+                    "ru": "Альгамбра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://cdn.getyourguide.com/img/location/60096d8b4abac.jpeg/88.jpg",
-                "description": "The Alhambra is a palace and fortress complex located in Granada, Andalucia, Spain. It was originally constructed as a small fortress in 889 CE on the remains of Roman fortifications,. The Alhambra is a UNESCO World Heritage Site."
+                "description": {
+                    "en": "The Alhambra is a palace and fortress complex located in Granada, Andalucia, Spain. It was originally constructed as a small fortress in 889 CE on the remains of Roman fortifications. The Alhambra is a UNESCO World Heritage Site.",
+                    "ru": "Альгáмбра — архитектурно-парковый ансамбль, расположенный на холмистой террасе в восточной части города Гранада в Южной Испании. Альгамбра является объектом Всемирного наследия ЮНЕСКО.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Casa Milà",
+                "name": {
+                    "en": "Casa Milà",
+                    "ru": "Дом Мила",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://casambi.com/wp-content/uploads/2020/05/casamila1-scaled.jpg",
-                "description": "Casa Milà, popularly known as La Pedrera or \"The stone quarry\", a reference to its unconventional rough-hewn appearance, is a modernist building in Barcelona, Catalonia, Spain. It was the last private residence designed by architect Antoni Gaudí and was built between 1906 and 1912."
+                "description": {
+                    "en": "Casa Milà, popularly known as La Pedrera or \"The stone quarry\", a reference to its unconventional rough-hewn appearance, is a modernist building in Barcelona, Catalonia, Spain. It was the last private residence designed by architect Antoni Gaudí and was built between 1906 and 1912.",
+                    "ru": "Каса-Мила́ — жилой дом, построенный в 1906—1910 годах в Барселоне архитектором Антони Гауди для семьи Мила, одна из достопримечательностей каталонской столицы. Здание расположено на пересечении бульвара Пасео-де-Грасия с улицей Карре-де-Провенса.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Casa Batlló",
+                "name": {
+                    "en": "Casa Batlló",
+                    "ru": "Дом Бальо",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.barcelona.com/var/plain/storage/images/barcelona_tickets/casa_batllo_tickets/header_container/casa_batllo_main_header/10251430-1-eng-GB/casa_batllo_main_header_header.jpg",
-                "description": "Casa Batlló is a building in the center of Barcelona. It was designed by Antoni Gaudí, and is considered one of his masterpieces. A remodel of a previously built house, it was redesigned in 1904 by Gaudí and has been refurbished several times after that."
+                "description": {
+                    "en": "Casa Batlló is a building in the center of Barcelona. It was designed by Antoni Gaudí, and is considered one of his masterpieces. A remodel of a previously built house, it was redesigned in 1904 by Gaudí and has been refurbished several times after that.",
+                    "ru": "Каса-Батльо́ — жилой дом, построенный в 1877 году для текстильного магната Жозепа Бальо-и-Касановаса по адресу: Пасео-де-Грасия, 43 в районе Эшампле, Барселона и перестроенный архитектором Антони Гауди в 1904—1906 годах.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "La Rambla",
+                "name": {
+                    "en": "La Rambla",
+                    "ru": "Рамбла",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://hotelarclarambla.com/wp-content/uploads/2019/11/Las-ramblas-de-Barcelona.jpg",
-                "description": "La Rambla is a street in central Barcelona. A tree-lined pedestrian street, it stretches for 1.2 km connecting the Plaça de Catalunya in its center with the Christopher Columbus Monument at Port Vell. La Rambla forms the boundary between the neighbourhoods of the Barri Gòtic to the east and the El Raval to the west."
+                "description": {
+                    "en": "La Rambla is a street in central Barcelona. A tree-lined pedestrian street, it stretches for 1.2 km connecting the Plaça de Catalunya in its center with the Christopher Columbus Monument at Port Vell. La Rambla forms the boundary between the neighbourhoods of the Barri Gòtic to the east and the El Raval to the west.",
+                    "ru": "Рамбла — пешеходная улица в центре Барселоны. Граница между Готическим кварталом и кварталом Эль Раваль. Идёт от площади Каталонии до площади Портал де ла Пау. Протяжённость — 1,2 км.",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/XUIZOdls3XY"
     },
     {
-        "country": "Italy",
+        "country": {
+            "en": "Italy",
+            "ru": "Италия",
+            "be": "Вялікая акіянская дарога"
+        },
         "polygonCoordinates": [
             [
                 [15.520376010813834, 38.23115509699147],
@@ -768,46 +1072,106 @@
             ]
         ],
         "capital": {
-            "name": "Rome",
+            "name": {
+                "en": "Rome",
+                "ru": "Рим",
+                "be": "Вялікая акіянская дарога"
+            },
             "coords": [41.902689, 12.496176]
         },
-        "overview": "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s \"David\" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.",
+        "overview": {
+            "en": "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s \"David\" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.",
+            "ru": "Италия – средиземноморское государство в Южной Европе с длинной береговой линией, которое оказало огромное влияние на западную культуру и кухню. На территории столицы страны, Рима, находится государство Ватикан, а также всемирно известные музеи и древние руины. Другие крупные города Италии – Флоренция, где можно увидеть шедевры эпохи Возрождения, например статую Давида работы Микеланджело и собор Дуомо, созданный по проекту архитектора Брунеллески, а также город каналов Венеция и столица моды Милан.",
+            "be": "Вялікая акіянская дарога"
+        },
         "photoURL": "https://abstour.by/upload/iblock/814/814ae5cb81981d50d9cf99181e3d4b86.jpg",
         "landmarks": [{
-                "name": "Colosseum",
+                "name": {
+                    "en": "Colosseum",
+                    "ru": "Колизей",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://cdn.getyourguide.com/img/location/60096e0d90302.jpeg/88.jpg",
-                "description": "The Colosseum, is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum and is the largest ancient amphitheatre ever built, and is still the largest standing amphitheater in the world today, despite its age."
+                "description": {
+                    "en": "The Colosseum, is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum and is the largest ancient amphitheatre ever built, and is still the largest standing amphitheater in the world today, despite its age.",
+                    "ru": "Колизей, или амфитеатр Флавиев — амфитеатр, памятник архитектуры Древнего Рима, наиболее известное и одно из самых грандиозных сооружений Древнего мира, сохранившихся до нашего времени. Находится в Риме, в низине между Эсквилинским, Палатинским и Целиевым холмами.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Cinque Terre",
+                "name": {
+                    "en": "Cinque Terre",
+                    "ru": "Чинкве-Терре",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://lp-cms-production.imgix.net/features/2015/12/Manarola_cs.jpg?format=auto",
-                "description": "Cinque Terre is a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, harbors are filled with fishing boats and trattorias turn out seafood specialties along with the Liguria region’s famous sauce, pesto. The Sentiero Azzurro cliffside hiking trail links the villages and offers sweeping sea vistas."
+                "description": {
+                    "en": "Cinque Terre is a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, harbors are filled with fishing boats and trattorias turn out seafood specialties along with the Liguria region’s famous sauce, pesto. The Sentiero Azzurro cliffside hiking trail links the villages and offers sweeping sea vistas.",
+                    "ru": "Чинкве-Терре представляет собой цепь из пяти старинных поселений на Итальянской Ривьере – скалистой узкой полосе побережья. Они славятся своими красочными домами, виноградниками на крутых террасах, гаванями, где пришвартованы рыболовецкие судна, и тратториями, в которых подают морепродукты со знаменитым лигурийским соусом песто. Поселения Чинкве-Терре связывает проложенная вдоль скал Лазурная тропа, с которой открывается великолепный вид на море.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Cathedral of Santa Maria del Fiore",
+                "name": {
+                    "en": "Cathedral of Santa Maria del Fiore",
+                    "ru": "Санта - Мария - Дель - Фьоре",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://cdn.britannica.com/71/8671-050-2EE6A745/Cathedral-Florence-Santa-Maria-del-Fiore.jpg",
-                "description": "Florence Cathedral, formally the Cattedrale di Santa Maria del Fiore, is the cathedral of Florence, Italy. It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome engineered by Filippo Brunelleschi."
+                "description": {
+                    "en": "Florence Cathedral, formally the Cattedrale di Santa Maria del Fiore, is the cathedral of Florence, Italy. It was begun in 1296 in the Gothic style to a design of Arnolfo di Cambio and was structurally completed by 1436, with the dome engineered by Filippo Brunelleschi.",
+                    "ru": "Собор Санта-Мария-дель-Фьоре — кафедральный собор во Флоренции, самое знаменитое из архитектурных сооружений флорентийского кватроченто. Находится в центре города, на Соборной площади.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Pantheon",
+                "name": {
+                    "en": "Pantheon",
+                    "ru": "Пантеон",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.learnreligions.com/thmb/Ab0Nl8iWXE9EIZwYPCPhoJ3PMzo=/3864x2173/smart/filters:no_upscale()/pantheon--rome--italy-870287362-5a87671b6bf06900375c06f2.jpg",
-                "description": "The Pantheon is a former Roman temple, now a Catholic church, in Rome, Italy, on the site of an earlier temple commissioned by Marcus Agrippa during the reign of Augustus. It was rebuilt by the emperor Hadrian and probably dedicated around 126AD."
+                "description": {
+                    "en": "The Pantheon is a former Roman temple, now a Catholic church, in Rome, Italy, on the site of an earlier temple commissioned by Marcus Agrippa during the reign of Augustus. It was rebuilt by the emperor Hadrian and probably dedicated around 126AD.",
+                    "ru": "Пантеон – это  античный храм, посвященный древнеримским богам и воплощение величия Римской Империи. Предполагается, что он  был построен во 2 веке н.э. на месте храма, построенного в 27 веке до н.э. Марком Агриппой. В 7 веке Пантеон был переосвящён в католический храм. Сегодня это достижение античности находится на площади дела Ротонда (Piazza della Rotonda).",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Trevi Fountain",
+                "name": {
+                    "en": "Trevi Fountain",
+                    "ru": "Фонтан Треви",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://inspirations.blacktomato.com/wp-content/uploads/2019/11/Trevi-Fountain-in-Rome-daylight.jpg",
-                "description": "The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others. Standing 26.3 metres high and 49.15 metres wide, it is the largest Baroque fountain in the city and one of the most famous fountains in the world."
+                "description": {
+                    "en": "The Trevi Fountain is a fountain in the Trevi district in Rome, Italy, designed by Italian architect Nicola Salvi and completed by Giuseppe Pannini and several others. Standing 26.3 metres high and 49.15 metres wide, it is the largest Baroque fountain in the city and one of the most famous fountains in the world.",
+                    "ru": "Фонтан Треви — самый крупный фонтан Рима, вместе с фасадом здания, являющимся частью архитектурно-скульптурной композиции, имеет высоту 25,9 м и ширину 49,8 м. Фонтан построен в 1732—1762 годах по проекту архитектора Николо Сальви. Он примыкает к фасаду Палаццо Поли.",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Uffizi Gallery",
+                "name": {
+                    "en": "Uffizi Gallery",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.uffiziticket.com/wp-content/uploads/2019/11/Slide-4.jpg",
-                "description": "The Uffizi Gallery is a prominent art museum located adjacent to the Piazza della Signoria in the Historic Centre of Florence in the region of Tuscany, Italy."
+                "description": {
+                    "en": "The Uffizi Gallery is a prominent art museum located adjacent to the Piazza della Signoria in the Historic Centre of Florence in the region of Tuscany, Italy.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/jLgcah7bpl4"
     },
     {
-        "country": "Japan",
+        "country": {
+            "en": "Japan",
+            "ru": "Канберра",
+            "be": "Вялікая акіянская дарога"
+        },
         "polygonCoordinates": [
             [
                 [134.63842817600388, 34.14923371025642],
@@ -882,46 +1246,106 @@
             ]
         ],
         "capital": {
-            "name": "Tokyo",
+            "name": {
+                "en": "Tokyo",
+                "ru": "Канберра",
+                "be": "Вялікая акіянская дарога"
+            },
             "coords": [35.6817, 139.753882]
         },
-        "overview": "Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south.",
+        "overview": {
+            "en": "Japan is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south.",
+            "ru": "Канберра",
+            "be": "Вялікая акіянская дарога"
+        },
         "photoURL": "https://smolensk-travel.com/assets/galleries/58/jap-4.jpg",
         "landmarks": [{
-                "name": "Mount Fuji",
+                "name": {
+                    "en": "Mount Fuji",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.liveabout.com/thmb/xmHHjutbUKGMvgxh5Dr1F_BVXB8=/3435x2576/smart/filters:no_upscale()/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg",
-                "description": "Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige."
+                "description": {
+                    "en": "Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Kinkaku-ji",
+                "name": {
+                    "en": "Kinkaku-ji",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://lp-cms-production.imgix.net/2019-06/015e2ab56932a07a3cb5f7f2decd418c0623bf47d28d262a8ab8199eb8797ad8.jpg",
-                "description": "Kinkaku-ji, officially named Rokuon-ji, is a Zen Buddhist temple in Kyoto, Japan. It is one of the most popular buildings in Kyoto, attracting many visitors annually."
+                "description": {
+                    "en": "Kinkaku-ji, officially named Rokuon-ji, is a Zen Buddhist temple in Kyoto, Japan. It is one of the most popular buildings in Kyoto, attracting many visitors annually.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Fushimi Inari Taisha",
+                "name": {
+                    "en": "Fushimi Inari Taisha",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://dskyoto.s3.amazonaws.com/gallery/full/8514/5559/7797/08-20131216_FushimiInari_Mainspot-307.jpg",
-                "description": "Fushimi Inari-taisha is the head shrine of the kami Inari, located in Fushimi-ku, Kyoto, Kyoto Prefecture, Japan."
+                "description": {
+                    "en": "Fushimi Inari-taisha is the head shrine of the kami Inari, located in Fushimi-ku, Kyoto, Kyoto Prefecture, Japan.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Kiyomizu-dera",
+                "name": {
+                    "en": "Kiyomizu-dera",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2017/07/Kiyomizudera-Temple-Kyoto.jpg",
-                "description": "Kiyomizu-dera, formally Otowa-san Kiyomizu-dera, is a Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site."
+                "description": {
+                    "en": "Kiyomizu-dera, formally Otowa-san Kiyomizu-dera, is a Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Tokyo Skytree",
+                "name": {
+                    "en": "Tokyo Skytree",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2017/07/iStock-skytree-Torsakarin.jpg",
-                "description": "Tokyo Skytree is a broadcasting and observation tower in Sumida, Tokyo. It became the tallest structure in Japan in 2010 and reached its full height of 634 meters in March 2011, making it the tallest tower in the world, displacing the Canton Tower, and the second tallest structure in the world after the Burj Khalifa."
+                "description": {
+                    "en": "Tokyo Skytree is a broadcasting and observation tower in Sumida, Tokyo. It became the tallest structure in Japan in 2010 and reached its full height of 634 meters in March 2011, making it the tallest tower in the world, displacing the Canton Tower, and the second tallest structure in the world after the Burj Khalifa.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Sensō-ji",
+                "name": {
+                    "en": "Sensō-ji",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/05/sensoji-temple-iStock-1083328636.jpg",
-                "description": "Sensō-ji is an ancient Buddhist temple located in Asakusa, Tokyo, Japan. It is Tokyo's oldest temple, and one of its most significant. Formerly associated with the Tendai sect of Buddhism, it became independent after World War II."
+                "description": {
+                    "en": "Sensō-ji is an ancient Buddhist temple located in Asakusa, Tokyo, Japan. It is Tokyo's oldest temple, and one of its most significant. Formerly associated with the Tendai sect of Buddhism, it became independent after World War II.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/IQy0FPmZpRo"
     },
     {
-        "country": "Switzerland",
+        "country": {
+            "en": "Switzerland",
+            "ru": "Канберра",
+            "be": "Вялікая акіянская дарога"
+        },
         "polygonCoordinates": [
             [
                 [9.59422610844635, 47.52505809182027],
@@ -951,40 +1375,96 @@
             ]
         ],
         "capital": {
-            "name": "Bern",
+            "name": {
+                "en": "Bern",
+                "ru": "Канберра",
+                "be": "Вялікая акіянская дарога"
+            },
             "coords": [46.947978, 7.440386]
         },
-        "overview": "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.",
+        "overview": {
+            "en": "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.",
+            "ru": "Канберра",
+            "be": "Вялікая акіянская дарога"
+        },
         "photoURL": "https://www.expatica.com/app/uploads/sites/9/2017/07/cost-of-living-thun.jpg",
         "landmarks": [{
-                "name": "Mount Pilatus",
+                "name": {
+                    "en": "Mount Pilatus",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/mount_pilatus.jpg?v=5d8ecb3f56d223081d50aab24d85ae31",
-                "description": "Mount Pilatus in the Lake Lucerne region is full of legends. The name of the mountain comes from a rumor that the famous biblical Roman governor Pontius Pilate may have been buried there. Medieval Europeans believed that the mountain formed as a dragon rock falling from the sky. The 2,100 meter (7000 foot) peak offers views of the Swiss and French Alps, as well as Lake Lucerne below. The winter boasts a high-altitude Christmas market, and the summer offers hiking opportunities galore. This region can be reached with the steepest railway in the world, boasting grades over 48%."
+                "description": {
+                    "en": "Mount Pilatus in the Lake Lucerne region is full of legends. The name of the mountain comes from a rumor that the famous biblical Roman governor Pontius Pilate may have been buried there. Medieval Europeans believed that the mountain formed as a dragon rock falling from the sky. The 2,100 meter (7000 foot) peak offers views of the Swiss and French Alps, as well as Lake Lucerne below. The winter boasts a high-altitude Christmas market, and the summer offers hiking opportunities galore. This region can be reached with the steepest railway in the world, boasting grades over 48%.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Jet d'Eau",
+                "name": {
+                    "en": "Jet d'Eau",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/jet_deau.jpg?v=1",
-                "description": "This giant water fountain is one of Geneva’s most famous landmarks. Shooting 140 meters (460 feet) into the air, the Jet d’Eau sits where Lake Geneva empties into the Rhone river, and is so large that it can be seen from miles away. At any one time, 7 tons of water is in the air, much of which sprays spectators on the pier beneath. Two or three times a year it is illuminated pink, blue or another color to mark a humanitarian occasion. The local swimming area, known as the Bains de Paquis, is one of the best areas to view the fountain."
+                "description": {
+                    "en": "This giant water fountain is one of Geneva’s most famous landmarks. Shooting 140 meters (460 feet) into the air, the Jet d’Eau sits where Lake Geneva empties into the Rhone river, and is so large that it can be seen from miles away. At any one time, 7 tons of water is in the air, much of which sprays spectators on the pier beneath. Two or three times a year it is illuminated pink, blue or another color to mark a humanitarian occasion. The local swimming area, known as the Bains de Paquis, is one of the best areas to view the fountain.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Grindelwald",
+                "name": {
+                    "en": "Grindelwald",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/grindelwald.jpg?v=31200f8a8a74438751da02807bd77e97",
-                "description": "The mountain town of Grindelwald is the largest ski resort town in the Jungfrau region. This lovely alpine town is both a summer and winter activity region. Tourists who visit in the summer can enjoy spectacular hiking trails and some of Europe’s most loved rock climbing locations. Winter tourists can ski or even try the local toboggan run. A number of locally accessible mountain peaks and passes makes this a beautiful choice for photographers and nature lovers alike. Festival lovers will love the ice sculptures at the world snow festival."
+                "description": {
+                    "en": "The mountain town of Grindelwald is the largest ski resort town in the Jungfrau region. This lovely alpine town is both a summer and winter activity region. Tourists who visit in the summer can enjoy spectacular hiking trails and some of Europe’s most loved rock climbing locations. Winter tourists can ski or even try the local toboggan run. A number of locally accessible mountain peaks and passes makes this a beautiful choice for photographers and nature lovers alike. Festival lovers will love the ice sculptures at the world snow festival.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Rhine Falls",
+                "name": {
+                    "en": "Rhine Falls",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/rhine_falls.jpg?v=1",
-                "description": "Rhine falls, near Schaffausen, is Europe’s largest waterfall. This amazing sight can be reached via a boat tour, which will also show visitors to Switzerland the lovely basin, riverside castles, and spectacular boulder perched in the middle of the river at the top of the falls. There are viewing platforms that reach out over the falls and allow guests to feel like they’re hovering directly above. A children’s playground, historical museum region and adventure trail make the visitor’s center a wonderful way to cap off the trip."
+                "description": {
+                    "en": "Rhine falls, near Schaffausen, is Europe’s largest waterfall. This amazing sight can be reached via a boat tour, which will also show visitors to Switzerland the lovely basin, riverside castles, and spectacular boulder perched in the middle of the river at the top of the falls. There are viewing platforms that reach out over the falls and allow guests to feel like they’re hovering directly above. A children’s playground, historical museum region and adventure trail make the visitor’s center a wonderful way to cap off the trip.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Zytglogge",
+                "name": {
+                    "en": "Zytglogge",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/zytglogge.jpg?v=ae60a3cbd0e2a95f1b307e6f3b407644",
-                "description": "The clock tower gate in Bern is the oldest city gate in town, and is a great historical site. The gate was built in the 1100s, and the clock that graces the tower is one of the most spectacular and oldest clocks that can be visited anywhere in the world. Built in 1530, this clock was the city’s master clock for centuries. The Baroque style with gold accents is a beautiful picture for both amateur and professional photographers. The tower boasts an astronomical clock, figurines, hour chimes, and two tower clocks that are all driven by a single central mechanism. This is one of the items that has secured Switzerland as one of the premiere clockmaking regions in the world."
+                "description": {
+                    "en": "The clock tower gate in Bern is the oldest city gate in town, and is a great historical site. The gate was built in the 1100s, and the clock that graces the tower is one of the most spectacular and oldest clocks that can be visited anywhere in the world. Built in 1530, this clock was the city’s master clock for centuries. The Baroque style with gold accents is a beautiful picture for both amateur and professional photographers. The tower boasts an astronomical clock, figurines, hour chimes, and two tower clocks that are all driven by a single central mechanism. This is one of the items that has secured Switzerland as one of the premiere clockmaking regions in the world.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             },
             {
-                "name": "Bernina Express",
+                "name": {
+                    "en": "Bernina Express",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                },
                 "photo": "https://www.touropia.com/gfx/d/tourist-attractions-in-switzerland/bernina_express.jpg?v=8800068a3c2bf281ae37521162d641ad",
-                "description": "The Bernina Express is a brightly colored scarlet train that crosses the Alps beginning in the town of Chur and ends in Tirano, just across the border in northern Italy. Arguable the most scenic Swiss train ride, the route takes about 4hours, and goes over 196 bridges and through 55 tunnels. Views of glaciers and mountain peaks and towns, bridges spanning across 60 meter (200 foot) drops and many more breathtaking sights are speeding by outside of the train, while porters bring snacks and drinks directly to your seat. This is not a trip to miss."
+                "description": {
+                    "en": "The Bernina Express is a brightly colored scarlet train that crosses the Alps beginning in the town of Chur and ends in Tirano, just across the border in northern Italy. Arguable the most scenic Swiss train ride, the route takes about 4hours, and goes over 196 bridges and through 55 tunnels. Views of glaciers and mountain peaks and towns, bridges spanning across 60 meter (200 foot) drops and many more breathtaking sights are speeding by outside of the train, while porters bring snacks and drinks directly to your seat. This is not a trip to miss.",
+                    "ru": "Канберра",
+                    "be": "Вялікая акіянская дарога"
+                }
             }
         ],
         "video": "https://www.youtube.com/embed/dapluVS0lgg"
