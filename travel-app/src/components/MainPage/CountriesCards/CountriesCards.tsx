@@ -37,7 +37,6 @@ export default function CountriesCards({search}: CountriesCardsProps) {
             {isSearchSucces && <Card
                 key={country}
                 className={`country-card`}
-                href='/'
                 data-country={country.en}
                 >
                   <NavLink to={`/country/${country}`}>
