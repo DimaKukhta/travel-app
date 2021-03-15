@@ -35,7 +35,7 @@ export default function CountriesCards({search}: CountriesCardsProps) {
           return (
             <>
             {isSearchSucces && <Card
-                key={country}
+                key={country.en}
                 className={`country-card`}
                 data-country={country.en}
                 >
