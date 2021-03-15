@@ -3,6 +3,8 @@ import { Select, Button, Icon } from 'semantic-ui-react'
 import { languages } from '../../types/types'
 import logo from '../../assets/images/logo.png';
 import './Header.css'
+import { NavLink } from 'react-router-dom';
+
 
 interface HeaderProps {
   updateSearch: (input: string) => void;
@@ -25,9 +27,9 @@ export default class Header extends Component<HeaderProps, {}> {
   render() {
     return (
       <div className='header'>
-        <a href='/'>
+        <NavLink to='/'>
           <img className='header_logo' src={logo} alt='logo'></img>
-        </a>
+        </NavLink>
         <Select className='header_lang' placeholder='Select language' options={languages} />
         <div>
           <input

@@ -3,6 +3,7 @@ import { Card, Image } from 'semantic-ui-react'
 import './CountriesCards.css'
 
 import data from '../../../countriesData/data'
+import { NavLink } from 'react-router-dom';
 
 interface CountriesCardsProps {
   search: string;
@@ -34,11 +35,11 @@ export default function CountriesCards({search}: CountriesCardsProps) {
           return (
             <>
             {isSearchSucces && <Card
-                key={country}
+                key={country.en}
                 className={`country-card`}
-                href='/'
                 data-country={country.en}
                 >
+                  <NavLink to={`/country/${country.en}`}>
                 <Image src={photoURL} />
                 <Card.Content>
                   <Card.Description>
@@ -48,6 +49,7 @@ export default function CountriesCards({search}: CountriesCardsProps) {
                     <em className={getSelectSearchClass(search, !isCountryFind)}>{name.en}</em>
                   </Card.Description>
                 </Card.Content>
+                </NavLink>
               </Card>}
             </>
           )
