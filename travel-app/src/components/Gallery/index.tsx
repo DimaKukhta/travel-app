@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ImageGallery, { ReactImageGalleryItem } from "react-image-gallery";
+import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
-import countriesData from "../../countriesInfo.json";
+import countriesData from "../../countriesData/data";
 import "./Gallery.scss";
 
 const images: {
@@ -10,14 +10,16 @@ const images: {
   description: string;
   originalTitle: string;
 }[] = [];
-countriesData[0].landmarks.forEach((element) => {
-  images.push({
-    original: element.photo,
-    thumbnail: element.photo,
-    description: element.description,
-    originalTitle: element.name,
-  });
-});
+countriesData[0].landmarks.forEach(
+  (element: { photo: string; name: string; description: string }) => {
+    images.push({
+      original: element.photo,
+      thumbnail: element.photo,
+      description: element.description,
+      originalTitle: element.name,
+    });
+  }
+);
 
 const Gallery = () => {
   const [imgId, setImgId] = useState(0);
