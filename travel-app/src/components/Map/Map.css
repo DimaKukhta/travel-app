@@ -1,0 +1,11 @@
+.Map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Map,
+.ymaps-2-1-78-fullscreen {
+    filter: hue-rotate(45deg);
+}
