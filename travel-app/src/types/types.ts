@@ -1,8 +1,8 @@
-export type TCountries = 'Australia' | 'Canada' | 'Germany' | 'France' | 'Spain' | 'Italy' | 'Japan' | 'Switzerland';
+export type TCountries = 'Australia' | 'Cambodia' | 'Germany' | 'France' | 'Spain' | 'Italy' | 'Japan' | 'Switzerland';
 
 export enum currencies {
   Australia = 'AUD',
-  Canada = 'CAD',
+  Cambodia = 'KHR',
   Germany = 'EUR',
   France = 'EUR',
   Spain = 'EUR',
@@ -13,7 +13,7 @@ export enum currencies {
 
 export enum capitals {
   Australia = 'Canberra',
-  Canada = 'Ottawa',
+  Cambodia = 'Phnom Penh',
   Germany = 'Berlin',
   France = 'Paris',
   Spain = 'Madrid',
@@ -24,7 +24,7 @@ export enum capitals {
 
 export enum countryCodes {
   Australia = 'AU',
-  Canada = 'CA',
+  Cambodia = 'KH',
   Germany = 'DE',
   France = 'FR',
   Spain = 'ES',
