@@ -1,23 +1,30 @@
 import React, { Component, PropsWithChildren } from 'react';
 import Header from '../Header/Header';
 import CountriesCards from './CountriesCards/CountriesCards';
-import CountryPage from '../country-page/CountryPage'
+import CountryPage from '../country-page/CountryPage';
+import { SignIn } from '../Header/SignIn/SignIn';
+import { Registration } from '../Header/Registration/Registration';
 import Footer from '../Footer/Footer';
 import './MainPage.css';
 import {
   Switch,
   Route,
-  BrowserRouter
+  BrowserRouter,
+  Redirect
 } from "react-router-dom";
 
 
 interface MainPageState {
   search: string,
+  user: any,
+  isAuthorized: boolean
 }
 
 export default class MainPage extends Component<{}, MainPageState> {
   state = {
     search: '',
+    user: {},
+    isAuthorized: false
   }
 
   updateSearch = (input: string): void => {
@@ -26,8 +33,40 @@ export default class MainPage extends Component<{}, MainPageState> {
     })
   }
 
-  componentDidMount() {
+  signIn = (user: any): void => {
+    this.setState({
+      user,
+      isAuthorized: true
+    })
+  }
 
+  logout = (): void => {
+    this.setState({
+      user: {},
+      isAuthorized: false
+    });
+    if (localStorage.getItem('token')) {
+      localStorage.removeItem('token');
+    }
+  }
+
+  authorization = async () => {
+    const response = await fetch('https://travel-app-be1.herokuapp.com/auth', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify({token: localStorage.getItem('token')}),
+    });
+
+    const result = await response.json();
+    this.signIn(result);
+  }
+
+  componentDidMount() {
+    if (localStorage.getItem('token')) {
+      this.authorization();
+    }
   }
 
   componentWillUnmount() {
@@ -42,15 +81,25 @@ export default class MainPage extends Component<{}, MainPageState> {
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-          <Header updateSearch={this.updateSearch} hasSearch={true}/>
+          <Header updateSearch={this.updateSearch} hasSearch={true} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
               <CountriesCards search={search} />
             </Route>
             <Route path="/country">
-          <Header hasSearch={false}/>
+          <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
 
               <CountryPage />
             </Route>
+            <Route path="/login">
+              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
+              <SignIn signIn={this.signIn}/>
+            </Route>
+            <Route path="/registration">
+              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
+              <Registration signIn={this.signIn}/>
+            </Route>
           </Switch>
+          {this.state.isAuthorized ? <Redirect from="/login" to="/" /> : null}
+          {this.state.isAuthorized ? <Redirect from="/registration" to="/" /> : null}
           <Footer />
 
         </BrowserRouter>
