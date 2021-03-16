@@ -23,7 +23,7 @@ export default class Header extends Component<HeaderProps, {}> {
       this.props.updateSearch(value);
     }
   }
-
+  
   componentDidMount() {
     const elem = this.textInput.current;
     elem?.focus();
