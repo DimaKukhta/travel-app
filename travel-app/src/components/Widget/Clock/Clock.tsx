@@ -39,7 +39,7 @@ export default class Clock extends Component<TClockProps> {
     //date
     const year = time.getUTCFullYear();
     const month = addZeroes(translateWidget.clock.months[lang][time.getUTCMonth()]);
-    console.log(month)
+
     const day = addZeroes(time.getUTCDate());
     const dayOfWeek = translateWidget.clock.daysOfWeek[lang][time.getUTCDay()];
     //time

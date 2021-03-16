@@ -31,6 +31,11 @@ const translate: Itranslate = {
       ru: 'Войти',
       be: 'Увайсцi',
     },
+    logout: {
+      en: 'Logout',
+      ru: 'Выход',
+      be: 'Выхад',
+    },
     registration: {
       en: 'Registration',
       ru: 'Регистрация',

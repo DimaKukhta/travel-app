@@ -78,12 +78,12 @@ export default class Header extends Component<HeaderProps, {}> {
         <div className="authorization">
           {this.props.isAuthorized 
           ? <div className="logout-and-avatar">
-              <Button color="red" onClick={this.props.logout}>Logout</Button>
+              <Button color="red" onClick={this.props.logout}>{translate.header.logout[lang]}</Button>
               {this.props.user.avatar ? <img className="header-avatar" src={this.props.user.avatar} alt="avatar" /> : null}
             </div>
           : <div>
-            <Button color="blue"><NavLink to="/login">Sign in</NavLink></Button>
-            <Button color="yellow"><NavLink to="/registration">Registration</NavLink></Button>
+            <Button color="blue"><NavLink to="/login">{translate.header.singIn[lang]}</NavLink></Button>
+            <Button color="yellow"><NavLink to="/registration">{translate.header.registration[lang]}</NavLink></Button>
           </div>
           }
         </div>

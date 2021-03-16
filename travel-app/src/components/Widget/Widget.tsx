@@ -38,8 +38,6 @@ export default class Widget extends Component<CountriesProps, {[key: string]: an
     // fetching weather
     try {
       const result = await getWeatherDataForCountry(country, lang);
-      console.log(result)
-
       this.updateWeatherData(result);
     } catch (e) {
       this.updateWeatherData(e);

@@ -37,6 +37,12 @@ export default class MainPage extends Component<{}, MainPageState> {
     })
   }
 
+  updateLang = (lang: string): void => {
+    this.setState({
+      lang: lang,
+    })
+  }
+
   signIn = (user: any): void => {
     this.setState({
       user,
@@ -60,7 +66,7 @@ export default class MainPage extends Component<{}, MainPageState> {
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },
-      body: JSON.stringify({token: localStorage.getItem('token')}),
+      body: JSON.stringify({ token: localStorage.getItem('token') }),
     });
 
     const result = await response.json();
@@ -85,37 +91,50 @@ export default class MainPage extends Component<{}, MainPageState> {
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-          <Header
-            updateSearch={this.updateSearch}
-            hasSearch={true}
-            isAuthorized={this.state.isAuthorized}
-            logout={this.logout} user={this.state.user}
-            lang={lang}/>
-              <CountriesCards search={search} />
+              <Header
+                updateSearch={this.updateSearch}
+                updateLang={this.updateLang}
+                hasSearch={true}
+                isAuthorized={this.state.isAuthorized}
+                logout={this.logout} user={this.state.user}
+                lang={lang} />
+              <CountriesCards search={search} lang={lang} />
             </Route>
             <Route path="/country">
-          <Header
-            hasSearch={false}
-            isAuthorized={this.state.isAuthorized}
-            logout={this.logout}
-            user={this.state.user}
-            lang={lang}
-            />
-
-              <CountryPage lang={lang}/>
+              <Header
+                hasSearch={false}
+                updateLang={this.updateLang}
+                isAuthorized={this.state.isAuthorized}
+                logout={this.logout}
+                user={this.state.user}
+                lang={lang}
+              />
+              <CountryPage lang={lang} />
             </Route>
             <Route path="/login">
-              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user} lang={lang}/>
-              <SignIn signIn={this.signIn}/>
+              <Header
+                hasSearch={false}
+                updateLang={this.updateLang}
+                isAuthorized={this.state.isAuthorized}
+                logout={this.logout}
+                user={this.state.user}
+                lang={lang} />
+              <SignIn signIn={this.signIn} />
             </Route>
             <Route path="/registration">
-              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user} lang={lang}/>
-              <Registration signIn={this.signIn}/>
+              <Header
+                hasSearch={false}
+                updateLang={this.updateLang}
+                isAuthorized={this.state.isAuthorized}
+                logout={this.logout}
+                user={this.state.user}
+                lang={lang} />
+              <Registration signIn={this.signIn} />
             </Route>
           </Switch>
           {this.state.isAuthorized ? <Redirect from="/login" to="/" /> : null}
           {this.state.isAuthorized ? <Redirect from="/registration" to="/" /> : null}
-          <Footer lang={lang}/>
+          <Footer lang={lang} />
 
         </BrowserRouter>
       </div >
