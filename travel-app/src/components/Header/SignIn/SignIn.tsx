@@ -5,10 +5,6 @@ interface SignInProps {
     signIn: (user: any) => void;
 }
 
-interface SignInState {
-
-}
-
 export const SignIn = (props : SignInProps) => {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
