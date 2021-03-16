@@ -45,10 +45,28 @@ export default class MainPage extends Component<{}, MainPageState> {
       user: {},
       isAuthorized: false
     });
+    if (localStorage.getItem('token')) {
+      localStorage.removeItem('token');
+    }
+  }
+
+  authorization = async () => {
+    const response = await fetch('https://travel-app-be1.herokuapp.com/auth', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify({token: localStorage.getItem('token')}),
+    });
+
+    const result = await response.json();
+    this.signIn(result);
   }
 
   componentDidMount() {
-
+    if (localStorage.getItem('token')) {
+      this.authorization();
+    }
   }
 
   componentWillUnmount() {

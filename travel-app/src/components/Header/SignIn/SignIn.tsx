@@ -12,6 +12,7 @@ interface SignInState {
 export const SignIn = (props : SignInProps) => {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
+    const [loading, setLoading] = useState(false);
 
     const handleLoginInput = (e: any) => {
         setLogin(e.target.value);
@@ -22,6 +23,7 @@ export const SignIn = (props : SignInProps) => {
     }
 
     const sigInResponse = async (user: any) => {
+        setLoading(true);
         const response = await fetch('https://travel-app-be1.herokuapp.com/login', {
             method: 'POST',
             headers: {
@@ -30,7 +32,7 @@ export const SignIn = (props : SignInProps) => {
             body: JSON.stringify(user),
         });
         const result = await response.json();
-        console.log(result)
+        setLoading(false);
         if (!result.message) {
             props.signIn(result);
             localStorage.setItem('token', result.token);
@@ -51,7 +53,7 @@ export const SignIn = (props : SignInProps) => {
 
     return (
         <div className="main">
-            <form className="ui form sign-in-form">
+            <form className={`ui form sign-in-form ${loading ? 'loading' : ''}`}>
                 <div className="field">
                     <h2>LogIn</h2>
                     <label>

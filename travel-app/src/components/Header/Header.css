@@ -31,3 +31,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.authorization a {
+  color: white;
+}
+
+.authorization a:hover {
+  color: white;
+}

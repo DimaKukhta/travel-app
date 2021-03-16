@@ -13,6 +13,7 @@ export const Registration = (props : RegistrationProps) => {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const [avatar, setAvatar] = useState('');
+    const [loading, setLoading] = useState(false);
 
 
     const handleFileInput = (e: any) => {
@@ -33,6 +34,7 @@ export const Registration = (props : RegistrationProps) => {
     }
 
     const createUser = async (user: any) => {
+        setLoading(true);
         const response = await fetch('https://travel-app-be1.herokuapp.com/reg', {
             method: 'POST',
             headers: {
@@ -44,6 +46,7 @@ export const Registration = (props : RegistrationProps) => {
         });
         console.log(response, user)
         const result = await response.json();
+        setLoading(false);
         console.log(result.message);
         console.log(result.message !== 'User was created')
         if (result.message === 'User was created') {
@@ -79,7 +82,7 @@ export const Registration = (props : RegistrationProps) => {
 
     return (
         <div className="main">
-            <form className="ui form authorization-form">
+            <form className={`ui form authorization-form ${loading ? 'loading' : ''}`}>
                 <div className="field">
                     <h2>Registration</h2>
                     <input type="file" id="input-file" accept=".jpg, .jpeg, .png"  onChange={handleFileInput}/>

@@ -60,12 +60,12 @@ export default class Header extends Component<HeaderProps, {}> {
             </Button>
           </div>
         }
-        <div>
+        <div className="authorization">
           {this.props.isAuthorized 
-          ? <button onClick={this.props.logout}>Logout</button>
+          ? <Button color="red" onClick={this.props.logout}>Logout</Button>
           : <div>
-            <NavLink to="/login"color='blue'>Sign in</NavLink>
-            <NavLink to="/registration"color='yellow'>Registration</NavLink>
+            <Button color="blue"><NavLink to="/login">Sign in</NavLink></Button>
+            <Button color="yellow"><NavLink to="/registration">Registration</NavLink></Button>
           </div>
           }
         </div>
