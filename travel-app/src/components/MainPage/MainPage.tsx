@@ -74,7 +74,7 @@ export default class MainPage extends Component<{}, MainPageState> {
             </Route>
           </Switch>
           {this.state.isAuthorized ? <Redirect from="/login" to="/" /> : null}
-          {this.state.isAuthorized ? <Redirect from="/reg" to="/" /> : null}
+          {this.state.isAuthorized ? <Redirect from="/registration" to="/" /> : null}
           <Footer />
 
         </BrowserRouter>
