@@ -9,6 +9,7 @@ import { NavLink } from 'react-router-dom';
 interface HeaderProps {
   updateSearch?: (input: string) => void;
   hasSearch: boolean,
+  isAuthorized: boolean
 }
 
 export default class Header extends Component<HeaderProps, {}> {
@@ -59,8 +60,13 @@ export default class Header extends Component<HeaderProps, {}> {
           </div>
         }
         <div>
-          <Button color='blue'>Sign in</Button>
-          <Button color='yellow'>Registration</Button>
+          {this.props.isAuthorized 
+          ? <button>Logout</button>
+          : <div>
+            <NavLink to="/login"color='blue'>Sign in</NavLink>
+            <NavLink to="/reg"color='yellow'>Registration</NavLink>
+          </div>
+          }
         </div>
       </div>
     );
