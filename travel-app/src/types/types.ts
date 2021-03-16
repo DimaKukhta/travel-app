@@ -41,8 +41,13 @@ export enum months {
   Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Okt, Nov, Dec,
 }
 
-export const languages: object[] = [
+export const languagesOptions: object[] = [
   { key: 'en', value: 'en', text: 'English' },
   { key: 'ru', value: 'ru', text: 'Русский' },
-  { key: 'by', value: 'by', text: 'Беларуская' },
+  { key: 'be', value: 'be', text: 'Беларуская' },
 ]
+
+
+// export type languages = 'en' | 'ru' | 'be';
+// export type Tlanguages = keyof(typeof languages);
+// export interface languages {[key: string]: string };

@@ -12,7 +12,7 @@ export default class Currency extends Component<{[key: string]: any}> {
       const rate = rates[curr];
 
       if (rate < 1) {
-        const group = 10 ** (`${Math.trunc(1/rate)}`.length - 1);
+        const group = 10 ** (`${Math.round(1/rate)}`.length - 1);
         return `${group} : ${(rate*group).toFixed(3)} ${curr}`
       }
       return `1: ${rate.toFixed(3)} ${curr}`;

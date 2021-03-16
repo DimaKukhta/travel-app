@@ -1,8 +1,10 @@
-import React, { Component, PropsWithChildren } from 'react';
+import React, { Component } from 'react';
 import Header from '../Header/Header';
 import CountriesCards from './CountriesCards/CountriesCards';
 import CountryPage from '../country-page/CountryPage'
 import Footer from '../Footer/Footer';
+import { getCurrentLang } from '../../utils/getCurrentLang';
+
 import './MainPage.css';
 import {
   Switch,
@@ -13,46 +15,49 @@ import {
 
 interface MainPageState {
   search: string,
+  lang: string,
 }
 
 export default class MainPage extends Component<{}, MainPageState> {
-  state = {
+  state: MainPageState = {
     search: '',
+    lang: getCurrentLang(),
   }
 
   updateSearch = (input: string): void => {
     this.setState({
-      search: input
+      search: input,
     })
   }
 
-  componentDidMount() {
-
-  }
-
-  componentWillUnmount() {
-
+  updateLang = (lang: string): void => {
+    this.setState({
+      lang: lang,
+    })
   }
 
   render() {
-    const { search } = this.state;
+    const { search, lang } = this.state;
 
     return (
       <div className='container'>
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-          <Header updateSearch={this.updateSearch} hasSearch={true}/>
-              <CountriesCards search={search} />
+              <Header updateSearch={this.updateSearch} updateLang={this.updateLang} hasSearch={true} lang={lang} />
+              <CountriesCards search={search} lang={lang}/>
             </Route>
             <Route path="/country">
-          <Header hasSearch={false}/>
-
-              <CountryPage />
+              <Header hasSearch={false} updateLang={this.updateLang} lang={lang} />
+              <CountryPage lang={lang}/>
+            </Route>
+            <Route path="/login">
+              <Header hasSearch={false} updateLang={this.updateLang} lang={lang}/>
+              {/* //TODO: registration form */}
+              <div className='main'>Registration form</div>
             </Route>
           </Switch>
           <Footer />
-
         </BrowserRouter>
       </div >
 
