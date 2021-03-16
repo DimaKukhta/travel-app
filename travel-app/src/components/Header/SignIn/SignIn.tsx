@@ -55,7 +55,7 @@ export const SignIn = (props : SignInProps) => {
         <div className="main">
             <form className={`ui form sign-in-form ${loading ? 'loading' : ''}`}>
                 <div className="field">
-                    <h2>LogIn</h2>
+                    <h2>SignIn</h2>
                     <label>
                         Login
                     </label>

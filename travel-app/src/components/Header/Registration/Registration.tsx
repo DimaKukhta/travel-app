@@ -86,8 +86,9 @@ export const Registration = (props : RegistrationProps) => {
                 <div className="field">
                     <h2>Registration</h2>
                     <input type="file" id="input-file" accept=".jpg, .jpeg, .png"  onChange={handleFileInput}/>
-                    <label htmlFor="input-file" className="label-avatar"><span>Choose a file</span></label>
-                    {/*<img className="avatar" src={avatar} alt="avatar" />*/}
+                    <label htmlFor="input-file" className="label-avatar">
+                        {avatar ? <img className="avatar-registration" src={avatar} alt="avatar"/> : <span className="span-text">Add photo</span>}
+                    </label>
                     <label>
                         Login
                     </label>

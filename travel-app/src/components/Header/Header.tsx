@@ -10,7 +10,8 @@ interface HeaderProps {
   updateSearch?: (input: string) => void;
   logout: () => void,
   hasSearch: boolean,
-  isAuthorized: boolean
+  isAuthorized: boolean,
+  user: any
 }
 
 export default class Header extends Component<HeaderProps, {}> {
@@ -62,7 +63,10 @@ export default class Header extends Component<HeaderProps, {}> {
         }
         <div className="authorization">
           {this.props.isAuthorized 
-          ? <Button color="red" onClick={this.props.logout}>Logout</Button>
+          ? <div className="logout-and-avatar">
+              <Button color="red" onClick={this.props.logout}>Logout</Button>
+              {this.props.user.avatar ? <img className="header-avatar" src={this.props.user.avatar} alt="avatar" /> : null}
+            </div>
           : <div>
             <Button color="blue"><NavLink to="/login">Sign in</NavLink></Button>
             <Button color="yellow"><NavLink to="/registration">Registration</NavLink></Button>

@@ -81,20 +81,20 @@ export default class MainPage extends Component<{}, MainPageState> {
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-          <Header updateSearch={this.updateSearch} hasSearch={true} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
+          <Header updateSearch={this.updateSearch} hasSearch={true} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
               <CountriesCards search={search} />
             </Route>
             <Route path="/country">
-          <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
+          <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
 
               <CountryPage />
             </Route>
             <Route path="/login">
-              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
+              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
               <SignIn signIn={this.signIn}/>
             </Route>
             <Route path="/registration">
-              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
+              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
               <Registration signIn={this.signIn}/>
             </Route>
           </Switch>
