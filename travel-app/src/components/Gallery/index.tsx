@@ -4,7 +4,11 @@ import "react-image-gallery/styles/scss/image-gallery.scss";
 import countriesData from "../../countriesData/data";
 import "./Gallery.css";
 
-const Gallery = () => {
+interface GalleryProps {
+  countryName: string;
+}
+
+const Gallery: React.FC<GalleryProps> = ({ countryName }) => {
   const [imgId, setImgId] = useState(0);
 
   const images: {
@@ -13,8 +17,7 @@ const Gallery = () => {
     description: string;
     originalTitle: string;
   }[] = [];
-  countriesData.Germany.landmarks.forEach(
-    //TODO: set country
+  countriesData[countryName].landmarks.forEach(
     (element: {
       photo: string;
       name: { en: string };

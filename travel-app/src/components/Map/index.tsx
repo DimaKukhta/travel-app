@@ -15,8 +15,11 @@ function changeCoordinates(coords: number[][][] | number[][]) {
     return item;
   });
 }
+interface MapComponentProps {
+  countryName: string;
+}
 
-const MapComponent: React.FC<React.ReactNode> = () => {
+const MapComponent: React.FC<MapComponentProps> = ({ countryName }) => {
   const [mapWidth, setMapWidth] = useState<number>(
     document.documentElement.clientWidth / 2
   );
@@ -29,9 +32,10 @@ const MapComponent: React.FC<React.ReactNode> = () => {
     return () => window.removeEventListener("resize", handleResize);
   });
 
-  // TODO: get country
-  const capitalCoordinates = countriesData.Germany.capital.coords;
-  const polygons = changeCoordinates(countriesData.Germany.polygonCoordinates);
+  const capitalCoordinates = countriesData[countryName].capital.coords;
+  const polygons = changeCoordinates(
+    countriesData[countryName].polygonCoordinates
+  );
   return (
     <div className="Map">
       <YMaps
