@@ -1,33 +1,41 @@
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
-  background-color: #b4e1e6;
-  padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #b4e1e6;
+    padding: 20px;
 }
 
 .header_lang {
-  min-width: 10rem!important;
+    min-width: 10rem !important;
 }
 
 .header_logo {
-  width: 50px;
+    width: 50px;
 }
 
 .header_search {
-  padding: 10px;
-  outline: none;
-  border: none;
-  border-radius: 2px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
 }
 
 .header_search::-webkit-search-cancel-button {
-  height: 15px;
-  width: 15px;
+    height: 15px;
+    width: 15px;
+    background-image: url("../../assets/images/clear.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-  background-image: url('../../assets/images/clear.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+    }
+    .auth_buttons_container {
+        margin-top: 10px;
+    }
 }

@@ -1,14 +1,13 @@
-import React, { Component, createRef } from 'react';
-import { Select, Button, Icon } from 'semantic-ui-react'
-import { languages } from '../../types/types'
-import logo from '../../assets/images/logo.png';
-import './Header.css'
-import { NavLink } from 'react-router-dom';
-
+import React, { Component, createRef } from "react";
+import { Select, Button, Icon } from "semantic-ui-react";
+import { languages } from "../../types/types";
+import logo from "../../assets/images/logo.png";
+import "./Header.css";
+import { NavLink } from "react-router-dom";
 
 interface HeaderProps {
   updateSearch?: (input: string) => void;
-  hasSearch: boolean,
+  hasSearch: boolean;
 }
 
 export default class Header extends Component<HeaderProps, {}> {
@@ -19,7 +18,7 @@ export default class Header extends Component<HeaderProps, {}> {
     if (this.props.updateSearch) {
       this.props.updateSearch(value);
     }
-  }
+  };
 
   componentDidMount() {
     const elem = this.textInput.current;
@@ -27,43 +26,47 @@ export default class Header extends Component<HeaderProps, {}> {
   }
 
   addLangToUrl = ({ target }: any) => {
-    console.log(target)
+    console.log(target);
     languages.forEach((lang: any) => {
       if (lang.text === target.textContent) {
-        localStorage.setItem('lang', `${lang.value}`)
+        localStorage.setItem("lang", `${lang.value}`);
       }
     });
-  }
+  };
 
   render() {
     const { hasSearch } = this.props;
 
     return (
-      <div className='header'>
-        <NavLink to=''>
-          <img className='header_logo' src={logo} alt='logo'></img>
+      <div className="header">
+        <NavLink to="">
+          <img className="header_logo" src={logo} alt="logo"></img>
         </NavLink>
-        <Select className='header_lang' placeholder='Select language' options={languages} onChange={this.addLangToUrl} />
-        { hasSearch &&
+        <Select
+          className="header_lang"
+          placeholder="Select language"
+          options={languages}
+          onChange={this.addLangToUrl}
+        />
+        {hasSearch && (
           <div>
             <input
-              type='search'
+              type="search"
               ref={this.textInput}
               onChange={this.handleChange}
-              className='header_search'
-              placeholder='Search...'
+              className="header_search"
+              placeholder="Search..."
             />
             <Button icon>
-              <Icon name='search' />
+              <Icon name="search" />
             </Button>
           </div>
-        }
-        <div>
-          <Button color='blue'>Sign in</Button>
-          <Button color='yellow'>Registration</Button>
+        )}
+        <div className="auth_buttons_container">
+          <Button color="blue">Sign in</Button>
+          <Button color="yellow">Registration</Button>
         </div>
       </div>
     );
-
   }
 }

@@ -1,23 +1,30 @@
 /* sticky footer: https://css-tricks.com/couple-takes-sticky-footer/ */
 
 .footer {
-  font-size: 1.5rem;
-  flex-shrink: 0;
-  padding: 20px 10px;
-  background-color: chocolate;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    padding: 20px 10px;
+    background-color: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .footer_link {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  margin: 0 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin: 0 5px;
 }
 
 .footer_image {
-  width: 70px;
+    width: 70px;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding-bottom: 200px;
+    }
 }
