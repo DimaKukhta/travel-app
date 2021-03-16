@@ -1,0 +1,32 @@
+.authorization-form {
+    width: 400px;
+}
+
+#input-file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+}
+
+.avatar-registration {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.label-avatar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0px;
+    padding: 0px;
+}
+.span-text {
+    position: absolute;
+    left: 7%;
+    top: 35%;
+}

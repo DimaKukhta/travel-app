@@ -10,8 +10,11 @@ import { NavLink } from 'react-router-dom';
 interface HeaderProps {
   updateSearch?: (input: string) => void;
   updateLang?: (lang: string) => void;
-  hasSearch: boolean,
   lang: string,
+  logout: () => void,
+  hasSearch: boolean,
+  isAuthorized: boolean,
+  user: any
 }
 
 export default class Header extends Component<HeaderProps, {}> {
@@ -23,7 +26,7 @@ export default class Header extends Component<HeaderProps, {}> {
       this.props.updateSearch(value);
     }
   }
-
+  
   componentDidMount() {
     const elem = this.textInput.current;
     elem?.focus();
@@ -72,9 +75,17 @@ export default class Header extends Component<HeaderProps, {}> {
             </Button>
           </div>
         }
-        <div>
-          <Button color='blue'>{translate.header.singIn[lang]}</Button>
-          <Button color='yellow'>{translate.header.registration[lang]}</Button>
+        <div className="authorization">
+          {this.props.isAuthorized 
+          ? <div className="logout-and-avatar">
+              <Button color="red" onClick={this.props.logout}>Logout</Button>
+              {this.props.user.avatar ? <img className="header-avatar" src={this.props.user.avatar} alt="avatar" /> : null}
+            </div>
+          : <div>
+            <Button color="blue"><NavLink to="/login">Sign in</NavLink></Button>
+            <Button color="yellow"><NavLink to="/registration">Registration</NavLink></Button>
+          </div>
+          }
         </div>
       </div>
     );
