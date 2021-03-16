@@ -4,6 +4,7 @@ import './page.css';
 import { Video } from './video/Video';
 import data from '../../countriesData/data';
 import Gallery from "../Gallery";
+import Widget from '../Widget/Widget';
 import MapComponent from "../Map";
 
 
@@ -25,7 +26,7 @@ class CountryPage extends React.Component {
         <Grid centered>
           <GridColumn width={3} className='left_bar_wrapper'>
             <Container className='container_border_none'>
-              <h1>Left</h1>
+              <Widget country={this.urlCountry}/>
             </Container>
           </GridColumn>
 

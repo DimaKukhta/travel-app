@@ -40,12 +40,14 @@ export default class MainPage extends Component<{}, MainPageState> {
     return (
       <div className='container'>
         <BrowserRouter>
-          <Header updateSearch={this.updateSearch} />
           <Switch>
             <Route exact path="/">
+          <Header updateSearch={this.updateSearch} hasSearch={true}/>
               <CountriesCards search={search} />
             </Route>
             <Route path="/country">
+          <Header hasSearch={false}/>
+
               <CountryPage />
             </Route>
           </Switch>
