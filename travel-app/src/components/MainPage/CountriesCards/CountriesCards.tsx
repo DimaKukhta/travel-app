@@ -3,8 +3,8 @@ import { Card, Image } from 'semantic-ui-react'
 import './CountriesCards.css'
 
 import data from '../../../countriesData/data'
+import translate from '../../../translateData/translate'
 import { NavLink } from 'react-router-dom';
-// import { languages } from '../../../types/types';
 
 interface CountriesCardsProps {
   search: string;
@@ -31,7 +31,7 @@ const CountriesCards: React.FC<CountriesCardsProps> = (props) => {
 
   return (
     <div className='main'>
-      { isMainEmpty ? <div>No data available for this search query...</div> : 
+      { isMainEmpty ? <div>{translate.CountriesCards.emptySearch[lang]}</div> : 
         [...dataArray].map(countryObj => {
           const { photoURL, country, capital: { name } } = countryObj;
           const isSearchSucces = [country[lang], name[lang]].some( elem => elem.toLowerCase().includes(search.toLowerCase()));

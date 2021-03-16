@@ -51,13 +51,13 @@ export default class MainPage extends Component<{}, MainPageState> {
               <Header hasSearch={false} updateLang={this.updateLang} lang={lang} />
               <CountryPage lang={lang}/>
             </Route>
-            <Route path="/login">
+            {/* <Route path="/login">
               <Header hasSearch={false} updateLang={this.updateLang} lang={lang}/>
-              {/* //TODO: registration form */}
+              //TODO: registration form
               <div className='main'>Registration form</div>
-            </Route>
+            </Route> */}
           </Switch>
-          <Footer />
+          <Footer lang={lang}/>
         </BrowserRouter>
       </div >
 

@@ -3153,7 +3153,7 @@ const data: { [key: string]: any } =
     "country": {
       "en": "Switzerland",
       "ru": "Швейцария",
-      "be": "Швайцарыя"
+      "be": "Швейцарыя"
     },
     "polygonCoordinates": [
       [

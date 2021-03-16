@@ -8,8 +8,13 @@ import { getCurrencyRatesForCountry, getWeatherDataForCountry } from '../../api/
 
 import './widget.css'
 
-export default class Widget extends Component<{country: TCountries}, {[key: string]: any}> {
-  constructor(props: {country: TCountries}) {
+interface CountriesProps {
+  country: TCountries,
+  lang: string,
+}
+
+export default class Widget extends Component<CountriesProps, {[key: string]: any}> {
+  constructor(props: CountriesProps) {
     super(props)
     this.state = {
       currencyData: null,
@@ -19,11 +24,12 @@ export default class Widget extends Component<{country: TCountries}, {[key: stri
   }
 
   async componentDidMount() {
-    const {country} = this.props;
+    const {country, lang} = this.props;
 
     // fetching currency
     try {
       const result = await getCurrencyRatesForCountry(country);
+      console.log(result)
       this.updateCurrencyData(result);
     } catch (e) {
       this.updateCurrencyData(e);
@@ -31,7 +37,9 @@ export default class Widget extends Component<{country: TCountries}, {[key: stri
 
     // fetching weather
     try {
-      const result = await getWeatherDataForCountry(country);
+      const result = await getWeatherDataForCountry(country, lang);
+      console.log(result)
+
       this.updateWeatherData(result);
     } catch (e) {
       this.updateWeatherData(e);
@@ -51,7 +59,7 @@ export default class Widget extends Component<{country: TCountries}, {[key: stri
   }
 
   render() {
-    const {country} = this.props;
+    const {country, lang} = this.props;
     const countryCurrency = currencies[country];
     const { weatherData } = this.state;
 
@@ -67,9 +75,9 @@ export default class Widget extends Component<{country: TCountries}, {[key: stri
           <div>{`${country} (${countryCurrency})`}</div>
           <Currency rates={rates}/>
           <hr></hr>
-          <Weather country={country} weatherData={weatherData}/>
+          <Weather country={country} weatherData={weatherData} lang={lang}/>
           <hr></hr>
-          <Clock timezone={timezone}/>
+          <Clock timezone={timezone} lang={lang}/>
         </div>
       </div>
     );

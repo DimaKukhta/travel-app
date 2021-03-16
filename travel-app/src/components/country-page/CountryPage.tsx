@@ -33,7 +33,7 @@ class CountryPage extends React.Component<CountryPageProps, {}> {
         <Grid centered>
           <GridColumn width={3} className="left_bar_wrapper">
             <Container className="container_border_none">
-              <Widget country={this.urlCountry} />
+              <Widget country={this.urlCountry} lang={lang}/>
             </Container>
           </GridColumn>
 
@@ -67,7 +67,7 @@ class CountryPage extends React.Component<CountryPageProps, {}> {
                 <Video src={video}></Video>
               </GridRow>
               <GridRow id="map" width={7}>
-                <MapComponent countryName={this.urlCountry} />
+                <MapComponent countryName={this.urlCountry} lang={lang} />
               </GridRow>
             </Grid>
           </GridColumn>
