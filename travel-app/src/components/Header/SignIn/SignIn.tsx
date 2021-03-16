@@ -31,8 +31,12 @@ export const SignIn = (props : SignInProps) => {
         });
         const result = await response.json();
         console.log(result)
-        props.signIn(result);
-        localStorage.setItem('token', result.token);
+        if (!result.message) {
+            props.signIn(result);
+            localStorage.setItem('token', result.token);
+        } else {    
+            localStorage.removeItem('token');
+        }
     }
 
     const handleButtonSubmit = async (e: any, login: string, password: string) => {
@@ -59,7 +63,7 @@ export const SignIn = (props : SignInProps) => {
                         <label>Password</label>
                         <input placeholder="Password" value={password} onChange={handlePasswordInput}/>
                     </div>
-                        <button type="submit" className="ui button" onClick={(e) => handleButtonSubmit(e, login, password)}>Submit</button>
+                    <button type="submit" className="ui button" onClick={(e) => handleButtonSubmit(e, login, password)}>Submit</button>
             </form>
         </div>
     )

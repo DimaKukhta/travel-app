@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './registration.css';
+import { url } from 'inspector';
 
 interface RegistrationProps {
-    registration: (user: any) => void;
+    signIn: (user: any) => void;
 }
 
 interface RegistrationState {
@@ -13,9 +14,9 @@ export const Registration = (props : RegistrationProps) => {
     const [password, setPassword] = useState('');
     const [avatar, setAvatar] = useState('');
 
-    const reader: any = new FileReader();
 
     const handleFileInput = (e: any) => {
+        const reader: any = new FileReader();
         reader.readAsDataURL(e.target.files[0]);
         reader.onload = function() {
             setAvatar(reader.result);
@@ -31,15 +32,7 @@ export const Registration = (props : RegistrationProps) => {
         setPassword(e.target.value);
     }
 
-    const handleButtonSubmit = async (e: any, login: string, password: string) => {
-        e.preventDefault();
-        const user = {
-            login,
-            password,
-            avatar
-        };
-        console.log(login, password, avatar, user)
-
+    const createUser = async (user: any) => {
         const response = await fetch('https://travel-app-be1.herokuapp.com/reg', {
             method: 'POST',
             headers: {
@@ -49,21 +42,49 @@ export const Registration = (props : RegistrationProps) => {
             },
             body: JSON.stringify(user),
         });
-      //  props.signIn({login: user.login, avatar: user.avatar});
         console.log(response, user)
+        const result = await response.json();
+        console.log(result.message);
+        console.log(result.message !== 'User was created')
+        if (result.message === 'User was created') {
+            props.signIn({login: user.login, avatar: user.avatar});
+        }
+    }
+
+    const handleButtonSubmit = async (e: any, login: string, password: string) => {
+        e.preventDefault();
+        const user = {
+            login,
+            password,
+            avatar
+        };
+        console.log(login, password, avatar, user)
+        createUser(user);
+
+       /* const response = await fetch('https://travel-app-be1.herokuapp.com/reg', {
+            method: 'POST',
+            headers: {
+            //'Accept': 'application/json',
+            'Content-Type': 'application/json;charset=utf-8',
+            //'Access-Control-Allow-Origin': '*' 
+            },
+            body: JSON.stringify(user),
+        });*/
+      //  props.signIn({login: user.login, avatar: user.avatar});
+       /* console.log(response, user)
 
         const result = await response.json();
-        console.log(result);
+        console.log(result);*/
     };
 
     return (
         <div className="main">
-            <form className="ui form">
+            <form className="ui form authorization-form">
                 <div className="field">
                     <h2>Registration</h2>
-                    <input type="file" id="input" accept=".jpg, .jpeg, .png"  onChange={handleFileInput}/>
-                    <label htmlFor="input" className="label">Choose a file</label>
-                    <img className="avatar" src={avatar} alt="avatar" />
+                    <input type="file" id="input-file" accept=".jpg, .jpeg, .png"  onChange={handleFileInput}/>
+                    <label htmlFor="input-file" className="label-avatar"><span>Choose a file</span></label>
+                    {/*<img className="avatar" src={avatar} alt="avatar" />*/}
                     <label>
                         Login
                     </label>

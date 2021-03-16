@@ -40,6 +40,13 @@ export default class MainPage extends Component<{}, MainPageState> {
     })
   }
 
+  logout = (): void => {
+    this.setState({
+      user: {},
+      isAuthorized: false
+    });
+  }
+
   componentDidMount() {
 
   }
@@ -56,21 +63,21 @@ export default class MainPage extends Component<{}, MainPageState> {
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-          <Header updateSearch={this.updateSearch} hasSearch={true} isAuthorized={this.state.isAuthorized}/>
+          <Header updateSearch={this.updateSearch} hasSearch={true} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
               <CountriesCards search={search} />
             </Route>
             <Route path="/country">
-          <Header hasSearch={false} isAuthorized={this.state.isAuthorized}/>
+          <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
 
               <CountryPage />
             </Route>
             <Route path="/login">
-              <Header hasSearch={false} isAuthorized={this.state.isAuthorized}/>
+              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
               <SignIn signIn={this.signIn}/>
             </Route>
             <Route path="/registration">
-              <Header hasSearch={false} isAuthorized={this.state.isAuthorized}/>
-              <Registration registration={SignIn}/>
+              <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout}/>
+              <Registration signIn={this.signIn}/>
             </Route>
           </Switch>
           {this.state.isAuthorized ? <Redirect from="/login" to="/" /> : null}

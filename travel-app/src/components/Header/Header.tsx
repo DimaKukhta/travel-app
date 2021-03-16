@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 interface HeaderProps {
   updateSearch?: (input: string) => void;
+  logout: () => void,
   hasSearch: boolean,
   isAuthorized: boolean
 }
@@ -61,10 +62,10 @@ export default class Header extends Component<HeaderProps, {}> {
         }
         <div>
           {this.props.isAuthorized 
-          ? <button>Logout</button>
+          ? <button onClick={this.props.logout}>Logout</button>
           : <div>
             <NavLink to="/login"color='blue'>Sign in</NavLink>
-            <NavLink to="/reg"color='yellow'>Registration</NavLink>
+            <NavLink to="/registration"color='yellow'>Registration</NavLink>
           </div>
           }
         </div>
