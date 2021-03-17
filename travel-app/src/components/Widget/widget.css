@@ -1,0 +1,48 @@
+.widget {
+    position: fixed;
+    background-color: #d8d8d8;
+    width: 140px;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 5;
+}
+
+.widget_country_name {
+    background: #b4e1e6;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+
+.widget-currency {
+    padding: 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.widget-weather {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.widget-weather_capital {
+    background: #b4e1e6;
+}
+
+@media only screen and (max-width: 768px) {
+    .widget {
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .widget_country_name,
+    .widget-weather_capital {
+        background: transparent;
+    }
+    .widget-currency,
+    .widget-weather {
+        border: none;
+    }
+}
