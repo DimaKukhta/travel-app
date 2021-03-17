@@ -1,33 +1,37 @@
-import React, { Component } from 'react';
-import Currency from './Currency/Currency';
-import Weather from './Weather/Weather';
-import Clock from './Clock/Clock';
-import data from '../../countriesData/data';
+import React, { Component } from "react";
+import Currency from "./Currency/Currency";
+import Weather from "./Weather/Weather";
+import Clock from "./Clock/Clock";
+import data from "../../countriesData/data";
 
+import { TCountries, currencies } from "../../types/types";
+import {
+  getCurrencyRatesForCountry,
+  getWeatherDataForCountry,
+} from "../../api/getWidgetData";
+import { translateCurrencies } from "../../translateData/translate";
 
-import { TCountries, currencies } from '../../types/types';
-import { getCurrencyRatesForCountry, getWeatherDataForCountry } from '../../api/getWidgetData';
-import { translateCurrencies } from '../../translateData/translate';
-
-
-import './widget.css'
+import "./widget.css";
 
 interface CountriesProps {
-  country: TCountries,
-  lang: string,
+  country: TCountries;
+  lang: string;
 }
 
-export default class Widget extends Component<CountriesProps, {[key: string]: any}> {
+export default class Widget extends Component<
+  CountriesProps,
+  { [key: string]: any }
+> {
   constructor(props: CountriesProps) {
-    super(props)
+    super(props);
     this.state = {
       currencyData: null,
       weatherData: null,
-    }
+    };
   }
 
   async componentDidMount() {
-    const {country, lang} = this.props;
+    const { country, lang } = this.props;
 
     // fetching currency
     try {
@@ -49,17 +53,17 @@ export default class Widget extends Component<CountriesProps, {[key: string]: an
   updateWeatherData = (data: object): void => {
     this.setState({
       weatherData: data,
-    })
-  }
+    });
+  };
 
   updateCurrencyData = (data: object): void => {
     this.setState({
       currencyData: data,
-    })
-  }
+    });
+  };
 
   render() {
-    const {country, lang} = this.props;
+    const { country, lang } = this.props;
     const countryCurrency = translateCurrencies[currencies[country]][lang];
 
     const { weatherData } = this.state;
@@ -73,13 +77,13 @@ export default class Widget extends Component<CountriesProps, {[key: string]: an
 
     return (
       <div>
-        <div className='widget'>
+        <div className="widget">
           <div>{`${countryCapital} (${countryCurrency})`}</div>
-          <Currency rates={rates} lang={lang}/>
-          <hr></hr>
-          <Weather country={country} weatherData={weatherData} lang={lang}/>
-          <hr></hr>
-          <Clock timezone={timezone} lang={lang}/>
+          <Currency rates={rates} lang={lang} />
+
+          <Weather country={country} weatherData={weatherData} lang={lang} />
+
+          <Clock timezone={timezone} lang={lang} />
         </div>
       </div>
     );
