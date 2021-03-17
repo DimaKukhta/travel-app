@@ -67,7 +67,7 @@ class CountryPage extends React.Component<CountryPageProps, CountryPageState> {
             <Gallery countryName={this.urlCountry} lang={lang} imgId={this.state.imgId} setImgId={this.setImgId}/>
           </div>
           <div className="rating-container">
-            <RatingOfPlace imgId={this.state.imgId} isAuthorized={this.props.isAuthorized}></RatingOfPlace>
+            <RatingOfPlace imgId={this.state.imgId} isAuthorized={this.props.isAuthorized} lang={lang}></RatingOfPlace>
           </div>
           <div className="video_container">
             <Video src={video}></Video>
