@@ -7,10 +7,12 @@ import "./Gallery.css";
 interface GalleryProps {
   countryName: string;
   lang: string;
+  setImgId: any,
+  imgId: number
 }
 
-const Gallery: React.FC<GalleryProps> = ({ countryName, lang }) => {
-  const [imgId, setImgId] = useState(0);
+const Gallery: React.FC<GalleryProps> = ({ countryName, lang, setImgId, imgId }) => {
+  //const [imgId, setImgId] = useState(0);
 
   const images: {
     original: string;
