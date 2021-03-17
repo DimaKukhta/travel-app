@@ -33,16 +33,9 @@ export enum countryCodes {
   Switzerland = 'CH',
 }
 
-export enum daysOfWeek {
-  Sun, Mon, Tue, Wen, Thu, Fri, Sat, 
-}
-
-export enum months {
-  Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Okt, Nov, Dec,
-}
-
-export const languages: object[] = [
+export const languagesOptions: object[] = [
   { key: 'en', value: 'en', text: 'English' },
   { key: 'ru', value: 'ru', text: 'Русский' },
-  { key: 'by', value: 'by', text: 'Беларуская' },
+  { key: 'be', value: 'be', text: 'Беларуская' },
 ]
+

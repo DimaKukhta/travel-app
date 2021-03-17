@@ -1,21 +1,27 @@
 // import Card from './Card/Card'
 import { Card, Image } from "semantic-ui-react";
 import "./CountriesCards.css";
-
 import data from "../../../countriesData/data";
+import translate from "../../../translateData/translate";
 import { NavLink } from "react-router-dom";
 
 interface CountriesCardsProps {
   search: string;
+  lang: string;
 }
 
-export default function CountriesCards({ search }: CountriesCardsProps) {
+const CountriesCards: React.FC<CountriesCardsProps> = (props) => {
+  const { search, lang } = props;
+
   const dataArray = Object.values(data);
   const isMainEmpty = [...dataArray].every(({ country, capital: { name } }) => {
-    return !(
-      country.en.toLowerCase().includes(search.toLowerCase()) ||
-      name.en.toLowerCase().includes(search.toLowerCase())
-    );
+    const isCountryFind = country[lang]
+      .toLowerCase()
+      .includes(search.toLowerCase());
+    const isCapitalFind = name[lang]
+      .toLowerCase()
+      .includes(search.toLowerCase());
+    return !(isCountryFind || isCapitalFind);
   });
 
   function getSelectSearchClass(val: string, isCountryFind: boolean): string {
@@ -29,7 +35,7 @@ export default function CountriesCards({ search }: CountriesCardsProps) {
   return (
     <div className="main">
       {isMainEmpty ? (
-        <div>No data available for this search query...</div>
+        <div>{translate.CountriesCards.emptySearch[lang]}</div>
       ) : (
         [...dataArray].map((countryObj) => {
           const {
@@ -37,10 +43,10 @@ export default function CountriesCards({ search }: CountriesCardsProps) {
             country,
             capital: { name },
           } = countryObj;
-          const isSearchSucces = [country.en, name.en].some((elem) =>
+          const isSearchSucces = [country[lang], name[lang]].some((elem) =>
             elem.toLowerCase().includes(search.toLowerCase())
           );
-          const isCountryFind = country.en
+          const isCountryFind = country[lang]
             .toLowerCase()
             .includes(search.toLowerCase());
 
@@ -61,7 +67,7 @@ export default function CountriesCards({ search }: CountriesCardsProps) {
                           isCountryFind
                         )} card_country_name`}
                       >
-                        {country.en}
+                        {country[lang]}
                       </b>
 
                       <em
@@ -70,7 +76,7 @@ export default function CountriesCards({ search }: CountriesCardsProps) {
                           !isCountryFind
                         )} card_country_capital`}
                       >
-                        {name.en}
+                        {name[lang]}
                       </em>
                     </div>
                   </NavLink>
@@ -82,4 +88,6 @@ export default function CountriesCards({ search }: CountriesCardsProps) {
       )}
     </div>
   );
-}
+};
+
+export default CountriesCards;

@@ -6,9 +6,10 @@ import "./Gallery.css";
 
 interface GalleryProps {
   countryName: string;
+  lang: string;
 }
 
-const Gallery: React.FC<GalleryProps> = ({ countryName }) => {
+const Gallery: React.FC<GalleryProps> = ({ countryName, lang }) => {
   const [imgId, setImgId] = useState(0);
 
   const images: {
@@ -20,14 +21,14 @@ const Gallery: React.FC<GalleryProps> = ({ countryName }) => {
   countriesData[countryName].landmarks.forEach(
     (element: {
       photo: string;
-      name: { en: string };
-      description: { en: string };
+      name: { [key: string]: string };
+      description: { [key: string]: string };
     }) => {
       images.push({
         original: element.photo,
         thumbnail: element.photo,
-        description: element.description.en,
-        originalTitle: element.name.en,
+        description: element.description[lang],
+        originalTitle: element.name[lang],
       });
     }
   );

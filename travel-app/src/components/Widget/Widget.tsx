@@ -2,30 +2,36 @@ import React, { Component } from "react";
 import Currency from "./Currency/Currency";
 import Weather from "./Weather/Weather";
 import Clock from "./Clock/Clock";
+import data from "../../countriesData/data";
 
 import { TCountries, currencies } from "../../types/types";
 import {
   getCurrencyRatesForCountry,
   getWeatherDataForCountry,
 } from "../../api/getWidgetData";
+import { translateCurrencies } from "../../translateData/translate";
 
 import "./widget.css";
 
+interface CountriesProps {
+  country: TCountries;
+  lang: string;
+}
+
 export default class Widget extends Component<
-  { country: TCountries },
+  CountriesProps,
   { [key: string]: any }
 > {
-  constructor(props: { country: TCountries }) {
+  constructor(props: CountriesProps) {
     super(props);
     this.state = {
       currencyData: null,
       weatherData: null,
-      time: new Date(),
     };
   }
 
   async componentDidMount() {
-    const { country } = this.props;
+    const { country, lang } = this.props;
 
     // fetching currency
     try {
@@ -37,7 +43,7 @@ export default class Widget extends Component<
 
     // fetching weather
     try {
-      const result = await getWeatherDataForCountry(country);
+      const result = await getWeatherDataForCountry(country, lang);
       this.updateWeatherData(result);
     } catch (e) {
       this.updateWeatherData(e);
@@ -57,9 +63,11 @@ export default class Widget extends Component<
   };
 
   render() {
-    const { country } = this.props;
-    const countryCurrency = currencies[country];
+    const { country, lang } = this.props;
+    const countryCurrency = translateCurrencies[currencies[country]][lang];
+
     const { weatherData } = this.state;
+    const countryCapital = data[country].country[lang];
 
     const hasCurrencyResponse = this.state.currencyData !== null;
     const hasWeatherResponse = this.state.weatherData !== null;
@@ -70,10 +78,12 @@ export default class Widget extends Component<
     return (
       <div>
         <div className="widget">
-          <div className="widget_country_name">{`${country} (${countryCurrency})`}</div>
-          <Currency rates={rates} />
-          <Weather country={country} weatherData={weatherData} />
-          <Clock timezone={timezone} />
+          <div>{`${countryCapital} (${countryCurrency})`}</div>
+          <Currency rates={rates} lang={lang} />
+
+          <Weather country={country} weatherData={weatherData} lang={lang} />
+
+          <Clock timezone={timezone} lang={lang} />
         </div>
       </div>
     );

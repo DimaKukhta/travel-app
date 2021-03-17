@@ -1,12 +1,15 @@
 import React, { Component, createRef } from "react";
 import { Select, Button, Icon } from "semantic-ui-react";
-import { languages } from "../../types/types";
+import { languagesOptions } from "../../types/types";
+import translate from "../../translateData/translate";
 import logo from "../../assets/images/logo.png";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 
 interface HeaderProps {
   updateSearch?: (input: string) => void;
+  updateLang?: (lang: string) => void;
+  lang: string;
   logout: () => void;
   hasSearch: boolean;
   isAuthorized: boolean;
@@ -26,31 +29,39 @@ export default class Header extends Component<HeaderProps, {}> {
   componentDidMount() {
     const elem = this.textInput.current;
     elem?.focus();
+    const isLangSetup = localStorage.getItem("lang");
+    if (!isLangSetup) {
+      localStorage.setItem("lang", "en");
+    }
   }
 
   addLangToUrl = ({ target }: any) => {
-    console.log(target);
-    languages.forEach((lang: any) => {
+    languagesOptions.forEach((lang: any) => {
       if (lang.text === target.textContent) {
         localStorage.setItem("lang", `${lang.value}`);
+        if (this.props.updateLang) {
+          this.props.updateLang(lang.value);
+        }
       }
     });
   };
 
   render() {
-    const { hasSearch } = this.props;
+    const { hasSearch, lang } = this.props;
 
     return (
       <div className="header">
         <NavLink to="">
           <img className="header_logo" src={logo} alt="logo"></img>
         </NavLink>
+
         <Select
           className="header_lang"
-          placeholder="Select language"
-          options={languages}
+          placeholder={translate.header.select[lang]}
+          options={languagesOptions}
           onChange={this.addLangToUrl}
         />
+
         {hasSearch && (
           <div>
             <input
@@ -58,7 +69,7 @@ export default class Header extends Component<HeaderProps, {}> {
               ref={this.textInput}
               onChange={this.handleChange}
               className="header_search"
-              placeholder="Search..."
+              placeholder={translate.header.search[lang]}
             />
             <Button icon>
               <Icon name="search" />
@@ -70,7 +81,7 @@ export default class Header extends Component<HeaderProps, {}> {
           {this.props.isAuthorized ? (
             <div className="logout-and-avatar">
               <Button color="red" onClick={this.props.logout}>
-                Logout
+                {translate.header.logout[lang]}
               </Button>
               {this.props.user.avatar ? (
                 <img
@@ -83,10 +94,12 @@ export default class Header extends Component<HeaderProps, {}> {
           ) : (
             <div>
               <Button color="blue">
-                <NavLink to="/login">Sign in</NavLink>
+                <NavLink to="/login">{translate.header.singIn[lang]}</NavLink>
               </Button>
               <Button color="yellow">
-                <NavLink to="/registration">Registration</NavLink>
+                <NavLink to="/registration">
+                  {translate.header.registration[lang]}
+                </NavLink>
               </Button>
             </div>
           )}

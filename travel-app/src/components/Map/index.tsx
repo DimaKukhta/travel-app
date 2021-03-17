@@ -7,6 +7,7 @@ import {
   Polygon,
 } from "react-yandex-maps";
 import countriesData from "../../countriesData/data";
+import { YMapsProps } from 'react-yandex-maps/typings/'
 import "./Map.css";
 
 function changeCoordinates(coords: number[][][] | number[][]) {
@@ -17,9 +18,10 @@ function changeCoordinates(coords: number[][][] | number[][]) {
 }
 interface MapComponentProps {
   countryName: string;
+  lang: string;
 }
 
-const MapComponent: React.FC<MapComponentProps> = ({ countryName }) => {
+const MapComponent: React.FC<MapComponentProps> = ({ countryName, lang }) => {
   const [mapWidth, setMapWidth] = useState<number>(
     document.documentElement.clientWidth / 2
   );
@@ -32,15 +34,30 @@ const MapComponent: React.FC<MapComponentProps> = ({ countryName }) => {
     return () => window.removeEventListener("resize", handleResize);
   });
 
+  // const getLangForMaps = (lang: string): YMapsProps => {
+  //   switch (lang) {
+  //     case 'ru':
+  //     case 'be':
+  //       return 'ru_RU'
+  //     case 'en':
+  //       return 'en_US'
+  //     default:
+  //       return 'en_US'
+  //   }
+  // }
+
   const capitalCoordinates = countriesData[countryName].capital.coords;
   const polygons = changeCoordinates(
     countriesData[countryName].polygonCoordinates
   );
+  // const { lang } = props;
+
   return (
     <div className="Map">
       <YMaps
         query={{
-          lang: "en_US", // TODO: get language
+          // lang: getLangForMaps(lang), // TODO: get language
+          lang: 'en_US', // TODO: get language
         }}
       >
         <Map
