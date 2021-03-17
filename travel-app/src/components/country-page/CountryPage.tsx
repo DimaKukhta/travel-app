@@ -6,6 +6,7 @@ import data from "../../countriesData/data";
 import Gallery from "../Gallery";
 import Widget from "../Widget/Widget";
 import MapComponent from "../Map";
+import { RatingOfPlace } from './RatingOfPlace/RatingOfPlace'; 
 
 class CountryPage extends React.Component {
   [x: string]: any;
@@ -58,6 +59,7 @@ class CountryPage extends React.Component {
                 <div className="slider_wrapper">
                   <Gallery countryName={this.urlCountry} />
                 </div>
+                <RatingOfPlace></RatingOfPlace>
               </Container>
             </GridRow>
             <Grid>

@@ -80,14 +80,14 @@ export default class MainPage extends Component<{}, MainPageState> {
       <div className='container'>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/" >
           <Header updateSearch={this.updateSearch} hasSearch={true} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
               <CountriesCards search={search} />
             </Route>
             <Route path="/country">
           <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
 
-              <CountryPage />
+              <CountryPage/>
             </Route>
             <Route path="/login">
               <Header hasSearch={false} isAuthorized={this.state.isAuthorized} logout={this.logout} user={this.state.user}/>
