@@ -60,7 +60,57 @@ const translate: Itranslate = {
       ru: 'По вашему поисковому запросу ничего не нашлось...',
       be: 'Няма дадзеных па вашаму запросу...',
     }
-  },  
+  },
+  registration: {
+    head: {
+      en: 'Registration',
+      ru: 'Регистрация',
+      be: 'Рэгістрацыя',
+    },
+    avatar: {
+      en: 'Add photo',
+      ru: 'Добавить фото',
+      be: 'Дадаць фота',
+    },
+    login: {
+      en: 'Login',
+      ru: 'Логин',
+      be: 'Логін',
+    },
+    password: {
+      en: 'Password',
+      ru: 'Пароль',
+      be: 'Пароль',
+    },
+    submit: {
+      en: 'Submit',
+      ru: 'Зарегистрироваться',
+      be: 'Зарэгістрыраваць',
+    },
+  },
+  signIn: {
+    head: {
+      en: 'Sign In',
+      ru: 'Войти',
+      be: 'Уваход',
+    },
+    login: {
+      en: 'Login',
+      ru: 'Логин',
+      be: 'Логін',
+    },
+    password: {
+      en: 'Password',
+      ru: 'Пароль',
+      be: 'Пароль',
+    },
+    submit: {
+      en: 'Submit',
+      ru: 'Войти',
+      be: 'Уваход',
+    },
+  
+  }
 }
 
 export const translateWidget: IWidget = {

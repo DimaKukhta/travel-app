@@ -119,7 +119,7 @@ export default class MainPage extends Component<{}, MainPageState> {
                 logout={this.logout}
                 user={this.state.user}
                 lang={lang} />
-              <SignIn signIn={this.signIn} />
+              <SignIn signIn={this.signIn} lang={lang}/>
             </Route>
             <Route path="/registration">
               <Header
@@ -129,13 +129,12 @@ export default class MainPage extends Component<{}, MainPageState> {
                 logout={this.logout}
                 user={this.state.user}
                 lang={lang} />
-              <Registration signIn={this.signIn} />
+              <Registration signIn={this.signIn} lang={lang}/>
             </Route>
           </Switch>
           {this.state.isAuthorized ? <Redirect from="/login" to="/" /> : null}
           {this.state.isAuthorized ? <Redirect from="/registration" to="/" /> : null}
           <Footer lang={lang} />
-
         </BrowserRouter>
       </div >
 
