@@ -8,17 +8,20 @@ import Widget from "../Widget/Widget";
 import MapComponent from "../Map";
 import { RatingOfPlace } from './RatingOfPlace/RatingOfPlace'; 
 
-class CountryPage extends React.Component {
+interface CountryPageProps {
+  lang: string;
+}
+
+class CountryPage extends React.Component<CountryPageProps, {}> {
   [x: string]: any;
-  constructor(props: any) {
+  constructor(props: CountryPageProps) {
     super(props);
-    this.state = {
-      // whill be lanlg
-    };
+
     this.urlCountry = window.location.pathname.split("/")[2];
   }
 
   render() {
+    const { lang } = this.props;
     const {
       video,
       photoURL,
@@ -31,13 +34,12 @@ class CountryPage extends React.Component {
         <Grid centered>
           <GridColumn width={3} className="left_bar_wrapper">
             <Container className="container_border_none">
-              <Widget country={this.urlCountry} />
+              <Widget country={this.urlCountry} lang={lang}/>
             </Container>
           </GridColumn>
 
           <GridColumn width={13} textAlign="center">
-            {/* <h1>{this.props.counryPageProps.head}</h1> */}
-            <h1>{data[this.urlCountry].country.en}</h1>
+            <h1>{data[this.urlCountry].country[lang]}</h1>
 
             <Grid textAlign="center">
               <GridRow columns={2}>
@@ -47,9 +49,9 @@ class CountryPage extends React.Component {
                   </Container>
                 </GridColumn>
                 <GridColumn width={8}>
-                  <h4>{name.en}</h4>
+                  <h4>{name[lang]}</h4>
                   <Container>
-                    <p>{overview.en}</p>
+                    <p>{overview[lang]}</p>
                   </Container>
                 </GridColumn>
               </GridRow>
@@ -57,7 +59,7 @@ class CountryPage extends React.Component {
             <GridRow>
               <Container>
                 <div className="slider_wrapper">
-                  <Gallery countryName={this.urlCountry} />
+                  <Gallery countryName={this.urlCountry} lang={lang} />
                 </div>
                 <RatingOfPlace></RatingOfPlace>
               </Container>
@@ -67,7 +69,7 @@ class CountryPage extends React.Component {
                 <Video src={video}></Video>
               </GridRow>
               <GridRow id="map" width={7}>
-                <MapComponent countryName={this.urlCountry} />
+                <MapComponent countryName={this.urlCountry} lang={lang} />
               </GridRow>
             </Grid>
           </GridColumn>
