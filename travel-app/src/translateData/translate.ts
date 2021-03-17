@@ -117,6 +117,28 @@ const translate: Itranslate = {
       be: 'Пагода',
     },  
   },
+  rating: {
+    head: {
+      en: 'Rating',
+      ru: 'Рейтинг',
+      be: 'Рэйтынг',
+    },
+    average: {
+      en: 'Average rating',
+      ru: 'Средний рейтинг',
+      be: 'Сярэднi рэйтынг',
+    },
+    submit: {
+      en: 'Submit',
+      ru: 'Отправить',
+      be: 'Адправiць',
+    },
+    note: {
+      en: 'To leave a rating please login.',
+      ru: 'Залогиньтесь, чтобы проголосовать.',
+      be: 'Каб прагаласаваць, трэба залагiнiцца.',
+    },
+  },
 }
 
 
