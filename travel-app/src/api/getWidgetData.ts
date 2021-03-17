@@ -7,6 +7,7 @@ export function getCurrencyRatesForCountry(country: TCountries) {
   const CURRENCY_SEARCH_PATH ='/latest';
   const CURRENCY_SEARCH_PARAM ='base=';
   const CURRENCY_SEARCH_QUERY = currencies[country];
+  console.log(`${CURRENCY_BASE_URL}${CURRENCY_SEARCH_PATH}?${CURRENCY_SEARCH_PARAM}${CURRENCY_SEARCH_QUERY}`)
 
   return fetch(`${CURRENCY_BASE_URL}${CURRENCY_SEARCH_PATH}?${CURRENCY_SEARCH_PARAM}${CURRENCY_SEARCH_QUERY}`)
     .then(response => response.json())

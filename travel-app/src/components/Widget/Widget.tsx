@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import Currency from './Currency/Currency';
 import Weather from './Weather/Weather';
 import Clock from './Clock/Clock';
+import data from '../../countriesData/data';
+
 
 import { TCountries, currencies } from '../../types/types';
 import { getCurrencyRatesForCountry, getWeatherDataForCountry } from '../../api/getWidgetData';
+import { translateCurrencies } from '../../translateData/translate';
+
 
 import './widget.css'
 
@@ -19,7 +23,6 @@ export default class Widget extends Component<CountriesProps, {[key: string]: an
     this.state = {
       currencyData: null,
       weatherData: null,
-      time: new Date(),
     }
   }
 
@@ -29,7 +32,6 @@ export default class Widget extends Component<CountriesProps, {[key: string]: an
     // fetching currency
     try {
       const result = await getCurrencyRatesForCountry(country);
-      console.log(result)
       this.updateCurrencyData(result);
     } catch (e) {
       this.updateCurrencyData(e);
@@ -58,8 +60,10 @@ export default class Widget extends Component<CountriesProps, {[key: string]: an
 
   render() {
     const {country, lang} = this.props;
-    const countryCurrency = currencies[country];
+    const countryCurrency = translateCurrencies[currencies[country]][lang];
+
     const { weatherData } = this.state;
+    const countryCapital = data[country].country[lang];
 
     const hasCurrencyResponse = this.state.currencyData !== null;
     const hasWeatherResponse = this.state.weatherData !== null;
@@ -70,8 +74,8 @@ export default class Widget extends Component<CountriesProps, {[key: string]: an
     return (
       <div>
         <div className='widget'>
-          <div>{`${country} (${countryCurrency})`}</div>
-          <Currency rates={rates}/>
+          <div>{`${countryCapital} (${countryCurrency})`}</div>
+          <Currency rates={rates} lang={lang}/>
           <hr></hr>
           <Weather country={country} weatherData={weatherData} lang={lang}/>
           <hr></hr>

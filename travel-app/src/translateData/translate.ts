@@ -1,7 +1,7 @@
 interface Itranslate {
   [key: string]: {
     [key: string]: {
-      [key: string]: string ;
+      [key: string]: string;
     }
   },
 };
@@ -25,7 +25,7 @@ const translate: Itranslate = {
       en: 'Search...',
       ru: 'Поиск...',
       be: 'Пошук...',
-    }, 
+    },
     singIn: {
       en: 'Sign in',
       ru: 'Войти',
@@ -109,9 +109,16 @@ const translate: Itranslate = {
       ru: 'Войти',
       be: 'Уваход',
     },
-  
-  }
+  },
+  widget: {
+    weather: {
+      en: 'Weather',
+      ru: 'Погода',
+      be: 'Пагода',
+    },  
+  },
 }
+
 
 export const translateWidget: IWidget = {
   clock: {
@@ -124,8 +131,51 @@ export const translateWidget: IWidget = {
       en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
       ru: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
       be: ["Студзень", "Люты", "Сакавік", "Красавік", "Май", "Чэрвень", "Ліпень", "Жнівень", "Верасень", "Кастрычнік", "Лістапад", "Снежань"],
-    }
+    },
+  },  
+}
+
+export const translateCurrencies: {
+  [key: string]: {
+    [key: string]: string
   }
+} = {
+  AUD: {
+    en: 'AUD',
+    ru: 'доллар Австралии',
+    be: 'даляр Аустраліі',
+  },
+  KHR: {
+    en: 'KHR',
+    ru: 'Камбоджийский риель',
+    be: 'Камбаджыйскі рыель',
+  },
+  EUR: {
+    en: 'EUR',
+    ru: 'Евро',
+    be: 'Еўра',
+  },
+  JPY: {
+    en: 'JPY',
+    ru: 'Японская иена',
+    be: 'Японская ена',
+  },
+  CHF: {
+    en: 'CHF',
+    ru: 'Швейцарский франк',
+    be: 'Швейцарскі франк',
+  },
+}
+
+export enum currencies {
+  Australia = 'AUD',
+  Cambodia = 'KHR',
+  Germany = 'EUR',
+  France = 'EUR',
+  Spain = 'EUR',
+  Italy = 'EUR',
+  Japan = 'JPY',
+  Switzerland = 'CHF',
 }
 
 export default translate;
