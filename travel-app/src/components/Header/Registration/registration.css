@@ -23,13 +23,15 @@
     justify-items: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 0px;
-    padding: 0px;
     cursor: pointer;
+}
+
+.label-avatar:hover {
+    background-color: #b4e1e6;
 }
 
 .span-text {
     position: absolute;
-    left: 7%;
-    top: 35%;
+    left: 10%;
+    top: 38%;
 }

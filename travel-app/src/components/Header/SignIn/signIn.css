@@ -1,3 +1,8 @@
 .sign-in-form {
     width: 400px;
 }
+
+.error {
+    color: red;
+    padding: 25px 0px;
+}

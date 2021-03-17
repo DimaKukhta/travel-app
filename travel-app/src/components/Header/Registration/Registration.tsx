@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import translate from '../../../translateData/translate';
 import './registration.css';
 
@@ -12,7 +12,16 @@ export const Registration = (props : RegistrationProps) => {
     const [password, setPassword] = useState('');
     const [avatar, setAvatar] = useState('');
     const [loading, setLoading] = useState(false);
+    const [valid, setValid] = useState(true);
+    const [error, setError] = useState('');
 
+    useEffect(() => {
+        if (login.length < 5 || password.length < 5) {
+            setValid(false);
+        } else {
+            setValid(true);
+        }
+    }, [login, password])
 
     const handleFileInput = (e: any) => {
         const reader: any = new FileReader();
@@ -44,6 +53,8 @@ export const Registration = (props : RegistrationProps) => {
         setLoading(false);
         if (result.message === 'User was created') {
             props.signIn({login: user.login, avatar: user.avatar});
+        } else {
+            setError(result.message);
         }
     }
 
@@ -77,7 +88,10 @@ export const Registration = (props : RegistrationProps) => {
                         <label>{translate.registration.password[lang]}</label>
                         <input value={password} onChange={handlePasswordInput} placeholder={`${translate.registration.password[lang]}`} type="password"/>
                     </div>
-                    <button className="ui button" onClick={(e) => handleButtonSubmit(e, login, password)}>{`${translate.registration.submit[lang]}`}</button>
+                    <div className="error">{error}</div>
+                    <button className="ui button"
+                            onClick={(e) => handleButtonSubmit(e, login, password)}
+                            disabled={valid ? false: true}>{`${translate.registration.submit[lang]}`}</button>
             </form>
         </div>
     );
