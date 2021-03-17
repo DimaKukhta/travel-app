@@ -73,7 +73,7 @@ export default class MainPage extends Component<{}, MainPageState> {
     }
   }
 
-  componentWillUnmount() {}
+  componentWillUnmount() { }
 
   render() {
     const { search, lang } = this.state;
@@ -93,6 +93,7 @@ export default class MainPage extends Component<{}, MainPageState> {
                 lang={lang}
               />
               <CountriesCards search={search} lang={lang} />
+              <Footer lang={lang} />
             </Route>
             <Route path="/country">
               <Header
@@ -104,6 +105,7 @@ export default class MainPage extends Component<{}, MainPageState> {
                 lang={lang}
               />
               <CountryPage lang={lang} />
+              <Footer lang={lang} padding={true}/>
             </Route>
             <Route path="/login">
               <Header
@@ -115,6 +117,7 @@ export default class MainPage extends Component<{}, MainPageState> {
                 lang={lang}
               />
               <SignIn signIn={this.signIn} lang={lang} />
+              <Footer lang={lang} />
             </Route>
             <Route path="/registration">
               <Header
@@ -126,13 +129,14 @@ export default class MainPage extends Component<{}, MainPageState> {
                 lang={lang}
               />
               <Registration signIn={this.signIn} lang={lang} />
+              <Footer lang={lang} />
+
             </Route>
           </Switch>
           {this.state.isAuthorized ? <Redirect from="/login" to="/" /> : null}
           {this.state.isAuthorized ? (
             <Redirect from="/registration" to="/" />
           ) : null}
-          <Footer lang={lang} />
         </BrowserRouter>
       </div>
     );
