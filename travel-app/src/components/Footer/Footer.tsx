@@ -3,10 +3,14 @@ import React from 'react';
 import rss from '../../assets/images/rss.svg';
 import './Footer.css'
 
-export default function Footer() {
+interface FooterProps {
+  padding?: boolean
+}
+
+const Footer:React.FC<FooterProps> = ({padding}) => {
 
   return (
-    <div className='footer'>
+    <div className={`footer ${padding ? 'footer-country' : ''}`}>
       Created by
       <a
         className='footer_link'
@@ -51,3 +55,5 @@ export default function Footer() {
     </div>
   )
 }
+
+export default Footer;
