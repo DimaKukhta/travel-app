@@ -19,6 +19,7 @@ interface HeaderProps {
 export default class Header extends Component<HeaderProps, {}> {
   private textInput = createRef<HTMLInputElement>();
 
+  
   handleChange = ({ target }: any): void => {
     const { value } = target;
     if (this.props.updateSearch) {
@@ -93,18 +94,20 @@ export default class Header extends Component<HeaderProps, {}> {
             </div>
           ) : (
             <div>
-              <Button color="blue">
-                <NavLink to="/login">{translate.header.singIn[lang]}</NavLink>
-              </Button>
-              <Button color="yellow">
-                <NavLink to="/registration">
+              <NavLink to="/login">
+                <Button color="blue">
+                  {translate.header.singIn[lang]}
+                </Button>
+              </NavLink>
+              <NavLink to="/registration">
+                <Button color="yellow">
                   {translate.header.registration[lang]}
-                </NavLink>
-              </Button>
+                </Button>
+              </NavLink>
             </div>
           )}
         </div>
-      </div>
+      </div >
     );
   }
 }
