@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import countriesData from "../../countriesData/data";
@@ -7,10 +7,11 @@ import "./Gallery.css";
 interface GalleryProps {
   countryName: string;
   lang: string;
+  setImgId: any,
+  imgId: number
 }
 
-const Gallery: React.FC<GalleryProps> = ({ countryName, lang }) => {
-  const [imgId, setImgId] = useState(0);
+const Gallery: React.FC<GalleryProps> = ({ countryName, lang, setImgId, imgId }) => {
 
   const images: {
     original: string;

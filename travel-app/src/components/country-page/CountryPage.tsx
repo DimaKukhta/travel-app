@@ -5,17 +5,31 @@ import data from "../../countriesData/data";
 import Gallery from "../Gallery";
 import Widget from "../Widget/Widget";
 import MapComponent from "../Map";
+import { RatingOfPlace } from './RatingOfPlace/RatingOfPlace'; 
 
 interface CountryPageProps {
-  lang: string;
+  lang: string,
+  isAuthorized: boolean
 }
 
-class CountryPage extends React.Component<CountryPageProps, {}> {
+interface CountryPageState {
+  imgId: number
+}
+
+class CountryPage extends React.Component<CountryPageProps, CountryPageState> {
   [x: string]: any;
   constructor(props: CountryPageProps) {
     super(props);
-
+    this.state = {
+      imgId: 0
+    };
     this.urlCountry = window.location.pathname.split("/")[2];
+  }
+
+  setImgId = (value: number) => {
+    this.setState({
+      imgId: value
+    });
   }
 
   render() {
@@ -50,7 +64,10 @@ class CountryPage extends React.Component<CountryPageProps, {}> {
             </div>
           </div>
           <div className="slider_container">
-            <Gallery countryName={this.urlCountry} lang={lang} />
+            <Gallery countryName={this.urlCountry} lang={lang} imgId={this.state.imgId} setImgId={this.setImgId}/>
+          </div>
+          <div className="rating-container">
+            <RatingOfPlace imgId={this.state.imgId} isAuthorized={this.props.isAuthorized}></RatingOfPlace>
           </div>
           <div className="video_container">
             <Video src={video}></Video>

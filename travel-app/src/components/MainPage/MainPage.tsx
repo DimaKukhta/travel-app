@@ -104,7 +104,7 @@ export default class MainPage extends Component<{}, MainPageState> {
                 user={this.state.user}
                 lang={lang}
               />
-              <CountryPage lang={lang} />
+              <CountryPage lang={lang} isAuthorized={this.state.isAuthorized}/>
               <Footer lang={lang} padding={true}/>
             </Route>
             <Route path="/login">

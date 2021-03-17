@@ -30,6 +30,17 @@
     padding-right: 20px;
 }
 
+.rating-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.rating-of-place {
+    margin: 0px auto;
+    text-align: center;
+}
+
 .capital_img {
     margin-right: 20px;
     max-width: 425px;
