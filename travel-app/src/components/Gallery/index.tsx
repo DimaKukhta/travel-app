@@ -35,7 +35,7 @@ const Gallery: React.FC<GalleryProps> = ({ countryName, lang }) => {
 
   return (
     <div className="Gallery">
-      <h2>{images[imgId].originalTitle}</h2>
+      <h2 className="landmark_title">{images[imgId].originalTitle}</h2>
       <ImageGallery
         items={images}
         onSlide={(id) => setImgId(id)}

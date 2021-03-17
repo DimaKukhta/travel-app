@@ -13,6 +13,7 @@
     width: 80px;
     height: 80px;
 }
+
 .label-avatar {
     position: relative;
     width: 80px;
@@ -24,7 +25,9 @@
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0px;
     padding: 0px;
+    cursor: pointer;
 }
+
 .span-text {
     position: absolute;
     left: 7%;

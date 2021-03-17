@@ -1,8 +1,23 @@
 .Gallery {
-    margin: 20px 0;
+    margin: 40px 0;
+}
+
+.landmark_title {
+    text-align: center;
+    background: #b4e1e6;
 }
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
     height: calc(100vh - 160px);
     object-fit: cover;
+}
+
+.image-gallery-slide .image-gallery-description {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-gallery-slide .image-gallery-description {
+        font-size: 14px;
+    }
 }
