@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import translate from '../../../translateData/translate';
 import './registration.css';
 
 interface RegistrationProps {
     signIn: (user: any) => void;
+    lang: string;
 }
 
 export const Registration = (props : RegistrationProps) => {
@@ -55,25 +57,27 @@ export const Registration = (props : RegistrationProps) => {
         createUser(user);
     };
 
+    const { lang } = props;
+
     return (
         <div className="main">
             <form className={`ui form authorization-form ${loading ? 'loading' : ''}`}>
                 <div className="field">
-                    <h2>Registration</h2>
+                    <h2>{translate.registration.head[lang]}</h2>
                     <input type="file" id="input-file" accept=".jpg, .jpeg, .png"  onChange={handleFileInput}/>
                     <label htmlFor="input-file" className="label-avatar">
-                        {avatar ? <img className="avatar-registration" src={avatar} alt="avatar"/> : <span className="span-text">Add photo</span>}
+                        {avatar ? <img className="avatar-registration" src={avatar} alt="avatar"/> : <span className="span-text">{translate.registration.avatar[lang]}</span>}
                     </label>
                     <label>
-                        Login
+                      {translate.registration.login[lang]}
                     </label>
-                    <input value={login} onChange={handleLoginInput} placeholder="Login"/>
+                    <input value={login} onChange={handleLoginInput} placeholder={`${translate.registration.login[lang]}`}/>
                     </div>
                     <div className="field">
-                        <label>Password</label>
-                        <input value={password} onChange={handlePasswordInput} placeholder="Password" type="password"/>
+                        <label>{translate.registration.password[lang]}</label>
+                        <input value={password} onChange={handlePasswordInput} placeholder={`${translate.registration.password[lang]}`} type="password"/>
                     </div>
-                    <button className="ui button" onClick={(e) => handleButtonSubmit(e, login, password)}>Submit</button>
+                    <button className="ui button" onClick={(e) => handleButtonSubmit(e, login, password)}>{`${translate.registration.submit[lang]}`}</button>
             </form>
         </div>
     );

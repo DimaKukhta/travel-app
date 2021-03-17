@@ -1256,7 +1256,7 @@ const data: { [key: string]: any } =
     "country": {
       "en": "Germany",
       "ru": "Германия",
-      "be": "Германія (Нямеччына)"
+      "be": "Германія"
     },
     "polygonCoordinates": [
       [
@@ -2006,7 +2006,7 @@ const data: { [key: string]: any } =
     "country": {
       "en": "Spain",
       "ru": "Испания",
-      "be": "Іспанія (Гішпанія)"
+      "be": "Іспанія"
     },
     "polygonCoordinates": [
       [
@@ -3153,7 +3153,7 @@ const data: { [key: string]: any } =
     "country": {
       "en": "Switzerland",
       "ru": "Швейцария",
-      "be": "Швайцарыя"
+      "be": "Швейцарыя"
     },
     "polygonCoordinates": [
       [

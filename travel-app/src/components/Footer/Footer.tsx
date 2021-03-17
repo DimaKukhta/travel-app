@@ -1,13 +1,20 @@
   
 import React from 'react';
 import rss from '../../assets/images/rss.svg';
+import translate from '../../translateData/translate'
+
 import './Footer.css'
 
-export default function Footer() {
+interface FooterProps {
+  lang: string,
+}
+
+ const Footer: React.FC<FooterProps> = (props) => {
+   const { lang } = props;
 
   return (
     <div className='footer'>
-      Created by
+      {translate.footer.create[lang]}
       <a
         className='footer_link'
         href='https://github.com/DimaKukhta'
@@ -36,7 +43,7 @@ export default function Footer() {
         target='_blank'>
           Viktar Sakharuk
       </a>
-      for
+      {translate.footer.for[lang]}
       <a 
         className='footer_link'
         href='https://rs.school/js/'
@@ -51,3 +58,5 @@ export default function Footer() {
     </div>
   )
 }
+
+export default Footer;
