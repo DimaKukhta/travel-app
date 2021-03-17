@@ -7,15 +7,26 @@ import {
   Polygon,
 } from "react-yandex-maps";
 import countriesData from "../../countriesData/data";
-import { YMapsProps } from 'react-yandex-maps/typings/'
 import "./Map.css";
 
-function changeCoordinates(coords: number[][][] | number[][]) {
+function changeCoordinates(coords: number[][][]) {
   return coords.map((item: any[]) => {
     item = item.map((itemCoords: any[]) => [itemCoords[1], itemCoords[0]]);
     return item;
   });
 }
+
+const getLangForMaps = (lang: string): "ru_RU" | "en_US" => {
+  switch (lang) {
+    case "ru":
+    case "be":
+      return "ru_RU";
+    case "en":
+      return "en_US";
+    default:
+      return "en_US";
+  }
+};
 interface MapComponentProps {
   countryName: string;
   lang: string;
@@ -30,34 +41,22 @@ const MapComponent: React.FC<MapComponentProps> = ({ countryName, lang }) => {
     const handleResize = () =>
       setMapWidth(document.documentElement.clientWidth / 2);
     window.addEventListener("resize", handleResize);
+    console.log(lang);
 
     return () => window.removeEventListener("resize", handleResize);
   });
-
-  // const getLangForMaps = (lang: string): YMapsProps => {
-  //   switch (lang) {
-  //     case 'ru':
-  //     case 'be':
-  //       return 'ru_RU'
-  //     case 'en':
-  //       return 'en_US'
-  //     default:
-  //       return 'en_US'
-  //   }
-  // }
 
   const capitalCoordinates = countriesData[countryName].capital.coords;
   const polygons = changeCoordinates(
     countriesData[countryName].polygonCoordinates
   );
-  // const { lang } = props;
 
   return (
     <div className="Map">
       <YMaps
         query={{
-          // lang: getLangForMaps(lang), // TODO: get language
-          lang: 'en_US', // TODO: get language
+          lang: getLangForMaps(lang),
+          // lang: 'en_US', // TODO: get language
         }}
       >
         <Map
