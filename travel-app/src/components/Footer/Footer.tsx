@@ -12,7 +12,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ lang, padding }) => {
   return (
     <div className={`footer ${padding ? "footer-country" : ""}`}>
-      Created by
+      {translate.footer.create[lang]}
       <a
         className="footer_link"
         href="https://github.com/DimaKukhta"
